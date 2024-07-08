@@ -1,0 +1,90 @@
+---
+sidebar: sidebar 
+permalink: deploy-fsx-file-system.html 
+keywords: vm workloads, deploy fsx, deploy storage for vms 
+summary: Nachdem Sie überprüft haben, ob das empfohlene FSX für ONTAP-Dateisystem oder Dateisysteme in einigen Fällen Ihren genauen Anforderungen entspricht, können Sie Workload Factory verwenden, um das System in Ihrer AWS-Umgebung bereitzustellen. 
+---
+= Stellen Sie das empfohlene FSX für ONTAP-Dateisystem bereit
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Nachdem Sie überprüft haben, ob das empfohlene FSX für ONTAP-Dateisystem (oder in einigen Fällen mehrere Dateisysteme) Ihre genauen Anforderungen erfüllt, können Sie Workload Factory verwenden, um das System in Ihrer AWS-Umgebung bereitzustellen.
+
+Abhängig von der Richtlinie und den Berechtigungen, die Sie Ihrem Workload Factory-Konto hinzugefügt haben, können Sie das FSX für ONTAP-Dateisystem vollständig unter Verwendung von Workload Factory (im Automatisierungsmodus) bereitstellen. Wenn Sie weniger Berechtigungen (Lesemodus) oder keine Berechtigungen (Grundmodus) haben, müssen Sie die CloudFormation-Informationen aus der Codebox verwenden und das FSX für ONTAP-Dateisystem selbst in AWS bereitstellen.
+
+.Anforderungen
+* Sie müssen VMware Cloud on AWS Software-Defined Datacenter (SDDC) Version 1.20 oder höher verwenden, um FSX for ONTAP-Filesysteme zu implementieren.
+* Sie dürfen das Filesystem FSX für ONTAP nicht in derselben VPC bereitstellen, die während der SDDC-Implementierung verwendet wurde. Stattdessen müssen Sie es in einer neuen Amazon VPC implementieren, um die Integration von VMware Cloud on AWS mit Amazon FSX for NetApp ONTAP zu ermöglichen.
+* Sie müssen das Filesystem FSX für ONTAP in derselben AWS-Region wie Ihr SDDC bereitstellen.
+
+
+.Schritte
+. Wählen Sie unten auf der Seite *Prüfplan* *deploy* aus, und die Seite Erstellen eines FSX für ONTAP-Dateisystem wird angezeigt.
++
+Die meisten Felder, die Ihr FSX für ONTAP-Dateisystem definieren, werden basierend auf den von Ihnen angegebenen Informationen ausgefüllt, aber es gibt ein paar Felder, die Sie auf dieser Seite ausfüllen müssen.
+
++
+Sie können die Option schnell erstellen oder Erweitert erstellen verwenden. Advanced Create bietet einige zusätzliche Speicherparameter, die Sie anpassen können. https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Sehen Sie, was diese beiden Optionen bieten"]
+
+. *AWS-Anmeldeinformationen*: Wählen Sie oder fügen Sie Anmeldeinformationen hinzu, die Workload Factory die notwendigen Berechtigungen geben, um Ihr FSX für ONTAP-Dateisystem direkt zu erstellen. Sie können auch den CloudFormation-Code aus der Codebox auswählen und das FSX für ONTAP-Dateisystem selbst in AWS bereitstellen.
+. *Dateisystemname*: Geben Sie den Namen ein, den Sie für dieses Dateisystem FSX for ONTAP verwenden möchten.
+. *Tags*: Optional können Sie Tags hinzufügen, um dieses FSX für ONTAP Dateisystem zu kategorisieren.
+. Geben Sie im Abschnitt „Netzwerk und Sicherheit“ die folgenden Informationen ein:
++
+.. *Region & VPC*: Wählen Sie die Region und die VPC, wo das Dateisystem FSX for ONTAP bereitgestellt wird.
++
+Die Implementierung sollte in einer VPC erfolgen, die von der VPC unterscheidet, bei der VMware Cloud auf AWS implementiert wird.
+
+.. *Sicherheitsgruppe*: Wenn Sie die Option *Advanced create* verwenden, können Sie die Standardsicherheitsgruppe für das FSX für ONTAP VPC auswählen, so dass der gesamte Verkehr auf das FSX für ONTAP Dateisystem zugreifen kann.
++
+Sie können eine eingehende Regel hinzufügen, die einschränkt, welche anderen AWS-Services auf das Filesystem FSX für ONTAP zugreifen können. Dadurch wird die Anzahl der offenen Services blockiert. Die Mindestports und Protokolle sind:
+
++
+[cols="15,10,55"]
+|===
+| Protokolle | Ports | Zweck 
+
+
+| TCP, UDP | 111 | Portmapper (zur Aushandlung der in NFS-Anfragen verwendeten Ports) 
+
+
+| TCP, UDP | 635 | NFS-Mountd (erhält NFS-Mount-Anfragen) 
+
+
+| TCP, UDP | 2049 | NFS-Netzwerkverkehr 
+
+
+| TCP, UDP | 4045 | Network Lock Manager (NLM, lockd) – verarbeitet Sperranforderungen. 
+
+
+| TCP, UDP | 4046 | Network Status Monitor (NSM, statd) - benachrichtigt NFS-Clients über Neustarts des Servers für das Sperrmanagement. 
+|===
+.. *Verfügbarkeitszone*: Wählen Sie die Verfügbarkeitszone und das Subnetz aus.
++
+Sie sollten dieselbe Verfügbarkeitszone auswählen, in der Ihr VMware SDDC implementiert ist, wenn Sie Kosten für AZ-übergreifenden Datenverkehr vermeiden möchten.
+
+.. *Verschlüsselung*: Wenn Sie die Option *Advanced create* verwenden, können Sie den Namen des AWS-Verschlüsselungsschlüssels aus der Dropdown-Liste auswählen.
+.. *Datastore Access Control*: Bei Verwendung der Option *Advanced create* können Sie auswählen, ob alle Hosts auf die Datastores zugreifen können oder ob nur bestimmte vSphere Cluster Nodes in einem bestimmten Subnetz auf die Datastores zugreifen können.
+
+
+. Geben Sie im Abschnitt „Dateisystemdetails“ die folgenden Informationen ein:
++
+.. *ONTAP Credentials*: Geben Sie das ONTAP-Passwort ein und bestätigen Sie es.
+.. *Speicher-VM-Anmeldeinformationen* (nur Advanced create): Geben Sie das Passwort für die Speicher-VM ein und bestätigen Sie es. Das Kennwort kann spezifisch für dieses Dateisystem sein, oder Sie können dasselbe Kennwort verwenden, das für die ONTAP-Anmeldeinformationen eingegeben wurde.
+
+
+. Im Abschnitt *Zusammenfassung* können Sie die FSX für ONTAP Dateisystem- und Datastore-Konfiguration anzeigen, die der VMware Migration Advisor basierend auf Ihren Informationen entwickelt hat.
+. Wählen Sie *Erstellen*, um das FSX für ONTAP-Dateisystem bereitzustellen. Dieser Vorgang kann bis zu 2 Stunden dauern.
++
+Optional können Sie im Codebox-Fenster *Redirect to CloudFormation* auswählen, um das Dateisystem mit einem CloudFormation-Stack zu erstellen.
+
++
+In beiden Fällen können Sie den Erstellungsfortschritt in CloudFormation überwachen.
+
+
+
+.Ergebnis
+Das Dateisystem FSX für ONTAP wird bereitgestellt.

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="495f22292688acea8c30ad6ad16b09d3" category="summary">Sie können das VM-Collector-Skript Migration Advisor oder RVTools verwenden, um Ihre aktuellen VM-Konfigurationen zu erfassen. Wir empfehlen die Verwendung des VM-Collector-Skripts Migration Advisor, da es sowohl VM-Konfigurations- als auch Performance-Daten für den genauesten Plan erfasst.</block>
+  <block id="8e2550c26f1fc7187221c8126336a37a" category="doc">Erfassung Ihrer aktuellen VM-Konfigurationen</block>
+  <block id="29f021e47d424b1dde8f4e01c9c530a8" category="inline-link-macro">Erfahren Sie, wie Sie einen vorhandenen Plan zur Erstellung eines neuen Plans nutzen</block>
+  <block id="b16e57a351e118b35fdca27cf5d83661" category="paragraph">Wenn Sie ein neues System basierend auf einem vorhandenen, lokal gespeicherten Bereitstellungsplan bereitstellen möchten, können Sie diesen Schritt überspringen und den vorhandenen Bereitstellungsplan auswählen. <block ref="d2cbff8d3a997fc87993c98dd8782aa2" category="inline-link-macro-rx"></block>.</block>
+  <block id="c423127be094663f098066c3efa8a37a" category="open-title">Verwenden Sie das Migrationberater VM-Collector-Skript</block>
+  <block id="e7bc9976408bfbd315fb5cead8d7c4e2" category="paragraph">Das VM-Collector-Skript des NetApp Migrationsberaters erfasst VM-Konfigurationsinformationen aus Ihrem vCenter, ähnlich wie RVTools die aktuellen VM-Leistungsdaten erfasst, um tatsächliche Lese- und Schreib-IOPS und Durchsatzstatistiken bereitzustellen.</block>
+  <block id="008d8f4c73b65286fe403c16e1624b81" category="paragraph">Sie müssen den Migrationsberater starten, um das Migrationberater VM-Collector-Skript aus dem Codebox-Fenster zu kopieren.</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Bevor Sie beginnen</block>
+  <block id="e1d2996b93191c5688a74299834edf26" category="paragraph">Das System, auf dem Sie das Collector-Skript ausführen, muss die folgenden Anforderungen erfüllen:</block>
+  <block id="0c4645754fcdfe7cca6f59f6d9404062" category="inline-link">Microsoft PowerShell Dokumentation</block>
+  <block id="c4b8ed9b28e6ddd2c9ef5d29cea79093" category="list-text">Microsoft PowerShell 7.0 oder höher muss installiert sein. Weitere Informationen finden Sie im<block ref="3bcd12783e3a1f59d5d004057b3692c3" category="inline-link-rx"></block> , wenn Sie PowerShell installieren müssen.</block>
+  <block id="0d5127f7ee302061e40242ba37db8061" category="inline-link">VMware PowerCLI-Dokumentation</block>
+  <block id="2a90e2cfe9bf4b6ecdc1218b5e9e89ce" category="list-text">VMware PowerCLI muss installiert sein. Weitere Informationen finden Sie im<block ref="ff5166a0861cd610082cc0f8476803ff" category="inline-link-rx"></block> , wenn Sie PowerCLI installieren müssen.</block>
+  <block id="e6137ecdf6ebd5bc847812c9dbb3684e" category="list-text">Die SSL-Zertifikatsprüfung muss deaktiviert sein.</block>
+  <block id="d334c68ce1d93dc967147b543a0f7eb5" category="list-text">PowerShell muss die Ausführung nicht signierter Skripte zulassen.</block>
+  <block id="3650e2eb7f7794332db7036831f768dd" category="paragraph">Beachten Sie, dass Sie, wenn Sie langfristige Statistiken aus Ihren VMs erfassen möchten (Tagesstatistiken), in der vSphere-Managementkonsole (VMware-Managementumgebung) die Statistikebene 3 oder höher aktiviert haben müssen.</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Schritte</block>
+  <block id="d34fab7936dd110b003945d679bb4133" category="list-text">Melden Sie sich bei Workload Factory an.</block>
+  <block id="e89045fcaeea0596351f980d8876a90a" category="list-text">Wählen Sie in der VMware-Kachel *Plan and Deploy* aus.</block>
+  <block id="56dbec4488b5001a29504a3a766a4f86" category="inline-image-macro">Ein Screenshot mit den verschiedenen Methoden zum Sammeln Ihrer aktuellen VM-Konfigurationsinformationen</block>
+  <block id="ab42a9ea30ee72a49c9dd83c04a1fa74" category="paragraph"><block ref="ab42a9ea30ee72a49c9dd83c04a1fa74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7733cfea4c10d8edbae71f745c8adcc4" category="list-text">Wählen Sie *Create a New Deployment Plan*, wählen Sie die Option *Use the Migration Advisor VMware Data Collector* und wählen Sie *Next* aus.</block>
+  <block id="7797697bf5f4b38c4de3f12c9a5194ac" category="paragraph">Die Seite *Prepare for VMware Cloud on AWS Migration* wird angezeigt.</block>
+  <block id="f383f073a6edf7564d29459bef094282" category="inline-image-macro">Die Download-Schaltfläche</block>
+  <block id="a064715cfe4e3e4a214bc84cf0551160" category="inline-image-macro">Die Schaltfläche „Kopieren“</block>
+  <block id="219834f22347449944becd8d5c8939be" category="list-text">Wählen Sie im Codebox-Fenster entweder aus <block ref="a800f53f7ef8a18e067b4b267fa3a526" category="inline-image-macro-rx" type="image"></block> , um das Migrations Advisor VM Collector-Skript (mit dem Namen "list-vms.ps1") auf dem Zielsystem zu speichern, oder wählen Sie aus <block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block> , um das Skript zu kopieren, damit Sie es auf das entsprechende System einfügen können.</block>
+  <block id="05e3a2cbedde64e89634c5de47649970" category="list-text">Führen Sie diese Schritte aus, um die Konfigurationen Ihrer aktuellen VMs zu erfassen:</block>
+  <block id="35fc8aad1c96a506870619b99b225bd3" category="list-text">Melden Sie sich beim System an, auf dem Sie den Data Collector heruntergeladen haben, auf dem PowerShell und PowerCLI installiert sind.</block>
+  <block id="ea290aa0b4fc7a1e5e3a3d4108b40f29" category="list-text">Stellen Sie eine Verbindung zu Ihrem VMware vCenter-Server her, indem Sie den folgenden Befehl ausführen:</block>
+  <block id="8283e4c9758f438b06e1efdea761629b" category="paragraph">Ersetzen Sie &lt;server_IP&gt; durch die IP-Adresse oder den Hostnamen Ihres VMware-Servers.</block>
+  <block id="b882080acef378635311a1d56cbfd3e5" category="list-text">Führen Sie das heruntergeladene Datensammlerskript aus und legen Sie die Datenerfassungsoption für die VM-Statistik „täglich“ oder „stündlich“ fest.</block>
+  <block id="5976be1a3647c1d1d6df4ce77cd4c6de" category="paragraph">Wo?</block>
+  <block id="f463cab33838fd5d10abccaf72330f35" category="list-text">*True* erfasst IOPS und Durchsatzdaten für die letzten 24 Stunden in 5-Minuten-Intervallen</block>
+  <block id="14b13715e39f4ef8d6e21c37afc154b7" category="list-text">*False* erfasst IOPS und Durchsatzdaten für die letzten 1 Stunde mit Intervallen von 20 Sekunden.</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Ergebnis</block>
+  <block id="1638657861eed27566f94f3aac3cd641" category="paragraph">Das Skript gibt eine CSV-Datei mit dem Namen im aktuellen Arbeitsverzeichnis aus<block ref="d79e984209d9daa189a55436e4ddcc1c" prefix=" " category="inline-code"></block> . Die CSV-Datei enthält eine Liste aller VMs und ihrer Eigenschaften sowie deren IOPS- und Durchsatzdaten.</block>
+  <block id="3f8f9b99b287380b37d3886a9f7e40f7" category="open-title">Verwenden Sie die RVTools-Software</block>
+  <block id="18498b95c15ee1034dbf55a71b7c7b9d" category="paragraph">RVTools ist eine Windows-Anwendung, die mit vCenter und ESX-Server (5.x bis 8.0) interagiert, um Informationen über Ihre virtuellen VMware-Umgebungen zu erfassen. Es sammelt Informationen über VMs, CPU, Arbeitsspeicher, Festplatten, Cluster, ESX Hosts, Datastores und vieles mehr. Sie können diese Informationen zur Verwendung mit dem Migrationsberater in eine xlsx-Datei exportieren.</block>
+  <block id="344899ab535d99090285d73527e8b852" category="inline-link">Erfahren Sie mehr über RVTools</block>
+  <block id="707b583376def9edad1fc8a7199124ea" category="paragraph"><block ref="707b583376def9edad1fc8a7199124ea" category="inline-link-rx"></block></block>
+  <block id="5525d9548d578c70365c720a2035b2fa" category="inline-link">RVTools-Website</block>
+  <block id="13613d07869f39104d3c7dc70d0a584e" category="list-text">Laden Sie RVTools 4.4.2 oder höher von herunter, und installieren Sie sie<block ref="c7c9965d016bc084e3044c04ae01ffcd" category="inline-link-rx"></block></block>
+  <block id="93768280696f91c787d919221b25e927" category="list-text">Starten Sie RVTools, und melden Sie sich beim Ziel-vCenter-Server an.</block>
+  <block id="1121913c71bf9c4dfefecfd1802408c4" category="paragraph">Dadurch werden Informationen über diesen vCenter-Server erfasst.</block>
+  <block id="418e7e2732f5b077d0a55b9086325810" category="list-text">Exportieren Sie Ihre VMware-Informationen in eine xlsx- oder xls-Datei.</block>
+  <block id="1abe5a39abd90cfac9ffa06b90b781c1" category="inline-link">RVTools-Dokumentation</block>
+  <block id="7d2cf15a702542e944716ce9fffaed68" category="paragraph">Weitere Informationen finden Sie im Kapitel „Kommandozeilenparameter“ in der<block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block> .</block>
+  <block id="67ec8486a529d78b43140379c2ad7aff" category="paragraph">Die xlsx- oder xls-Datei mit Ihren Ergebnissen wird in Ihrem Arbeitsverzeichnis gespeichert.</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">Was kommt als Nächstes?</block>
+  <block id="a178c2b3af2dda868c902f74b1f1d2a0" category="inline-link-macro">Erstellen eines Implementierungsplans mithilfe des Migrationsberaters</block>
+  <block id="ed04dfca3ba99cc02a56786b8fee09d3" category="paragraph"><block ref="b33ad552760aea505851a4e799b84f84" category="inline-link-macro-rx"></block>.</block>
+  <block id="a409bb04787a5ddb8911b653d035c75e" category="summary">Nach der Implementierung eines FSX für ONTAP-Filesystems müssen Sie dieses System mit Ihrer VMware Cloud on AWS-Infrastruktur verbinden. Das SDDC bietet Netzwerkoptionen zur Verbindung mit dem Filesystem FSX for ONTAP mithilfe der VPC-Peering-Funktion zur Erweiterung der Netzwerkkonnektivität zu den externen NFS-Storage-Volumes.</block>
+  <block id="07413029412abf4b07d59a7418a48d98" category="doc">Verbinden Sie Ihre FSX for ONTAP-Dateisysteme mit VMware Cloud on AWS</block>
+  <block id="ff8452c1f30c7c23563874f41490c4aa" category="paragraph">Nach der Implementierung von FSX for ONTAP-Filesystemen müssen Sie dieses System mit Ihrer VMware Cloud on AWS-Infrastruktur verbinden. Das softwaredefinierte Datacenter (SDDC) bietet Netzwerkoptionen zur Verbindung mit dem Filesystem FSX for ONTAP mithilfe von VPC Peering-Funktion zur Erweiterung der Netzwerkverbindung zu den externen NFS-Storage-Volumes.</block>
+  <block id="36789903991e7a805b64dce62ee3cb41" category="inline-link">Details finden Sie in der Dokumentation zu Amazon VPC Peering</block>
+  <block id="3f44cc30db3785a317875ea3b608f92d" category="paragraph"><block ref="3f44cc30db3785a317875ea3b608f92d" category="inline-link-rx"></block></block>
+  <block id="35e4dc1372c9892d7d45c118016255bf" category="paragraph">Das folgende Diagramm zeigt, wie VPC-Peering verwendet wird, um AZ-SDDC-Cluster (Single Availability Zone) mit FSX für ONTAP-Single-AZ-Implementierungen zu verbinden.</block>
+  <block id="40c5156ee08f8bf4b4ba3c18de0844d9" category="inline-image-macro">Ein Diagramm, das zeigt, wie VPC-Peering für die Verbindung von Single-AZ-SDDC-Clustern mit FSX für ONTAP-Single-AZ-Implementierungen verwendet wird.</block>
+  <block id="9d06593ee15f520ce9a945a1bbad4daf" category="paragraph"><block ref="9d06593ee15f520ce9a945a1bbad4daf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c450ceba09f988891c5496ca97845c53" category="summary">Nachdem Sie überprüft haben, ob das empfohlene FSX für ONTAP-Dateisystem oder Dateisysteme in einigen Fällen Ihren genauen Anforderungen entspricht, können Sie Workload Factory verwenden, um das System in Ihrer AWS-Umgebung bereitzustellen.</block>
+  <block id="6dab83facb5fd4298e37906481e1055b" category="doc">Stellen Sie das empfohlene FSX für ONTAP-Dateisystem bereit</block>
+  <block id="5619c23907d6c8e136428b1ffb2d7cbd" category="paragraph">Nachdem Sie überprüft haben, ob das empfohlene FSX für ONTAP-Dateisystem (oder in einigen Fällen mehrere Dateisysteme) Ihre genauen Anforderungen erfüllt, können Sie Workload Factory verwenden, um das System in Ihrer AWS-Umgebung bereitzustellen.</block>
+  <block id="d1ffdff1dd8d60417d05a9a8abdd7372" category="paragraph">Abhängig von der Richtlinie und den Berechtigungen, die Sie Ihrem Workload Factory-Konto hinzugefügt haben, können Sie das FSX für ONTAP-Dateisystem vollständig unter Verwendung von Workload Factory (im Automatisierungsmodus) bereitstellen. Wenn Sie weniger Berechtigungen (Lesemodus) oder keine Berechtigungen (Grundmodus) haben, müssen Sie die CloudFormation-Informationen aus der Codebox verwenden und das FSX für ONTAP-Dateisystem selbst in AWS bereitstellen.</block>
+  <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="list-title">Anforderungen</block>
+  <block id="7e1f47394f042a5680b207362e9dbb16" category="list-text">Sie müssen VMware Cloud on AWS Software-Defined Datacenter (SDDC) Version 1.20 oder höher verwenden, um FSX for ONTAP-Filesysteme zu implementieren.</block>
+  <block id="3cc79e4bc7d6bf8c61765b69d71a1967" category="list-text">Sie dürfen das Filesystem FSX für ONTAP nicht in derselben VPC bereitstellen, die während der SDDC-Implementierung verwendet wurde. Stattdessen müssen Sie es in einer neuen Amazon VPC implementieren, um die Integration von VMware Cloud on AWS mit Amazon FSX for NetApp ONTAP zu ermöglichen.</block>
+  <block id="4c140f9dee411d36eaecae373e42714d" category="list-text">Sie müssen das Filesystem FSX für ONTAP in derselben AWS-Region wie Ihr SDDC bereitstellen.</block>
+  <block id="83485d5de9840078428e4e90581100d8" category="list-text">Wählen Sie unten auf der Seite *Prüfplan* *deploy* aus, und die Seite Erstellen eines FSX für ONTAP-Dateisystem wird angezeigt.</block>
+  <block id="c62464e42e0351f87df4c1af5e9e9eae" category="paragraph">Die meisten Felder, die Ihr FSX für ONTAP-Dateisystem definieren, werden basierend auf den von Ihnen angegebenen Informationen ausgefüllt, aber es gibt ein paar Felder, die Sie auf dieser Seite ausfüllen müssen.</block>
+  <block id="132fcccbd763cde9c55e108cdadfd0fd" category="inline-link">Sehen Sie, was diese beiden Optionen bieten</block>
+  <block id="fd2398aa4da3ccd407e0f45bfe6e2c78" category="paragraph">Sie können die Option schnell erstellen oder Erweitert erstellen verwenden. Advanced Create bietet einige zusätzliche Speicherparameter, die Sie anpassen können.<block ref="58902a26384717a6f0eddfec6bc4cb67" category="inline-link-rx"></block></block>
+  <block id="3122fdd8e760049dec2c43dc4e3b6338" category="list-text">*AWS-Anmeldeinformationen*: Wählen Sie oder fügen Sie Anmeldeinformationen hinzu, die Workload Factory die notwendigen Berechtigungen geben, um Ihr FSX für ONTAP-Dateisystem direkt zu erstellen. Sie können auch den CloudFormation-Code aus der Codebox auswählen und das FSX für ONTAP-Dateisystem selbst in AWS bereitstellen.</block>
+  <block id="6067baf4cdc27f6050d51b12f15fc3e1" category="list-text">*Dateisystemname*: Geben Sie den Namen ein, den Sie für dieses Dateisystem FSX for ONTAP verwenden möchten.</block>
+  <block id="359e1e6f7c29e9b4dac5878404beab8e" category="list-text">*Tags*: Optional können Sie Tags hinzufügen, um dieses FSX für ONTAP Dateisystem zu kategorisieren.</block>
+  <block id="f6da2acef7db3c4a718d343f3dfe3c4c" category="list-text">Geben Sie im Abschnitt „Netzwerk und Sicherheit“ die folgenden Informationen ein:</block>
+  <block id="7d41d89314fd1a2df6210e91f6da55a7" category="list-text">*Region &amp; VPC*: Wählen Sie die Region und die VPC, wo das Dateisystem FSX for ONTAP bereitgestellt wird.</block>
+  <block id="875cc5528c7347167f10ab54d3e80c6b" category="paragraph">Die Implementierung sollte in einer VPC erfolgen, die von der VPC unterscheidet, bei der VMware Cloud auf AWS implementiert wird.</block>
+  <block id="d7b999322a22682588eba6652df7e969" category="list-text">*Sicherheitsgruppe*: Wenn Sie die Option *Advanced create* verwenden, können Sie die Standardsicherheitsgruppe für das FSX für ONTAP VPC auswählen, so dass der gesamte Verkehr auf das FSX für ONTAP Dateisystem zugreifen kann.</block>
+  <block id="955565afef9175d40dc796c8c08484e8" category="paragraph">Sie können eine eingehende Regel hinzufügen, die einschränkt, welche anderen AWS-Services auf das Filesystem FSX für ONTAP zugreifen können. Dadurch wird die Anzahl der offenen Services blockiert. Die Mindestports und Protokolle sind:</block>
+  <block id="9985b4390c40137573e6da05caf85874" category="cell">Protokolle</block>
+  <block id="407c4e9fac86b98147da49acd4fa0d01" category="cell">Ports</block>
+  <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">Zweck</block>
+  <block id="c9767dc9dfe4c81c0ae4626b21acfc43" category="cell">TCP, UDP</block>
+  <block id="698d51a19d8a121ce581499d7b701668" category="cell">111</block>
+  <block id="14c91204084503a0837bfc6026505f24" category="cell">Portmapper (zur Aushandlung der in NFS-Anfragen verwendeten Ports)</block>
+  <block id="6a10bbd480e4c5573d8f3af73ae0454b" category="cell">635</block>
+  <block id="28aac0c74eeebdce14ab7aaa4c92bc47" category="cell">NFS-Mountd (erhält NFS-Mount-Anfragen)</block>
+  <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049</block>
+  <block id="2f29fc667dc3fa4319c22fdf48b5f753" category="cell">NFS-Netzwerkverkehr</block>
+  <block id="ee0e95249268b86ff2053bef214bfeda" category="cell">4045</block>
+  <block id="fefb6f2f5d7131cf5e8b738af973a786" category="cell">Network Lock Manager (NLM, lockd) – verarbeitet Sperranforderungen.</block>
+  <block id="354ac345fd8c6d7ef634d9a8e3d47b83" category="cell">4046</block>
+  <block id="9d9e7ba9dfdb9531592447525b1f1fc8" category="cell">Network Status Monitor (NSM, statd) - benachrichtigt NFS-Clients über Neustarts des Servers für das Sperrmanagement.</block>
+  <block id="77fbffa5b3d67799f982e68e437e610d" category="list-text">*Verfügbarkeitszone*: Wählen Sie die Verfügbarkeitszone und das Subnetz aus.</block>
+  <block id="efb5e91db292426d0c09add167e46888" category="paragraph">Sie sollten dieselbe Verfügbarkeitszone auswählen, in der Ihr VMware SDDC implementiert ist, wenn Sie Kosten für AZ-übergreifenden Datenverkehr vermeiden möchten.</block>
+  <block id="fb26b856306fb38ef6265197eb53ecb2" category="list-text">*Verschlüsselung*: Wenn Sie die Option *Advanced create* verwenden, können Sie den Namen des AWS-Verschlüsselungsschlüssels aus der Dropdown-Liste auswählen.</block>
+  <block id="edc4d6e9343c85d6c3cd73aa547319dc" category="list-text">*Datastore Access Control*: Bei Verwendung der Option *Advanced create* können Sie auswählen, ob alle Hosts auf die Datastores zugreifen können oder ob nur bestimmte vSphere Cluster Nodes in einem bestimmten Subnetz auf die Datastores zugreifen können.</block>
+  <block id="8692762c0d29157bc5211825fc73a10b" category="list-text">Geben Sie im Abschnitt „Dateisystemdetails“ die folgenden Informationen ein:</block>
+  <block id="b457a49b2162fbe7cc5f769e85b880b9" category="list-text">*ONTAP Credentials*: Geben Sie das ONTAP-Passwort ein und bestätigen Sie es.</block>
+  <block id="b976bad24e9b592d64259244c102d9fd" category="list-text">*Speicher-VM-Anmeldeinformationen* (nur Advanced create): Geben Sie das Passwort für die Speicher-VM ein und bestätigen Sie es. Das Kennwort kann spezifisch für dieses Dateisystem sein, oder Sie können dasselbe Kennwort verwenden, das für die ONTAP-Anmeldeinformationen eingegeben wurde.</block>
+  <block id="08e34c2ea7e908b280b051fe362e2321" category="list-text">Im Abschnitt *Zusammenfassung* können Sie die FSX für ONTAP Dateisystem- und Datastore-Konfiguration anzeigen, die der VMware Migration Advisor basierend auf Ihren Informationen entwickelt hat.</block>
+  <block id="4a35c02d3fb3149532246a286cc9491f" category="list-text">Wählen Sie *Erstellen*, um das FSX für ONTAP-Dateisystem bereitzustellen. Dieser Vorgang kann bis zu 2 Stunden dauern.</block>
+  <block id="3ee808c6bed6c3cca6d6a6643ba08c89" category="paragraph">Optional können Sie im Codebox-Fenster *Redirect to CloudFormation* auswählen, um das Dateisystem mit einem CloudFormation-Stack zu erstellen.</block>
+  <block id="8a17abf71adea43d22ac172f424f4140" category="paragraph">In beiden Fällen können Sie den Erstellungsfortschritt in CloudFormation überwachen.</block>
+  <block id="af48fc2e1e9f5e62213f21a797f40b49" category="paragraph">Das Dateisystem FSX für ONTAP wird bereitgestellt.</block>
+  <block id="243f4102d24e538f61072e19e53b373f" category="summary">NetApp bietet unterschiedlichen Support für Workload Factory. Umfassende kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, wie etwa Knowledge Base-Artikel (KB) und ein Community-Forum. Ihre Support-Registrierung umfasst technischen Remote-Support über Web-Ticketing.</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Holen Sie sich Hilfe</block>
+  <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="paragraph">NetApp bietet für Workload Factory und die zugehörigen Cloud-Services unterschiedliche Unterstützung. Umfassende kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, wie etwa Knowledge Base-Artikel (KB) und ein Community-Forum. Ihre Support-Registrierung umfasst technischen Remote-Support über Web-Ticketing.</block>
+  <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">Erhalten Sie Support für FSX für ONTAP</block>
+  <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">Für technischen Support in Bezug auf FSX for ONTAP, seine Infrastruktur oder jede Lösung, die den Service verwendet, siehe „Hilfe erhalten“ in der Dokumentation zu Workload Factory für dieses Produkt.</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX für ONTAP</block>
+  <block id="9d06990508d25d367d9158c6558eb9c8" category="paragraph"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
+  <block id="35f9849ffdd809bda11d0fc56e1e3583" category="paragraph">Nutzen Sie die unten beschriebenen Support-Optionen, um technischen Support für Workload Factory und seine Storage-Lösungen und -Services zu erhalten.</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Nutzen Sie Self-Support-Optionen</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">Diese Optionen sind kostenlos verfügbar, 24 Stunden am Tag, 7 Tage die Woche:</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">Dokumentation</block>
+  <block id="d935525f4850c4638cbf48ae53fb4686" category="paragraph">Die Workload Factory-Dokumentation, die Sie derzeit anzeigen.</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">Wissensdatenbank</block>
+  <block id="436f63b446dba5a418c698d49bd39718" category="list-text"><block ref="436f63b446dba5a418c698d49bd39718" category="inline-link-rx"></block></block>
+  <block id="ba6274b9c9d1f81bb3a648fa289986b8" category="paragraph">Durchsuchen Sie die Workload Factory Knowledge Base, um hilfreiche Artikel zur Fehlerbehebung zu finden.</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">Communitys</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="7faef90df03399696ba9d4815b37171a" category="paragraph">Treten Sie der Workload Factory Community bei, um laufende Diskussionen zu verfolgen oder neue zu erstellen.</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Erstellen Sie einen Fall mit dem NetApp Support</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Zusätzlich zu den oben genannten Self-Support-Optionen können Sie gemeinsam mit einem NetApp Support-Experten eventuelle Probleme nach der Aktivierung des Supports beheben.</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">Bevor Sie beginnen</block>
+  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">Erfahren Sie, wie Sie sich für Support registrieren</block>
+  <block id="a12ea39ddf1c98adfd7f751299705efa" category="paragraph">Um die Funktion *Fall erstellen* nutzen zu können, müssen Sie sich zunächst für den Support registrieren. Verknüpfen Sie Ihre Zugangsdaten für die NetApp Support-Website mit Ihrer Workload Factory Anmeldung. <block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>.</block>
+  <block id="356c88ac4b0ec3f7689cc91f54701fef" category="list-text">Wählen Sie oben rechts in der Workload Factory-Konsole *Hilfe &gt; Support* aus.</block>
+  <block id="aadd86a3fadf19221852692c6e4adc2f" category="paragraph">Wenn Sie diese Option auswählen, wird die BlueXP Konsole um eine neue Browserregisterkarte geöffnet und das Support Dashboard geladen.</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Wählen Sie auf der Seite *Ressourcen* eine der verfügbaren Optionen unter Technischer Support:</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">Wählen Sie *Rufen Sie uns an*, wenn Sie mit jemandem am Telefon sprechen möchten. Sie werden zu einer Seite auf netapp.com weitergeleitet, auf der die Telefonnummern aufgeführt sind, die Sie anrufen können.</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">Wählen Sie *Fall erstellen*, um ein Ticket mit einem NetApp-Supportspezialisten zu öffnen:</block>
+  <block id="d7d0da18fbb8f8f85c1364883fbdf4c7" category="list-text">*Service*: Wählen Sie *Workload Factory*.</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*Case Priority*: Wählen Sie die Priorität für den Fall, der niedrig, Mittel, hoch oder kritisch sein kann.</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">Wenn Sie weitere Informationen zu diesen Prioritäten wünschen, bewegen Sie den Mauszeiger über das Informationssymbol neben dem Feldnamen.</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*Problembeschreibung*: Geben Sie eine detaillierte Beschreibung Ihres Problems an, einschließlich aller anwendbaren Fehlermeldungen oder Fehlerbehebungsschritte, die Sie durchgeführt haben.</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*Zusätzliche E-Mail-Adressen*: Geben Sie zusätzliche E-Mail-Adressen ein, wenn Sie jemand anderes auf dieses Problem aufmerksam machen möchten.</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Anhang (optional)*: Laden Sie bis zu fünf Anhänge nacheinander hoch.</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Anhänge sind auf 25 MB pro Datei begrenzt. Folgende Dateierweiterungen werden unterstützt: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx und csv.</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">Screenshot aus dem Formular „Create a Case“, in dem Sie einen Case beim NetApp Support erstellen können</block>
+  <block id="b0c6c3ee60a29925d3f09cd609b79483" category="paragraph"><block ref="b0c6c3ee60a29925d3f09cd609b79483" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">Nachdem Sie fertig sind</block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">Es wird ein Popup-Fenster mit der Support-Fallnummer angezeigt. Ein NetApp Support-Experte prüft Ihren Fall und macht Sie umgehend mit.</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">Um eine Historie deiner Support-Fälle anzuzeigen, kannst du *Einstellungen &gt; Chronik* auswählen und nach Aktionen mit dem Namen „Support-Case erstellen“ suchen. Mit einer Schaltfläche ganz rechts können Sie die Aktion erweitern, um Details anzuzeigen.</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">Es ist möglich, dass beim Versuch, einen Fall zu erstellen, möglicherweise die folgende Fehlermeldung angezeigt wird:</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">„Sie sind nicht berechtigt, einen Fall für den ausgewählten Service zu erstellen.“</block>
+  <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">Dieser Fehler könnte bedeuten, dass das NSS-Konto und das Unternehmen des Datensatzes, mit dem es verbunden ist, nicht das gleiche Unternehmen des Eintrags für die BlueXP Account Seriennummer (dh 960xxxx) oder Seriennummer der Arbeitsumgebung. Sie können Hilfe mit einer der folgenden Optionen anfordern:</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">Verwenden Sie den Chat im Produkt</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">Übermitteln Sie einen nicht-technischen Case unter<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">Managen Ihrer Support-Cases (Vorschau)</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">Sie können aktive und gelöste Support-Cases direkt über BlueXP anzeigen und managen. Sie können die mit Ihrem NSS-Konto und Ihrem Unternehmen verbundenen Fälle verwalten.</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">Case Management ist als Vorschau verfügbar. Wir planen, diese Erfahrungen weiter zu verbessern und in zukünftigen Versionen Verbesserungen hinzuzufügen. Bitte senden Sie uns Ihr Feedback über den Product-Chat.</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Beachten Sie Folgendes:</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">Das Case-Management-Dashboard oben auf der Seite bietet zwei Ansichten:</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">Die Ansicht auf der linken Seite zeigt die Gesamtzahl der Fälle, die in den letzten 3 Monaten durch das von Ihnen angegebene NSS-Benutzerkonto eröffnet wurden.</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">Die Ansicht auf der rechten Seite zeigt die Gesamtzahl der in den letzten 3 Monaten auf Unternehmensebene eröffneten Fälle basierend auf Ihrem NSS-Benutzerkonto an.</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">Die Ergebnisse in der Tabelle geben die Fälle in Bezug auf die ausgewählte Ansicht wieder.</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">Sie können interessante Spalten hinzufügen oder entfernen und den Inhalt von Spalten wie Priorität und Status filtern. Andere Spalten bieten nur Sortierfunktionen.</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">Weitere Informationen erhalten Sie in den Schritten unten.</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">Auf Fallebene bieten wir die Möglichkeit, Fallnotizen zu aktualisieren oder einen Fall zu schließen, der sich noch nicht im Status „Geschlossen“ oder „Geschlossen“ befindet.</block>
+  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">Wählen Sie *Case Management* aus und fügen Sie bei Aufforderung Ihr NSS-Konto zu BlueXP hinzu.</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">Auf der Seite *Case Management* werden offene Fälle im Zusammenhang mit dem NSS-Konto angezeigt, das mit Ihrem BlueXP Benutzerkonto verknüpft ist. Dies ist das gleiche NSS-Konto, das oben auf der Seite *NSS Management* angezeigt wird.</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">Ändern Sie optional die in der Tabelle angezeigten Informationen:</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">Wählen Sie unter *Vorgänge der Organisation* *Ansicht* aus, um alle mit Ihrem Unternehmen verbundenen Fälle anzuzeigen.</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">Ändern Sie den Datumsbereich, indem Sie einen genauen Datumsbereich oder einen anderen Zeitrahmen auswählen.</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">Ein Screenshot der Option über der Tabelle auf der Seite Case Management, mit der Sie einen genauen Datumsbereich oder die letzten 7 Tage, 30 Tage oder 3 Monate auswählen können.</block>
+  <block id="4f7062c5c309a833cf46e4a1a5a5d366" category="paragraph"><block ref="4f7062c5c309a833cf46e4a1a5a5d366" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">Filtern Sie den Inhalt der Spalten.</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">Ein Screenshot der Filteroption in der Spalte Status, in dem Sie Fälle filtern können, die einem bestimmten Status entsprechen, z. B. aktiv oder Geschlossen.</block>
+  <block id="8f624dee500d9670a27c4404084a7a62" category="paragraph"><block ref="8f624dee500d9670a27c4404084a7a62" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">Das Plus-Symbol, das in der Tabelle angezeigt wird</block>
+  <block id="002f1c0a8cf4a68b888010ddef3a7f7e" category="list-text">Ändern Sie die Spalten, die in der Tabelle angezeigt werden, indem <block ref="e55ec8dc42ae68d9326c51261c8a5f4f" category="inline-image-macro-rx" type="image"></block> Sie die Spalten auswählen und dann auswählen, die Sie anzeigen möchten.</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">Ein Screenshot mit den Spalten, die Sie in der Tabelle anzeigen können.</block>
+  <block id="72c5c65442a2c44e7f2546b8b4c957df" category="paragraph"><block ref="72c5c65442a2c44e7f2546b8b4c957df" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Ein Symbol mit drei Punkten, das in der letzten Spalte der Tabelle angezeigt wird</block>
+  <block id="000a1376035909240f559b8ab724030c" category="list-text">Managen Sie einen bestehenden Fall, indem <block ref="54181d1b918b28e5f92545f8b3b4a30c" category="inline-image-macro-rx" type="image"></block> Sie eine der verfügbaren Optionen auswählen:</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Fall anzeigen*: Vollständige Details zu einem bestimmten Fall anzeigen.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Aktennotizen aktualisieren*: Geben Sie zusätzliche Details zu Ihrem Problem an oder wählen Sie *Dateien hochladen*, um maximal fünf Dateien anzuhängen.</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Fall schließen*: Geben Sie Einzelheiten darüber an, warum Sie den Fall schließen und wählen Sie *Fall schließen*.</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Ein Screenshot, der die Aktionen zeigt, die Sie nach Auswahl des Menüs in der letzten Spalte der Tabelle durchführen können.</block>
+  <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2559e4d6b9e2e602a91b8df995b458c8" category="summary">Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware Migration Advisor zuzugreifen. Befolgen Sie die Schritte des Assistenten, um einen auf Ihre Anforderungen zugeschnittenen Bereitstellungsplan oder Migrationsplan zu erstellen.</block>
+  <block id="31f8985acb8af1ba9c63a40c3a7ceeee" category="paragraph">Mithilfe des Migrationsberaters kann ein Implementierungsplan für die folgenden Szenarien erstellt werden:</block>
+  <block id="c2fc31ef454cc8e0f7af0db95923a688" category="inline-xref">Um Ihre aktuelle lokale vSphere Umgebung in die Cloud zu migrieren.</block>
+  <block id="e8fd05295638b6180f44a5f4c0d57bf4" category="list-text"><block ref="5a7eb2b4bf76f0222b9bec2f2e8b4fa9" category="inline-xref-macro-rx"></block></block>
+  <block id="28a3e421e42b408e3e4ff1bca62ee052" category="inline-xref">Bereitstellen eines Systems in der Cloud basierend auf einem bestehenden Implementierungsplan mit ähnlichen Anforderungen</block>
+  <block id="c31c21e843fdb59a8add150356c11304" category="list-text"><block ref="5fa6f23430006bdd76a7952ab9b38e33" category="inline-xref-macro-rx"></block></block>
+  <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">Hier</block>
+  <block id="aa852edb1debe256686d19ef81384df5" category="paragraph">Beachten Sie, dass Sie über einen Benutzernamen und ein Passwort verfügen müssen, um auf Workload Factory zuzugreifen. Wenn Sie keinen Zugriff haben, erstellen Sie jetzt ein Konto. Siehe die Anleitung<block ref="8d9a8b8727a696c09218527f7717c32e" category="inline-link-rx"></block>.</block>
+  <block id="8209a613eadf680eb0da074479c79a0b" category="section-title">Erstellen Sie einen Implementierungsplan basierend auf einer lokalen vSphere-Umgebung</block>
+  <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphere-Umgebungen auf Virtual Machines in VMware Cloud on AWS migrieren und die benutzerdefinierten Amazon FSX for NetApp ONTAP-Dateisysteme als externe Datastores verwenden.</block>
+  <block id="56a6fbe00ab3546c5044f6b0c6eca438" category="list-text">Sie müssen die Bestandsdatei aus Ihren vorhandenen Systemen mithilfe des VM-Collectors des Migrationsberaters (.csv-Datei) oder mithilfe von RVTools (.xlsx-Datei) erstellt haben.</block>
+  <block id="b13e28ff6e5b463fac6d9d320af1db48" category="list-text">Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, auf die Bestandsdatei zugreifen können.</block>
+  <block id="2627024352d67ddaed97566f9597199d" category="list-text">Wählen Sie in der Kachel VMware Workloads *Plan and Deploy* aus, und die Hauptseite von VMware Migration Advisor wird angezeigt.</block>
+  <block id="cff0ff09fa5d46af3e6c32d9a5e2d408" category="inline-image-macro">Ein Screenshot mit den verschiedenen Methoden zum Laden der aktuellen VM-Konfigurationsinformationen</block>
+  <block id="be546eb7700a271b12e087db71616a76" category="paragraph"><block ref="be546eb7700a271b12e087db71616a76" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e805dde1d276b6165ec64309a45ea71e" category="list-text">Wählen Sie *Neuen Bereitstellungsplan erstellen*.</block>
+  <block id="4f85817ed18f4d26c6d18e7183794766" category="list-text">Wählen Sie die Art der Bestandsdatei aus, die Sie verwenden werden, um Workload Factory mit Ihrer aktuellen VM-Konfiguration zu füllen, und wählen Sie *Weiter*.</block>
+  <block id="e7864d4b66ace757c2a108b5b0e4db3e" category="list-text">Wählen Sie *Use the Migration Advisor VMware Data Collector* aus, um die .csv-Datei zu verwenden, die Sie mit dem VMware Data Collector erstellt haben.</block>
+  <block id="df5b6541eb8d439f6dc76a16fe960915" category="list-text">Wählen Sie *Verwenden Sie RVTools*, um die .xlsx-Datei zu verwenden, die Sie mit RVTools erstellt haben.</block>
+  <block id="587a30d8155d9c5303442e11e5e9efd7" category="paragraph">Die Seite „Vorbereitung für VMware Cloud Onboarding“ wird angezeigt.</block>
+  <block id="d762f74fe1a7fc0e27c55a560adb618a" category="inline-image-macro">Die Schaltfläche „Hochladen“</block>
+  <block id="743535db86e8f679fc605a77ecbf0ca2" category="list-text">Wählen Sie im Abschnitt _VM-Konfiguration hochladen_ die Datei aus <block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block> , die Sie verwenden möchten.</block>
+  <block id="f1199435711bc45d8683750f770d5c15" category="list-text">Wählen Sie die .csv-Datei aus, wenn Sie den VM-Collector des Migrationsberaters verwenden.</block>
+  <block id="27251bcadd79e3fd1a18ec89ac447679" category="list-text">Wählen Sie die .xlsx-Datei aus, wenn Sie RVTools verwenden.</block>
+  <block id="2e2ed307f4257994c4b8559cf9d7b08d" category="paragraph">Der Abschnitt „VM-Zusammenfassung“ wird aus der Bestandsdatei ausgefüllt, um die Anzahl der VMs und die gesamte Storage-Kapazität wiederzugeben.</block>
+  <block id="3d8f99409368ebf501d582ae12ca2f27" category="list-text">Wählen Sie im Abschnitt _VM-Bestandsaufnahme Überlegungen_ die Optionen aus, um die Liste der VMs zu filtern, die Sie migrieren möchten.</block>
+  <block id="06d3c6072e68b5d0d41062b66737b7e6" category="list-text">*Betrachten Sie VMs*: Geben Sie an, welche VMs basierend auf ihrem Betriebszustand aus der .csv-Datei extrahiert werden. Sie können alle VMs oder nur die VMs aktivieren, deaktivieren oder suspendiert.</block>
+  <block id="edbd0792b525368441c58f7092b26053" category="list-text">*Zu berücksichtigende VM-Speicherung*: Wählen Sie aus, ob die für jede einbezogene VM erstellten Datenspeicher auf der Grundlage ihrer aktuell verwendeten Größe (empfohlen) oder ihrer bereitgestellten Größe dimensioniert sind.</block>
+  <block id="5137ca074fe20694559457d4589ea3cb" category="paragraph">Die externen Datastores werden mit Amazon FSX für NetApp ONTAP-Dateisystemvolumes implementiert.</block>
+  <block id="27fb8be12e3cea936186504383e63a1d" category="list-text">*Zu berücksichtigende VM-Arbeitsspeicher*: Wählen Sie aus, ob der für jede eingeordnete VM zugewiesene Speicher auf der Grundlage ihrer aktuell genutzten Größe (empfohlen) oder ihrer bereitgestellten Größe dimensioniert ist.</block>
+  <block id="e269405b2917ada078ab1e21aea949ab" category="list-text">Geben Sie im Abschnitt „_VMware Cloud on AWS Deployment Configuration_“ Details zur erforderlichen VMware Cloud on AWS-Konfiguration ein.</block>
+  <block id="4db1f12ab10efa83baa889c794b5d44f" category="list-text">*Region*: Wählen Sie die Region aus, in der die VMs und Amazon FSX for NetApp ONTAP-Dateisysteme bereitgestellt werden sollen.</block>
+  <block id="56d2a3933360986a83fe1eebbddbbe4d" category="paragraph">Um eine optimale Performance und Kosteneffizienz zu erzielen, ist dies in der Regel die gleiche Region, in der das vorhandene VMware Cloud on AWS SDDC implementiert wird.</block>
+  <block id="6b8da9378d031990b64af03c75893aa3" category="list-text">*VM Estimated Performance Requirements*: Diese Option ist nur bei Verwendung von RVTools verfügbar. Der VM-Collector Migration Advisor erfasst diese Informationen aus Ihrer Umgebung. Geben Sie die folgenden durchschnittlichen Performance-Parameter pro Virtual Machine an, die Sie auf Ihre neu zu implementierenden VMs anwenden möchten:</block>
+  <block id="ed14429e797a847f497a533ac4d3ae54" category="list-text">*Durchschnittliche IOPS pro VM*: Geben Sie die Anzahl der für Ihre Dateisysteme erforderlichen IOPS ein. Wenn Sie sich nicht sicher sind, können Sie den Standardwert von 3 IOPS pro gib SSD-Speicher für Amazon FSX für ONTAP-Dateisysteme verwenden. Wenn Sie beispielsweise 2,000 gib Kapazität bereitstellen, wird dies auf 6,000 IOPS übersetzt. Wir empfehlen, zunächst mit einer kleineren IOPS-Einstellung zu beginnen. Sie können die bereitgestellten SSD-IOPS erhöhen, nachdem das Filesystem beim Migrieren oder Einsetzen von Workloads erstellt wurde.</block>
+  <block id="35c06a302c6771923f1bf0ae87021382" category="list-text">*Durchschnittliche I/O-Blockgröße*: Die Größe jedes Blocks mit Lese- oder Schreibvorgängen. Die Standardgröße beträgt 4 KB. Bei umfangreichen sequenziellen Lese- und Schreib-Workloads ist eine größere Blockgröße möglicherweise besser. Eine kleinere Blockgröße bietet möglicherweise bessere Performance bei Workloads, die kleine zufällige Schreibvorgänge auf wenige Dateien oder große Dateien ausführen.</block>
+  <block id="671f570e3ea106a7c662d27393517d77" category="list-text">*Durchschnittliches Schreibverhältnis*: Der Prozentsatz der Operationen, die Schreibvorgänge für Ihre Workloads sind. Das Standardverhältnis beträgt 30 % Schreibvorgänge und 70 % Lesevorgänge.</block>
+  <block id="8cee69b8c05f31ed2796e76723e0346d" category="list-text">Wählen Sie im Abschnitt _Überlegungen zur VM-Storage-Kapazität_ aus einigen Storage-Optionen aus.</block>
+  <block id="6f46f8eb6a78042e25d606c158b4f91b" category="list-text">*Durchschnittliches Datenreduzierungsverhältnis*: Wählen Sie aus den drei gängigen Auswahlwerten für die Datenreduzierung. Wählen Sie „1:1 - Keine Reduzierung“, „1:1.25 - 20% Reduktion“ oder „1:1.5 - 33% Reduktion“.</block>
+  <block id="0c47db7e17a6772593257a96d46f5cef" category="list-text">*Reserveprozentsatz*: Geben Sie den Prozentsatz des Kapazitätswachstums ein, der der Kapazität für Ihre FSX for ONTAP-Dateisysteme hinzugefügt wird.</block>
+  <block id="aebce73a3f5f4b5eb62667bc03380901" category="paragraph">Beachten Sie, dass bei einer Auswahl von weniger als 20 % keine Volume-Snapshots zum Schutz und für langfristige Backups erstellt werden können.</block>
+  <block id="b861243dc465efb48d26f7b08e8092dd" category="list-text">Wählen Sie *Next* und die Seite „VMware Cloud on AWS Node Configuration“ wird angezeigt.</block>
+  <block id="eb45b66ef322066cb931c800b0ff5a5d" category="paragraph">Auf dieser Seite können Sie die VMware Cloud auf AWS Cluster-Konfiguration anhand einer Analyse der geschätzten Einsparungen und des empfohlenen Node-Typs definieren. Sie können Folgendes konfigurieren:</block>
+  <block id="c89e6e0aa2bb09c1d7b8e38b112b33e1" category="list-text">*VSAN-Architektur*: Wählen Sie aus, ob Sie die vSAN Express Storage Architecture (ESA) oder die vSAN Original Storage Architecture (OSA) verwenden möchten.</block>
+  <block id="43a0e9cbfc582c1e66e7982369aae32e" category="list-text">*VSAN Fault Tolerance*: Wählen Sie die für die VMs erforderliche Fehlertoleranzstufe. Sie können „Auto“ wählen, die empfohlen wird, oder aus einer Vielzahl von RAID-Levels.</block>
+  <block id="74ea3f5cdcbfe5071a021f2bcbcf8f1d" category="list-text">RAID-1 (FTT 1): Besteht aus einer exakten Kopie (oder Spiegelung) eines Datensatzes auf 2 oder mehr Festplatten.</block>
+  <block id="afd103de82421fcd40e3a247053edca8" category="list-text">RAID-5 (FTT 1): Besteht aus Striping auf Blockebene mit verteilter Parität. Die Paritätsinformationen werden auf 3 oder mehr Laufwerken verteilt und können dem Ausfall einer Festplatte standhalten.</block>
+  <block id="540c7a94a98b70d6ef1eca9ecb05237b" category="list-text">RAID-5 (FTT 2): Besteht aus Striping auf Blockebene mit verteilter Parität. Die Paritätsinformationen werden auf 4 oder mehr Laufwerken verteilt und können 2 gleichzeitige Festplattenausfälle überstehen.</block>
+  <block id="83079c9ee0e50366d1ef680d4e22dedc" category="list-text">RAID-6 (FTT 2): Erweitert RAID 5 um ein weiteres Paritätsblock. Somit wird Striping auf Blockebene mit zwei Paritätsblöcken verwendet, die über alle Mitgliedsfestplatten verteilt sind. Es sind 4 oder mehr Laufwerke erforderlich, und es können alle zwei gleichzeitigen Festplattenausfälle überstanden werden.</block>
+  <block id="9478ea6583d20a9061cef8506db5c270" category="list-text">*Knotenkonfigurationsauswahlliste*: Wählen Sie einen EC2 Instanztyp für die Knoten.</block>
+  <block id="d24303e7898eb257f4fb345a8f95e80c" category="list-text">Wählen Sie *Weiter*, und die Seite "Virtuelle Maschinen auswählen" zeigt die VMs an, die den Kriterien entsprechen, die Sie auf der vorherigen Seite angegeben haben.</block>
+  <block id="2098e007a671f07e900cc010817a5ea8" category="list-text">Wählen Sie im Abschnitt _Selection Criteria_ die Kriterien für die VMs aus, die Sie bereitstellen möchten:</block>
+  <block id="b03b66d464724edfe090b5d9de614232" category="list-text">Sie basiert auf einer Kosten- und Performance-Optimierung</block>
+  <block id="48ab4f2784ee12638e45fef2dcf8b049" category="list-text">Er basiert auf der Möglichkeit, Ihre Daten mit lokalen Snapshots für Recovery-Szenarien einfach wiederherzustellen</block>
+  <block id="20d354f50e7d95fe0e5bfc8eb9580f5b" category="list-text">Auf der Grundlage beider Kriterien: Die niedrigsten Kosten bei gleichzeitiger Bereitstellung guter Recovery-Optionen</block>
+  <block id="ae3c7f6c7bd398f47e39119c3850d2c9" category="list-text">Im Abschnitt _Virtual Machines_ werden die VMs ausgewählt (markiert), die den auf der vorherigen Seite angegebenen Kriterien entsprechen. Wählen Sie VMs aus oder deaktivieren Sie diese, wenn Sie weniger oder mehr VMs auf dieser Seite integrieren/migrieren möchten.</block>
+  <block id="79f53a3b1e201c92e599dda08347cd47" category="paragraph">Der Abschnitt *Empfohlene Bereitstellung* wird aktualisiert, wenn Sie Änderungen vornehmen. Beachten Sie, dass Sie durch Aktivieren des Kontrollkästchens in der Überschriftenzeile alle VMs auf dieser Seite auswählen können.</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">Wählen Sie *Weiter*.</block>
+  <block id="d688779efac4d2bffd0b9dff31e1e59a" category="list-text">Überprüfen Sie auf der Seite *Datastore Deployment Plan* die Gesamtzahl der für die Migration empfohlenen VMs und Datenspeicher.</block>
+  <block id="fb803e9043bd24aadbf134718fc937f4" category="list-text">Wählen Sie jeden Datenspeicher aus, der im oberen Bereich der Seite aufgelistet ist, um zu sehen, wie Datenspeicher und VMs bereitgestellt werden.</block>
+  <block id="4345e81606df5dc45287de1f6571b7e8" category="paragraph">Im unteren Bereich der Seite wird die Quell-VM (oder mehrere VMs) angezeigt, für die diese neue VM und der neue Datenspeicher bereitgestellt werden.</block>
+  <block id="370536ffe24c99675c2d3115f877ecb6" category="list-text">Wenn Sie wissen, wie Ihre Datastores bereitgestellt werden, wählen Sie *Next*.</block>
+  <block id="365938d07c3056cb5ddd57ae13a34718" category="list-text">Überprüfen Sie auf der Seite *Bereitstellungsplan prüfen* die geschätzten monatlichen Kosten für alle VMs, die Sie migrieren möchten.</block>
+  <block id="6337ff3f1523ba47c97a795e4b5bbc20" category="paragraph">Oben auf der Seite werden die monatlichen Kosten für alle implementierten VMs und FSX für ONTAP-Dateisysteme beschrieben. Sie können jeden Abschnitt erweitern, um Details für die „Empfohlene Amazon FSX für ONTAP Filesystem-Konfiguration“, „geschätzte Kosten-Aufschlüsselung“, „Volume-Konfiguration“, „Sizing-Annahmen“ und technische „Haftungsausschlüsse“ anzuzeigen.</block>
+  <block id="8687a48178491c960e3d406f98cbf29c" category="list-text">Wenn Sie mit dem Migrationsplan zufrieden sind, haben Sie ein paar Möglichkeiten:</block>
+  <block id="0afb54dff7a72cd0654a60ad3ddcbeca" category="inline-link-macro">Erfahren Sie, wie Sie ein FSX für ONTAP-Dateisystem implementieren</block>
+  <block id="97d5613878abc66cd0377bc72293e1c7" category="list-text">Wählen Sie *Deploy*, um die FSX for ONTAP-Dateisysteme zur Unterstützung Ihrer VMs bereitzustellen. <block ref="6d03875f1725fb0475157a3f38b365e6" category="inline-link-macro-rx"></block>.</block>
+  <block id="2c0e666cc5cdf75376ac7d0a2c199cbd" category="list-text">Wählen Sie *Download Plan &gt; VM Deployment*, um den Migrationsplan im .csv-Format herunterzuladen, damit Sie damit Ihre neue Cloud-basierte intelligente Dateninfrastruktur erstellen können.</block>
+  <block id="89fa06462cff9e0b4ce0010f48295b35" category="list-text">Wählen Sie *Download Plan &gt; Planbericht*, um den Migrationsplan im .pdf-Format herunterzuladen, damit Sie den Plan zur Überprüfung verteilen können.</block>
+  <block id="a8e3f2e23f07d3e3b894748c162a207a" category="list-text">Wählen Sie *Plan exportieren*, um den Migrationsplan als Vorlage im .json-Format zu speichern. Sie können den Plan zu einem späteren Zeitpunkt importieren und ihn als Vorlage verwenden, wenn Sie Systeme mit ähnlichen Anforderungen bereitstellen.</block>
+  <block id="eb0382b6d1486520f7db805842e3cb39" category="section-title">Erstellen Sie einen Bereitstellungsplan auf der Grundlage eines vorhandenen Plans</block>
+  <block id="8c7f50d238649f9f07e3c2778bd32944" category="paragraph">Wenn Sie eine neue Bereitstellung planen, die einem vorhandenen Bereitstellungsplan ähnelt, den Sie in der Vergangenheit verwendet haben, können Sie diesen Plan importieren, Änderungen vornehmen und als neuen Bereitstellungsplan speichern.</block>
+  <block id="2ba4d56c67bf769878bdd42cd7cca655" category="paragraph">Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, auf die .json-Datei für den vorhandenen Bereitstellungsplan zugreifen können.</block>
+  <block id="8e6d200b693c56bf0c412dc1466869ca" category="paragraph"><block ref="8e6d200b693c56bf0c412dc1466869ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0cf508bfdfca6645623887a9bbdf21a6" category="list-text">Wählen Sie *Import eines vorhandenen Bereitstellungsplans*.</block>
+  <block id="5f729e0cf80af6c0509f40c4e10b8e21" category="list-text">Wählen Sie die vorhandene Plandatei aus <block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block> , die Sie im Migrationsberater importieren möchten.</block>
+  <block id="8909739edfc984376de0bcbd81aa6b66" category="list-text">Wählen Sie *Weiter*, und die Seite Plan überprüfen wird angezeigt.</block>
+  <block id="d4c61bc1e71803429948c212b58c3dfe" category="list-text">Sie können *Previous* auswählen, um auf die Seite _Prepare for VMware Cloud Onboarding_ und die Seite _Select VMs_ zuzugreifen, um die Einstellungen für den Plan wie im vorherigen Abschnitt beschrieben zu ändern.</block>
+  <block id="ad004cea2e3efcaa61893ef5d25d7633" category="list-text">Nachdem Sie den Plan an Ihre Anforderungen angepasst haben, können Sie den Plan speichern oder den Bereitstellungsprozess für Ihre Datastores auf FSX for ONTAP-Dateisystemen starten.</block>
+  <block id="44e948f72707f7630f611b68923bfc83" category="summary">Workload Factory für VMware bietet Tools zum Verschieben von Daten von On-Premises-Systemen in die VMware Cloud on AWS. Mit dem VMware Migrationsberater können Sie Ihre aktuellen Virtual Machine-Konfigurationen in lokalen vSphere-Umgebungen analysieren, einen Plan zur Implementierung empfohlener VM Layouts für VMware Cloud auf AWS vSphere-Cluster erstellen und die benutzerdefinierten Amazon FSX für NetApp ONTAP-Filesysteme als externe Datastores verwenden.</block>
+  <block id="be5711eda7e0bf4f780900d61a066a0c" category="doc">Erfahren Sie mehr über Workload Factory für VMware</block>
+  <block id="9a65636d5ca5b878904a6057dac83843" category="paragraph">Workload Factory für VMware bietet Tools zum Verschieben von Daten von On-Premises-Systemen in VMware Cloud on AWS (VMC). Mit dem VMware Migrationsberater können Sie Ihre aktuellen Virtual Machine-Konfigurationen in lokalen vSphere-Umgebungen analysieren, einen Plan zur Implementierung empfohlener VM Layouts für VMware Cloud auf AWS vSphere-Cluster erstellen und die benutzerdefinierten Amazon FSX für NetApp ONTAP-Filesysteme als externe Datastores verwenden.</block>
+  <block id="95b939b0f0e220091a7ff9d176a3097b" category="paragraph">Amazon FSX for NetApp ONTAP ist ein externer NFS-Datastore, der auf dem ONTAP-Filesystem von NetApp basiert und an die VMware Cloud auf AWS vSphere-Clustern angebunden werden kann. Es muss nicht mehr Hosts hinzugefügt werden, um den verfügbaren Storage zu erweitern. Stattdessen sollten Sie FSX for ONTAP Volumes nur als externe Datastores verwenden, um vSAN Datastores zu ergänzen. Dadurch erhalten Sie eine flexible, hochperformante virtualisierte Storage-Infrastruktur, die unabhängig von den Rechenressourcen skaliert werden kann.</block>
+  <block id="30141ccedd6bc04bfcb3e98195efc3cb" category="inline-image-macro">Ein Diagramm mit der Architektur</block>
+  <block id="b3bddd6280dd2182432a9d3160f06da2" category="paragraph"><block ref="b3bddd6280dd2182432a9d3160f06da2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ccaa90f171b926c0ccd9ee1bae9f5282" category="section-title">Funktionsweise des VMware Migrationsberaters</block>
+  <block id="7d197b845beffcefcc2b7624db4536bc" category="paragraph">Der Migrationsberater unterstützt Sie beim Verschieben von lokalen Virtual Machines (VMs) und ihrer Daten, die auf beliebigen von VMware unterstützten Datastores ausgeführt werden, in VMware-Cloud-Datastores, mit ergänzenden NFS-Datastores auf einem FSX für ONTAP-Filesystem.</block>
+  <block id="3104e285f52d2373db8e64fa25908a0a" category="inline-image-macro">Ein Diagramm mit einem Beispiel für eine alte Architektur und eine neue Architektur nach der Migration.</block>
+  <block id="793538922c4536c046db4d0b15151ec1" category="paragraph"><block ref="793538922c4536c046db4d0b15151ec1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f16579e3ec27716e8cd4980fbae4d3e4" category="paragraph">Beachten Sie, dass Sie bis zu vier (4) FSX für ONTAP-Volumes an ein einzelnes vSphere-Cluster in VMware Cloud on AWS anschließen können.</block>
+  <block id="389a4416c476e7624728b96c49b3cce2" category="section-title">Funktionen des Migrationsberaters im Einsatz</block>
+  <block id="a5f8a88b580feb03d498f8605e413984" category="paragraph">Der Migrationsberater stellt folgende Funktionen zur Verfügung:</block>
+  <block id="8cab295292831bfdeb59bccbb79bdd46" category="list-text">Analyse aktueller VM-Konfigurationen vor Ort</block>
+  <block id="c25aec1fd0ebfaedc74c756cad69abd2" category="list-text">Bestimmen der VMs für die Migration zu VMware Cloud on AWS</block>
+  <block id="1a05637cb863ca10f5a7d788eab39615" category="list-text">Ermitteln Sie den Speicherplatz, der auf FSX für ONTAP-Volumes zur Nutzung als externe VM-Datastores erforderlich ist</block>
+  <block id="feb18d16cfa710c71684233bc628e803" category="list-text">Überprüfen Sie den Ergebnisbericht, um die Implementierungsschritte zu verstehen</block>
+  <block id="ecd032206ca6be7b4497c7dadd4679ff" category="list-text">Durchführung der eigentlichen Implementierung</block>
+  <block id="404d1cf9d1cf2f009727efa79f365ed0" category="paragraph">Der Migrationsberater unterstützt die Konfigurationsplanung für einen einzelnen VMware Cloud on AWS-Cluster, der mit einem einzigen FSX for ONTAP-Filesystem verbunden ist.</block>
+  <block id="59a64ee2ba08e22b44728c86d8f75c1b" category="section-title">Vorteile des Migrationsberaters</block>
+  <block id="68b045681603b3999a47a329a1c2f2f2" category="paragraph">Die Umstellung von Teilen Ihrer aktuellen Infrastruktur auf VMware Cloud on AWS mit Amazon FSX for ONTAP als externe NFS-Datastores bietet folgende Vorteile:</block>
+  <block id="633d759efd4c2199d984faea480082ad" category="list-text">Kostenoptimierung durch Entkopplung von Host und Storage und erweiterte Dateneffizienz</block>
+  <block id="52800f54ef93212b18b3653970aa2ed4" category="list-text">Bedarfsunabhängige Erweiterung der Storage-Kapazität, ohne dass zusätzliche Host-Instanzen angeschafft werden müssen</block>
+  <block id="17167f5b04002560e9e2c5818b543bfa" category="list-text">NetApp ONTAP Datenmanagementfunktionen in der Cloud wie z. B. platzsparende Snapshots, Klonen, Komprimierung, Deduplizierung, Data-Compaction und Replizierung</block>
+  <block id="d668b75d63a6a78b8ce267ca999a6f00" category="list-text">Weniger Management von Hardware-Aktualisierungen</block>
+  <block id="f9f61055f7c12e19b3df8a6b77099e20" category="list-text">Möglichkeit zum Ändern des Datendurchsatzes, der IOPS-Werte und der Größe des Filesystems sowie zum Erhöhen oder verringern der Volume-Größe</block>
+  <block id="958d4e659e939db8e66a192e1e4f46f9" category="list-text">Hochverfügbarkeit bei Unterstützung mehrerer Verfügbarkeitszonen-Implementierungen (Availability Zone, AZ)</block>
+  <block id="0abb1f890b7655b5842e2e4271738b78" category="list-text">Kosten- und Latenzreduzierung für einzelne-AZ-Konfigurationen, die VPC-Peering ohne Transit-Gateway verwenden</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Kosten</block>
+  <block id="cf8aeb0c4f237de02bcdaf88a3c66dc8" category="paragraph">Der VMware Migrationsberater ist mit keinerlei Kosten verbunden.</block>
+  <block id="82836395e9110a209081b396c82b2a38" category="paragraph">Sie müssen auf Basis der Empfehlungen des Migrationsberaters Kosten für AWS Ressourcen zahlen, die Sie implementieren.</block>
+  <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">Lizenzierung</block>
+  <block id="2d9265a10aaf645fb97ed7b493dc9c5c" category="paragraph">Zur Nutzung des Migrationsberaters sind von NetApp keine speziellen Lizenzen erforderlich.</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Rechtliche Hinweise</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Rechtliche Hinweise ermöglichen den Zugriff auf Copyright-Erklärungen, Marken, Patente und mehr.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Urheberrecht</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marken</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, das NETAPP Logo und die auf der NetApp Markenseite aufgeführten Marken sind Marken von NetApp Inc. Andere Firmen- und Produktnamen können Marken der jeweiligen Eigentümer sein.</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Patente</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Eine aktuelle Liste der NetApp Patente finden Sie unter:</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Datenschutzrichtlinie</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open Source</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.</block>
+  <block id="22e5a7336ebe77138f0282cedcb069ab" category="inline-link">Workload Factory</block>
+  <block id="7ffcbeca3b450b8d05f9cf0eedb617f8" category="list-text"><block ref="7ffcbeca3b450b8d05f9cf0eedb617f8" category="inline-link-rx"></block></block>
+  <block id="887f800d53dc2cd5a7894464a6f60a6b" category="inline-link">Workload Factory für Datenbanken</block>
+  <block id="7e505d4c691d86e5bd415f9ccb849966" category="list-text"><block ref="7e505d4c691d86e5bd415f9ccb849966" category="inline-link-rx"></block></block>
+  <block id="9591e2d54c998ae1c9d48fd5be7762e9" category="inline-link">Workload Factory für GenAI</block>
+  <block id="f38c7416013fc239c3dd3288d40a40c0" category="list-text"><block ref="f38c7416013fc239c3dd3288d40a40c0" category="inline-link-rx"></block></block>
+  <block id="404a5efb62a3a3f22b02593091042608" category="inline-link">Workload-Fabrik für VMware</block>
+  <block id="9a211183d3fa82368d76fdbab5abdeda" category="list-text"><block ref="9a211183d3fa82368d76fdbab5abdeda" category="inline-link-rx"></block></block>
+  <block id="2281d47edbe43f0701ce273bb95a9f2f" category="summary">Verwenden Sie ein Tool wie VMware Hybrid Cloud Extension, um Ihre Daten aus Ihrem alten Virtual Machine Storage in das FSX für NetApp ONTAP Volumes zu verschieben, das mit Ihren neuen Virtual Machines verbunden ist. Die Kernfunktionen von VMware HCX ermöglichen Ihnen die transparente Migration von Workloads von Ihrem lokalen Datacenter zu Ihrem SDDC.</block>
+  <block id="2066c133f5c3f51fd034acd791ddedb4" category="doc">Migrieren Sie Ihre Daten zur neuen Infrastruktur</block>
+  <block id="63796ed0675a30eed387ff515fb4109d" category="paragraph">Verwenden Sie ein Tool wie VMware Hybrid Cloud Extension (HCX), um Ihre Daten aus Ihrem alten Virtual-Machine-Storage in die FSX for NetApp ONTAP Volumes zu verschieben, die mit Ihren neuen Virtual Machines verbunden sind. Die Kernfunktionen von VMware HCX ermöglichen Ihnen die transparente Migration von Workloads von Ihrem lokalen Rechenzentrum in Ihr softwaredefiniertes Rechenzentrum (SDDC).</block>
+  <block id="81296b60bd3fac67fc4c879b35c21ce7" category="inline-link">Weitere Informationen finden Sie in der VMware HCX-Dokumentation</block>
+  <block id="38b89112e54a0592b6516a64ce8ab7cd" category="paragraph"><block ref="38b89112e54a0592b6516a64ce8ab7cd" category="inline-link-rx"></block></block>
+  <block id="5944c69245ff8965d3ea01f690fb5c93" category="paragraph">Nachdem Sie nun Ihre Daten in externe Datastores in VMware Cloud on AWS und Amazon FSX for NetApp ONTAP migriert haben, können Sie wichtige Daten in Ihrem FSX for ONTAP-Filesystem sichern und schützen, um sicherzustellen, dass Ihre Daten immer verfügbar sind.</block>
+  <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link">Dokumentation zu Amazon FSX für NetApp ONTAP</block>
+  <block id="0eb8b604056cff3e56816d6bff3e3b57" category="paragraph">Informationen zum Verwalten Ihres FSX für ONTAP-Dateisystems finden Sie unter, um die<block ref="fbab171416a38225bcf6963b32f6d497" category="inline-link-rx"></block> Backup- und Schutzfunktionen anzuzeigen, die Sie verwenden können.</block>
+  <block id="b7c19b7e4e8df7fa64586112497c63f5" category="summary">Steigen Sie mit dem VMware Migrationsberater ein, um Ihre aktuelle Infrastruktur mithilfe von Amazon FSX for ONTAP als externe NFS-Datastores in VMware Cloud on AWS zu verlagern.</block>
+  <block id="4a715abf409664eac4dbee272a84b726" category="doc">Schnelleinstieg für die Nutzung des VMware Migrationsberaters</block>
+  <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link">Betriebsmodi</block>
+  <block id="02d45e6950dba7745c9b6afe3c8338ca" category="paragraph">Bevor Sie beginnen, sollten Sie ein Verständnis von haben<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block></block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Eins</block>
+  <block id="fff1fc3457dd9a218bca11799687e08e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Registrieren Sie sich und erstellen Sie ein Konto für Workload Factory</block>
+  <block id="8fd935558171bd50056871ef9ee7bd05" category="inline-link">Workload Factory-Konsole</block>
+  <block id="14f89f5bf7b25f9807c89a283db37504" category="inline-link">Erfahren Sie mehr über das Erstellen von Konten</block>
+  <block id="7cca958997b643dcdd24be8d260e2aba" category="paragraph">Gehen Sie zu<block ref="d98336faa10e493cfae83d68fb7054ec" category="inline-link-rx"></block> und melden Sie sich an.<block ref="f1d16e6a74984f9cd23c9d8db5e9c155" category="inline-link-rx"></block></block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Zwei</block>
+  <block id="b36a952e38561cb86fdb6a473044fce0" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Fügen Sie Ihrem Konto AWS-Anmeldedaten und -Berechtigungen hinzu</block>
+  <block id="b6d510f8e10407a559355b654de7d04f" category="paragraph">Sie können Workload Factory im _Basic_-Modus verwenden, ohne Anmeldedaten für den Zugriff auf Ihr AWS-Konto hinzuzufügen. Durch das Hinzufügen von AWS-Anmeldeinformationen zu Workload Factory im Modus _Lesen_ oder _Automatisieren_ erhält Ihr Workload Factory-Konto die Berechtigungen, die zum Erstellen und Verwalten von FSX für ONTAP-Dateisysteme sowie zum Bereitstellen und Managen von Workloads in VMware Cloud erforderlich sind.</block>
+  <block id="fb391f4cf6483b8b419032dc188bd9d8" category="inline-link">Erfahren Sie, wie Sie Anmeldeinformationen und Berechtigungen hinzufügen</block>
+  <block id="d162e97fcdf643050da77419fb18d12e" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block></block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">Drittens</block>
+  <block id="1f76f27677ef01d1ad1565c7410f1780" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Erfassen Sie Ihre aktuellen VM-Konfigurationen in Ihrer vSphere-Umgebung</block>
+  <block id="db8e3fd16ddc3075e85969124d04abeb" category="paragraph">Sie können das VM-Collector-Skript Migration Advisor oder RVTools verwenden, um Ihre aktuellen VM-Konfigurationen zu erfassen und einen Bereitstellungsplan zu erstellen. Sie können auch einen vorhandenen Bereitstellungsplan als Vorlage importieren und dann alle erforderlichen Attribute ändern.</block>
+  <block id="d9cec56bc6d84406c70fa2a7a03dd8ce" category="inline-link-macro">Erfahren Sie, wie Sie Ihre aktuellen VM-Konfigurationen erfassen</block>
+  <block id="ec7087d8e162b675d744c90559820893" category="paragraph"><block ref="79606d920ed0f6e57d9f492e8fd606e3" category="inline-link-macro-rx"></block>.</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">Vier</block>
+  <block id="f47ef0c0240caa246ed6aae746117014" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Erstellen Sie mithilfe des VMware Migration Advisor einen Implementierungsplan</block>
+  <block id="14f4f353ef5e3c4a3673476c525c538d" category="paragraph">Starten Sie den VMware Migrationsberater und wählen Sie die VMs aus, die Sie in die neue VMware Cloud on AWS-Infrastruktur migrieren möchten. Dazu verwenden Sie ein Filesystem von Amazon FSX für ONTAP als externe NFS-Datastores. Sie können einige Änderungen vornehmen, bevor Sie den Plan speichern.</block>
+  <block id="a0df7f574896aa929c819bd3a817625c" category="inline-link-macro">Lesen Sie, wie Sie mit dem VMware Migrationsberater einen Bereitstellungsplan erstellen</block>
+  <block id="8d7795534dfe29f84396c92c8d0a4dcd" category="paragraph"><block ref="a837f3781560502a9640d7db10536ff7" category="inline-link-macro-rx"></block>.</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">Fünf</block>
+  <block id="d4ae0fc6e06774e5a7be305be578b336" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> Stellen Sie das empfohlene FSX für ONTAP-Dateisystem bereit</block>
+  <block id="f52c9ba96cd69f0216a683d029eb830e" category="paragraph">Implementieren Sie das neue Filesystem FSX für ONTAP, das die Datastores für Ihre VMs in Ihrer VMware Cloud on AWS-Infrastruktur zur Verfügung stellt.</block>
+  <block id="2c3ed559463775a8e752bd5354347b70" category="inline-link-macro">Erfahren Sie, wie Sie Ihr neues FSX für ONTAP-Filesystem implementieren</block>
+  <block id="5e3387eb970620f47e529a8dc0cc62b6" category="paragraph"><block ref="b515969da0a0d29c570c51f868d340c0" category="inline-link-macro-rx"></block>.</block>
+  <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">Sechs</block>
+  <block id="c572af7f3132380b2d88a9d4aa80dad6" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> Verbinden Sie Ihre FSX for ONTAP-Dateisysteme mit VMware Cloud on AWS</block>
+  <block id="88cf79670ce663257099330f2ebe608f" category="paragraph">Das softwaredefinierte Datacenter (SDDC) bietet Netzwerkoptionen zur Verbindung mit dem Filesystem FSX for ONTAP mithilfe von VPC Peering-Funktion zur Erweiterung der Netzwerkverbindung zu den externen NFS-Storage-Volumes.</block>
+  <block id="03f4cd7af088de0b86d1c9f3c79648d1" category="inline-link-macro">Weitere Informationen zur Migration Ihrer Daten</block>
+  <block id="41b04f79071185e9f18797de9d32abe2" category="paragraph"><block ref="051cfa5c6aadf2a5b5551470e9f0e33e" category="inline-link-macro-rx"></block>.</block>
+  <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">Sieben</block>
+  <block id="a4712ad015228f6fd465cbe507723fae" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> Migrieren Sie Daten von Ihren alten Systemen in Ihr neues FSX für ONTAP-Dateisystem</block>
+  <block id="3638e2726e921646915ead3523420694" category="paragraph">Verwenden Sie ein externes Tool wie VMware HCX (Hybrid Cloud Extension), um Ihre Daten aus Ihrem alten Virtual-Machine-Storage in das FSX für NetApp ONTAP-Volumes zu verschieben, die mit Ihren neuen Virtual Machines verbunden sind.</block>
+  <block id="ed2864ba6212a6975c8039c89029a916" category="paragraph"><block ref="19e3683b716b5e111f0f1f9ccf094dd2" category="inline-link-macro-rx"></block>.</block>
+  <block id="b334128403ed60ff931947907046e1f0" category="summary">Bevor Sie einen Support-Fall beim technischen NetApp eröffnen können, müssen Sie ein NetApp Support Site Konto bei Workload Factory hinzufügen und sich anschließend für Support registrieren.</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">Für den Support anmelden</block>
+  <block id="996ad73a480311d4f86d6946935389d2" category="paragraph">Für den Support von Workload Factory und seinen Storage-Lösungen und -Services ist eine Support-Registrierung erforderlich. Sie müssen sich für Support über die BlueXP Konsole registrieren, einer separaten webbasierten Konsole von Workload Factory.</block>
+  <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">Durch die Registrierung für den Support wird die NetApp-Unterstützung für einen Fileservice eines Cloud-Providers nicht aktiviert. Technischer Support im Zusammenhang mit einem Fileservice eines Cloud-Providers, seiner Infrastruktur oder einer Lösung, die den Service verwendet, finden Sie unter „Hilfe erhalten“ in der Dokumentation zu Workload Factory für dieses Produkt.</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">Übersicht über die Support-Registrierung</block>
+  <block id="d7e4bb081bf4ec4814d83edcfbdb8b96" category="paragraph">Die Registrierung Ihres Support-Abonnements für Ihre Account-ID (Ihre 20-stellige Seriennummer 960xxxxxxx auf der Seite „Support Resources“ in BlueXP) dient als zentrale Support-Abonnement-ID. Jedes BlueXP-Abonnement für Support auf Kontoebene muss registriert werden.</block>
+  <block id="f9e05c2b383e3f11e3b4bebbe8952225" category="paragraph">Durch das Registrieren von Funktionen wie das Öffnen von Support-Tickets und die automatische Generierung von Support-Cases. Die Registrierung ist abgeschlossen, indem wie unten beschrieben Konten der NetApp Support Website (NSS) zu BlueXP hinzugefügt werden.</block>
+  <block id="856edc4caec68fece6859c4be9360f3c" category="section-title">Registrieren Sie Ihr Konto für NetApp Support</block>
+  <block id="2d6573b6ae4c51dc24e58109473f2490" category="paragraph">Um sich für den Support zu registrieren und die Supportberechtigung zu aktivieren, muss ein Benutzer in Ihrem Konto einem NetApp Support Site Konto seine BlueXP Anmeldedaten zuweisen. Wie Sie sich für den NetApp Support registrieren, hängt davon ab, ob Sie bereits über einen NSS Account (NetApp Support Site) verfügen.</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">Bestandskunde mit NSS-Konto</block>
+  <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">Wenn Sie ein NetApp Kunde mit einem NSS-Konto sind, müssen Sie sich lediglich für den Support über BlueXP registrieren.</block>
+  <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">Wählen Sie *Benutzeranmeldeinformationen*.</block>
+  <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Wählen Sie *NSS-Anmeldeinformationen hinzufügen* und folgen Sie der Eingabeaufforderung für die NetApp-Support-Website (NSS)-Authentifizierung.</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">Um zu bestätigen, dass die Registrierung erfolgreich war, wählen Sie das Hilfesymbol und dann *Support*.</block>
+  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">Auf der Seite *Ressourcen* sollte angezeigt werden, dass Ihr Konto für Support registriert ist.</block>
+  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">Ein Screenshot mit einer Seriennummer des Kontos und einem grünen Kontrollkästchen sowie dem für den Support registrierten Text.</block>
+  <block id="fa7897454f637026faa3e00ccbfec239" category="paragraph"><block ref="fa7897454f637026faa3e00ccbfec239" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">Beachten Sie, dass andere BlueXP Benutzer diesen Support-Registrierungsstatus nicht sehen, wenn sie ihrem BlueXP Login kein NetApp Support Site Konto zugeordnet haben. Das bedeutet jedoch nicht, dass Ihr BlueXP Konto nicht für den Support registriert ist. Solange ein Benutzer im Konto diese Schritte befolgt hat, wurde Ihr Konto registriert.</block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">Vorhandener Kunde, aber kein NSS-Konto</block>
+  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">Wenn Sie bereits NetApp Kunde sind und über vorhandene Lizenzen und Seriennummern sowie _No_ NSS Konto verfügen, müssen Sie ein NSS Konto erstellen und es Ihren BlueXP Anmeldedaten zuordnen.</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp Support Site-Formular zur Benutzerregistrierung</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">Erstellen Sie ein NetApp Support Site Konto, indem Sie das abschließen<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">Stellen Sie sicher, dass Sie die entsprechende Benutzerebene wählen, die normalerweise *NetApp Kunde/Endbenutzer* ist.</block>
+  <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">Kopieren Sie unbedingt die oben verwendete BlueXP-Kontonummer (960xxxx) für das Feld Seriennummer. Dadurch wird die Kontobearbeitung beschleunigt.</block>
+  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">Ordnen Sie Ihr neues NSS-Konto Ihrem BlueXP-Login zu, indem Sie die unter aufgeführten Schritte ausführen <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">Neu bei NetApp</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">Wenn Sie neu bei NetApp sind und über keinen NSS-Account verfügen, befolgen Sie jeden Schritt unten.</block>
+  <block id="f5d7029ed18f998c0a9d780b2554e538" category="list-text">Suchen Sie auf der Seite „Support Resources“ nach der Seriennummer Ihres Kontos.</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Ein Screenshot des Hilfemenü, in dem Support die erste Option aufgeführt ist</block>
+  <block id="55adf589d087b17fca134b34f65498ed" category="paragraph"><block ref="55adf589d087b17fca134b34f65498ed" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">Die Support-Registrierungs-Website von NetApp</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">Navigieren Sie zu<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> und wählen Sie *Ich bin kein registrierter NetApp-Kunde*.</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">Füllen Sie die Pflichtfelder aus (mit roten Sternchen).</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">Wählen Sie im Feld *Product Line* die Option *Cloud Manager* aus, und wählen Sie dann den gewünschten Abrechnungsanbieter aus.</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">Kopieren Sie die Seriennummer des Kontos von Schritt 2 oben, füllen Sie die Sicherheitsprüfung aus und bestätigen Sie dann, dass Sie die globale Datenschutzrichtlinie von NetApp lesen.</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">Zur Fertigstellung dieser sicheren Transaktion wird sofort eine E-Mail an die angegebene Mailbox gesendet. Überprüfen Sie Ihre Spam-Ordner, wenn die Validierungs-E-Mail nicht in wenigen Minuten ankommt.</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">Bestätigen Sie die Aktion in der E-Mail.</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">Indem Sie Ihre Anfrage an NetApp senden, wird Ihnen die Erstellung eines NetApp Support Site Kontos empfohlen.</block>
+  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">Kopieren Sie die oben angegebene Seriennummer (960xxxx) für das Feld „Seriennummer“. Dadurch wird die Kontobearbeitung beschleunigt.</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp sollte sich bei diesem Prozess mit Ihnen in Verbindung setzen. Dies ist eine einmalige Onboarding-Übung für neue Benutzer.</block>
+  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">Wenn Sie über Ihren Account für die NetApp Support-Website verfügen, ordnen Sie das Konto Ihrer BlueXP Anmeldung zu, indem Sie die unter aufgeführten Schritte ausführen <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="ced82174541d112041637e3fe596dc75" category="summary">Informieren Sie sich über die Neuerungen bei der Komponente VMware Migration Advisor von Workload Factory.</block>
+  <block id="490414e0366b091220802d406e52c076" category="doc">Was ist neu</block>
+  <block id="ff51979e6ce0617443f1ee7e3e8969ea" category="paragraph">Informieren Sie sich über die Neuerungen bei der Komponente VMware Cloud Migration Advisor von Workload Factory.</block>
+  <block id="1d949c7c5600289e10795f178278edd1" category="section-title">7 Juli 2024</block>
+  <block id="e34fc91d682ebcf23e9732294872ca80" category="section-title">Erstversion von Workload Factory für VMware</block>
+  <block id="9bab53a02593423437540c8ac9802fde" category="paragraph">Die erste Version umfasst die Möglichkeit, mithilfe des VMware Migrationsberaters Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphere Umgebungen zu analysieren, einen Plan für die Implementierung empfohlener VM-Layouts in VMware Cloud on AWS zu erstellen und die benutzerdefinierten Amazon FSX for NetApp ONTAP Filesysteme als externe Datastores zu verwenden.</block>
+  <block id="1a61f87dd9021f3f5868a4a4418a6116" category="sidebar">Optimieren Sie Migrationen aus lokalen vSphere-Umgebungen zu VMware Cloud on AWS und implementieren Sie angepasste FSX für ONTAP-Filesysteme als externe Datastores.</block>
+  <block id="73f5c244b09686e8501c3a915df34d30" category="sidebar">Workload Factory für VMware Dokumentation</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Los geht's</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">Schnellstart</block>
+  <block id="9faf81d72d2e94d2a3b1079129468863" category="sidebar">Nutzen Sie den VMware Migrationsberater</block>
+  <block id="1a686aeebb374b70871c49c0a3a9e04d" category="sidebar">Verbinden Sie FSX für ONTAP-Dateisysteme mit VMware Cloud on AWS</block>
+  <block id="114262d24985ba4272fb41b60a7a9b81" category="sidebar">VMware-Workload-Dokumentation</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Versionshinweise</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Was ist neu</block>
+  <block id="48b99c17fb09e3417fa2dfdd982e21b8" category="sidebar">FSX for ONTAP mit VMware Cloud on AWS verbinden</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Wissen und Support</block>
+</blocks>

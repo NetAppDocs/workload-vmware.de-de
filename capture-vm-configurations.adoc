@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: capture-vm-configurations.html 
+keywords: vm workloads, capture vm details 
+summary: Sie können das VM-Collector-Skript Migration Advisor oder RVTools verwenden, um Ihre aktuellen VM-Konfigurationen zu erfassen. Wir empfehlen die Verwendung des VM-Collector-Skripts Migration Advisor, da es sowohl VM-Konfigurations- als auch Performance-Daten für den genauesten Plan erfasst. 
+---
+= Erfassung Ihrer aktuellen VM-Konfigurationen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können das VM-Collector-Skript Migration Advisor oder RVTools verwenden, um Ihre aktuellen VM-Konfigurationen zu erfassen. Wir empfehlen die Verwendung des VM-Collector-Skripts Migration Advisor, da es sowohl VM-Konfigurations- als auch Performance-Daten für den genauesten Plan erfasst.
+
+Wenn Sie ein neues System basierend auf einem vorhandenen, lokal gespeicherten Bereitstellungsplan bereitstellen möchten, können Sie diesen Schritt überspringen und den vorhandenen Bereitstellungsplan auswählen. link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["Erfahren Sie, wie Sie einen vorhandenen Plan zur Erstellung eines neuen Plans nutzen"].
+
+[role="tabbed-block"]
+====
+.Verwenden Sie das Migrationberater VM-Collector-Skript
+--
+Das VM-Collector-Skript des NetApp Migrationsberaters erfasst VM-Konfigurationsinformationen aus Ihrem vCenter, ähnlich wie RVTools die aktuellen VM-Leistungsdaten erfasst, um tatsächliche Lese- und Schreib-IOPS und Durchsatzstatistiken bereitzustellen.
+
+Sie müssen den Migrationsberater starten, um das Migrationberater VM-Collector-Skript aus dem Codebox-Fenster zu kopieren.
+
+.Bevor Sie beginnen
+Das System, auf dem Sie das Collector-Skript ausführen, muss die folgenden Anforderungen erfüllen:
+
+* Microsoft PowerShell 7.0 oder höher muss installiert sein. Weitere Informationen finden Sie im https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4["Microsoft PowerShell Dokumentation"^] , wenn Sie PowerShell installieren müssen.
+* VMware PowerCLI muss installiert sein. Weitere Informationen finden Sie im https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.esxi.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html["VMware PowerCLI-Dokumentation"^] , wenn Sie PowerCLI installieren müssen.
+* Die SSL-Zertifikatsprüfung muss deaktiviert sein.
+* PowerShell muss die Ausführung nicht signierter Skripte zulassen.
+
+
+Beachten Sie, dass Sie, wenn Sie langfristige Statistiken aus Ihren VMs erfassen möchten (Tagesstatistiken), in der vSphere-Managementkonsole (VMware-Managementumgebung) die Statistikebene 3 oder höher aktiviert haben müssen.
+
+.Schritte
+. Melden Sie sich bei Workload Factory an.
+. Wählen Sie in der VMware-Kachel *Plan and Deploy* aus.
++
+image:screenshot-choose-method.png["Ein Screenshot mit den verschiedenen Methoden zum Sammeln Ihrer aktuellen VM-Konfigurationsinformationen"]
+
+. Wählen Sie *Create a New Deployment Plan*, wählen Sie die Option *Use the Migration Advisor VMware Data Collector* und wählen Sie *Next* aus.
++
+Die Seite *Prepare for VMware Cloud on AWS Migration* wird angezeigt.
+
+. Wählen Sie im Codebox-Fenster entweder aus image:button-download-codebox.png["Die Download-Schaltfläche"] , um das Migrations Advisor VM Collector-Skript (mit dem Namen "list-vms.ps1") auf dem Zielsystem zu speichern, oder wählen Sie aus image:button-copy-codebox.png["Die Schaltfläche „Kopieren“"] , um das Skript zu kopieren, damit Sie es auf das entsprechende System einfügen können.
+. Führen Sie diese Schritte aus, um die Konfigurationen Ihrer aktuellen VMs zu erfassen:
++
+.. Melden Sie sich beim System an, auf dem Sie den Data Collector heruntergeladen haben, auf dem PowerShell und PowerCLI installiert sind.
+.. Stellen Sie eine Verbindung zu Ihrem VMware vCenter-Server her, indem Sie den folgenden Befehl ausführen:
++
+ Connect-VIServer -server <server_IP>
++
+Ersetzen Sie <server_IP> durch die IP-Adresse oder den Hostnamen Ihres VMware-Servers.
+
+.. Führen Sie das heruntergeladene Datensammlerskript aus und legen Sie die Datenerfassungsoption für die VM-Statistik „täglich“ oder „stündlich“ fest.
++
+ .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
++
+Wo?
+
++
+*** *True* erfasst IOPS und Durchsatzdaten für die letzten 24 Stunden in 5-Minuten-Intervallen
+*** *False* erfasst IOPS und Durchsatzdaten für die letzten 1 Stunde mit Intervallen von 20 Sekunden.
+
+
+
+
+
+
+.Ergebnis
+Das Skript gibt eine CSV-Datei mit dem Namen im aktuellen Arbeitsverzeichnis aus `list-vms-yyyy-MM-dd-HH-mm-ss.csv` . Die CSV-Datei enthält eine Liste aller VMs und ihrer Eigenschaften sowie deren IOPS- und Durchsatzdaten.
+
+--
+.Verwenden Sie die RVTools-Software
+--
+RVTools ist eine Windows-Anwendung, die mit vCenter und ESX-Server (5.x bis 8.0) interagiert, um Informationen über Ihre virtuellen VMware-Umgebungen zu erfassen. Es sammelt Informationen über VMs, CPU, Arbeitsspeicher, Festplatten, Cluster, ESX Hosts, Datastores und vieles mehr. Sie können diese Informationen zur Verwendung mit dem Migrationsberater in eine xlsx-Datei exportieren.
+
+https://www.robware.net/home["Erfahren Sie mehr über RVTools"^]
+
+.Schritte
+. Laden Sie RVTools 4.4.2 oder höher von herunter, und installieren Sie sie https://www.robware.net/download["RVTools-Website"^]
+. Starten Sie RVTools, und melden Sie sich beim Ziel-vCenter-Server an.
++
+Dadurch werden Informationen über diesen vCenter-Server erfasst.
+
+. Exportieren Sie Ihre VMware-Informationen in eine xlsx- oder xls-Datei.
++
+Weitere Informationen finden Sie im Kapitel „Kommandozeilenparameter“ in der https://resources.robware.net/resources/prod/RVTools.pdf["RVTools-Dokumentation"^] .
+
+
+
+.Ergebnis
+Die xlsx- oder xls-Datei mit Ihren Ergebnissen wird in Ihrem Arbeitsverzeichnis gespeichert.
+
+--
+====
+.Was kommt als Nächstes?
+link:launch-onboarding-advisor.html["Erstellen eines Implementierungsplans mithilfe des Migrationsberaters"].
