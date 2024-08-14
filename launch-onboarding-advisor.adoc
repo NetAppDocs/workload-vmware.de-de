@@ -28,12 +28,12 @@ Beachten Sie, dass Sie über einen Benutzernamen und ein Passwort verfügen müs
 Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphere-Umgebungen auf Virtual Machines in VMware Cloud on AWS migrieren und die benutzerdefinierten Amazon FSX for NetApp ONTAP-Dateisysteme als externe Datastores verwenden.
 
 .Anforderungen
-* Sie müssen die Bestandsdatei aus Ihren vorhandenen Systemen mithilfe des VM-Collectors des Migrationsberaters (.csv-Datei) oder mithilfe von RVTools (.xlsx-Datei) erstellt haben.
+* Sie müssen die Inventardatei aus Ihren vorhandenen Systemen mithilfe des VM-Collectors des Migrationsberaters (.csv-Datei) oder mithilfe von RVTools (.xlsx-Datei) erstellt haben.
 * Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, auf die Bestandsdatei zugreifen können.
 
 
 .Schritte
-. Wählen Sie in der Kachel VMware Workloads *Plan and Deploy* aus, und die Hauptseite von VMware Migration Advisor wird angezeigt.
+. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu VMware Cloud on AWS* aus. Die Hauptseite des VMware Migration Advisor wird angezeigt.
 +
 image:screenshot-choose-method-create.png["Ein Screenshot mit den verschiedenen Methoden zum Laden der aktuellen VM-Konfigurationsinformationen"]
 
