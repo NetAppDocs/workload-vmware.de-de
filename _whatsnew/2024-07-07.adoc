@@ -1,0 +1,9 @@
+= Erstversion von Workload Factory für VMware
+:allow-uri-read: 
+
+
+
+
+=== Erstversion von Workload Factory für VMware
+
+Die erste Version umfasst die Möglichkeit, mithilfe des VMware Migrationsberaters Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphere Umgebungen zu analysieren, einen Plan für die Implementierung empfohlener VM-Layouts in VMware Cloud on AWS zu erstellen und die benutzerdefinierten Amazon FSX for NetApp ONTAP Filesysteme als externe Datastores zu verwenden.

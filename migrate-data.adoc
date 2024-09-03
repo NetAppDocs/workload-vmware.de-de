@@ -13,7 +13,7 @@ summary: Verwenden Sie ein Tool wie VMware Hybrid Cloud Extension, um Ihre Daten
 [role="lead"]
 Verwenden Sie ein Tool wie VMware Hybrid Cloud Extension (HCX), um Ihre Daten aus Ihrem alten Virtual-Machine-Storage in die FSX for NetApp ONTAP Volumes zu verschieben, die mit Ihren neuen Virtual Machines verbunden sind. Die Kernfunktionen von VMware HCX ermöglichen Ihnen die transparente Migration von Workloads von Ihrem lokalen Rechenzentrum in Ihr softwaredefiniertes Rechenzentrum (SDDC).
 
-https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-E8671FC6-F64B-4D41-8F01-B6120B0E3675.html["Weitere Informationen finden Sie in der VMware HCX-Dokumentation"^]
+https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-E8671FC6-F64B-4D41-8F01-B6120B0E3675.html["Lesen Sie die VMware HCX-Dokumentation"^] Genaue Informationen.
 
 .Was kommt als Nächstes?
 Nachdem Sie nun Ihre Daten in externe Datastores in VMware Cloud on AWS und Amazon FSX for NetApp ONTAP migriert haben, können Sie wichtige Daten in Ihrem FSX for ONTAP-Filesystem sichern und schützen, um sicherzustellen, dass Ihre Daten immer verfügbar sind.

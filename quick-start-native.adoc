@@ -1,17 +1,17 @@
 ---
 sidebar: sidebar 
-permalink: quick-start.html 
+permalink: quick-start-native.html 
 keywords: quick start 
-summary: Steigen Sie mit dem VMware Migrationsberater ein, um Ihre aktuelle Infrastruktur mithilfe von Amazon FSX for ONTAP als externe NFS-Datastores in VMware Cloud on AWS zu verlagern. 
+summary: Steigen Sie mit dem VMware Migrationsberater ein, um Ihre aktuelle Infrastruktur mithilfe von Amazon FSX for ONTAP als externe NFS-Datastores zu Amazon EC2 zu migrieren. 
 ---
-= Schneller Start für die Migration zu VMware Cloud on AWS mit dem VMware Migrationsberater
+= Schneller Einstieg für die Migration zu Amazon EC2 über den VMware Migrationsberater
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Steigen Sie mit dem VMware Migrationsberater ein, um Ihre aktuelle Infrastruktur mithilfe von Amazon FSX for ONTAP als externe NFS-Datastores in VMware Cloud on AWS zu verlagern.
+Steigen Sie mit dem VMware Migrationsberater ein, um Ihre aktuelle Infrastruktur mithilfe von Amazon FSX for ONTAP als externe NFS-Datastores zu Amazon EC2 zu migrieren.
 
 Bevor Sie beginnen, sollten Sie ein Verständnis von haben https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Betriebsmodi"^]
 
@@ -21,7 +21,7 @@ Gehen Sie zu https://console.workloads.netapp.com["Workload Factory-Konsole"^] u
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Fügen Sie Ihrem Konto AWS-Anmeldedaten und -Berechtigungen hinzu
 [role="quick-margin-para"]
-Sie können Workload Factory im _Basic_-Modus verwenden, ohne Anmeldedaten für den Zugriff auf Ihr AWS-Konto hinzuzufügen. Durch das Hinzufügen von AWS-Anmeldeinformationen zu Workload Factory im Modus _Lesen_ oder _Automatisieren_ erhält Ihr Workload Factory-Konto die Berechtigungen, die zum Erstellen und Verwalten von FSX für ONTAP-Dateisysteme sowie zum Bereitstellen und Managen von Workloads in VMware Cloud erforderlich sind.
+Sie können Workload Factory im _Basic_-Modus verwenden, ohne Anmeldedaten für den Zugriff auf Ihr AWS-Konto hinzuzufügen. Durch das Hinzufügen von AWS Zugangsdaten zu Workload Factory im Modus _Lesen_ oder _Automatisieren_ erhält Ihr Workload Factory-Konto die Berechtigungen, die zum Erstellen und Managen von FSX for ONTAP-Dateisystemen sowie zum Bereitstellen und Managen von Workloads innerhalb von Amazon EC2 erforderlich sind.
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Erfahren Sie, wie Sie Anmeldeinformationen und Berechtigungen hinzufügen"^]
@@ -31,18 +31,18 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Erfahre
 Sie können das VM-Collector-Skript Migration Advisor oder RVTools verwenden, um Ihre aktuellen VM-Konfigurationen zu erfassen und einen Bereitstellungsplan zu erstellen. Sie können auch einen vorhandenen Bereitstellungsplan als Vorlage importieren und dann alle erforderlichen Attribute ändern.
 
 [role="quick-margin-para"]
-link:capture-vm-configurations.html["Erfahren Sie, wie Sie Ihre aktuellen VM-Konfigurationen erfassen"].
+link:capture-vm-configurations-native.html["Erfahren Sie, wie Sie Ihre aktuellen VM-Konfigurationen erfassen"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Erstellen Sie mithilfe des VMware Migration Advisor einen Implementierungsplan
 [role="quick-margin-para"]
-Starten Sie den VMware Migrationsberater und wählen Sie die VMs aus, die Sie in die neue VMware Cloud on AWS-Infrastruktur migrieren möchten. Dazu verwenden Sie ein Filesystem von Amazon FSX für ONTAP als externe NFS-Datastores. Sie können einige Änderungen vornehmen, bevor Sie den Plan speichern.
+Starten Sie den VMware Migrationsberater und wählen Sie die VMs aus, die Sie zur Amazon EC2 Infrastruktur migrieren möchten. Dazu verwenden Sie ein Filesystem von Amazon FSX für ONTAP als externe NFS-Datastores. Sie können einige Änderungen vornehmen, bevor Sie den Plan speichern.
 
 [role="quick-margin-para"]
-link:launch-onboarding-advisor.html["Lesen Sie, wie Sie mit dem VMware Migrationsberater einen Bereitstellungsplan erstellen"].
+link:launch-onboarding-advisor-native.html["Lesen Sie, wie Sie mit dem VMware Migrationsberater einen Bereitstellungsplan erstellen"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Fünf"] Stellen Sie das empfohlene FSX für ONTAP-Dateisystem bereit
 [role="quick-margin-para"]
-Implementieren Sie das neue Filesystem FSX für ONTAP, das die Datastores für Ihre VMs in Ihrer VMware Cloud on AWS-Infrastruktur zur Verfügung stellt.
+Implementieren Sie das neue Filesystem FSX für ONTAP, das die Datastores für Ihre VMs in Ihrer Amazon EC2 Infrastruktur zur Verfügung stellt.
 
 [role="quick-margin-para"]
 link:deploy-fsx-file-system.html["Erfahren Sie, wie Sie Ihr neues FSX für ONTAP-Filesystem implementieren"].

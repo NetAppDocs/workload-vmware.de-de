@@ -4,7 +4,7 @@ permalink: launch-onboarding-advisor.html
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
 summary: Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware Migration Advisor zuzugreifen. Befolgen Sie die Schritte des Assistenten, um einen auf Ihre Anforderungen zugeschnittenen Bereitstellungsplan oder Migrationsplan zu erstellen. 
 ---
-= Erstellen eines Implementierungsplans mithilfe des Migrationsberaters
+= Erstellen Sie mit dem Migrationsberater einen Implementierungsplan für VMware Cloud on AWS
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -13,9 +13,9 @@ summary: Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware M
 [role="lead"]
 Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware Migration Advisor zuzugreifen. Befolgen Sie die Schritte des Assistenten, um einen auf Ihre Anforderungen zugeschnittenen Bereitstellungsplan oder Migrationsplan zu erstellen.
 
-Mithilfe des Migrationsberaters kann ein Implementierungsplan für die folgenden Szenarien erstellt werden:
+Bei der Migration zu VMware Cloud können Sie mit dem Migrationsberater einen Bereitstellungsplan für folgende Szenarien erstellen:
 
-* <<Erstellen Sie einen Implementierungsplan basierend auf einer lokalen vSphere-Umgebung,Um Ihre aktuelle lokale vSphere Umgebung in die Cloud zu migrieren.>>
+* <<Erstellen Sie einen Implementierungsplan basierend auf einer lokalen vSphere-Umgebung,Um Ihre aktuelle lokale vSphere Umgebung in die VMware Cloud zu migrieren.>>
 * <<Erstellen Sie einen Bereitstellungsplan auf der Grundlage eines vorhandenen Plans,Bereitstellen eines Systems in der Cloud basierend auf einem bestehenden Implementierungsplan mit ähnlichen Anforderungen>>
 
 
@@ -33,9 +33,9 @@ Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphe
 
 
 .Schritte
-. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu VMware Cloud on AWS* aus. Die Hauptseite des VMware Migration Advisor wird angezeigt.
+. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu VMware Cloud on AWS* aus.
 +
-image:screenshot-choose-method-create.png["Ein Screenshot mit den verschiedenen Methoden zum Laden der aktuellen VM-Konfigurationsinformationen"]
+Die Hauptseite des VMware Migration Advisor wird angezeigt.
 
 . Wählen Sie *Neuen Bereitstellungsplan erstellen*.
 . Wählen Sie die Art der Bestandsdatei aus, die Sie verwenden werden, um Workload Factory mit Ihrer aktuellen VM-Konfiguration zu füllen, und wählen Sie *Weiter*.
@@ -83,7 +83,7 @@ Um eine optimale Performance und Kosteneffizienz zu erzielen, ist dies in der Re
 
 . Wählen Sie im Abschnitt _Überlegungen zur VM-Storage-Kapazität_ aus einigen Storage-Optionen aus.
 +
-.. *Durchschnittliches Datenreduzierungsverhältnis*: Wählen Sie aus den drei gängigen Auswahlwerten für die Datenreduzierung. Wählen Sie „1:1 - Keine Reduzierung“, „1:1.25 - 20% Reduktion“ oder „1:1.5 - 33% Reduktion“.
+.. *Durchschnittliches Datenreduzierungsverhältnis*: Wählen Sie aus den drei gängigen Auswahlwerten für die Datenreduzierung. Wählen Sie „1:1 - Keine Reduzierung“, „1:1.25 - 20 % Reduzierung“ oder „1:1.5 - 33 % Reduzierung“.
 .. *Reserveprozentsatz*: Geben Sie den Prozentsatz des Kapazitätswachstums ein, der der Kapazität für Ihre FSX for ONTAP-Dateisysteme hinzugefügt wird.
 +
 Beachten Sie, dass bei einer Auswahl von weniger als 20 % keine Volume-Snapshots zum Schutz und für langfristige Backups erstellt werden können.
@@ -96,7 +96,7 @@ Auf dieser Seite können Sie die VMware Cloud auf AWS Cluster-Konfiguration anha
 
 +
 .. *VSAN-Architektur*: Wählen Sie aus, ob Sie die vSAN Express Storage Architecture (ESA) oder die vSAN Original Storage Architecture (OSA) verwenden möchten.
-.. *VSAN Fault Tolerance*: Wählen Sie die für die VMs erforderliche Fehlertoleranzstufe. Sie können „Auto“ wählen, die empfohlen wird, oder aus einer Vielzahl von RAID-Levels.
+.. *VSAN Fault Tolerance*: Wählen Sie die für die VMs erforderliche Fehlertoleranzstufe. Sie können „Auto“ wählen, was empfohlen wird, oder aus einer Vielzahl von RAID-Levels.
 +
 *** RAID-1 (FTT 1): Besteht aus einer exakten Kopie (oder Spiegelung) eines Datensatzes auf 2 oder mehr Festplatten.
 *** RAID-5 (FTT 1): Besteht aus Striping auf Blockebene mit verteilter Parität. Die Paritätsinformationen werden auf 3 oder mehr Laufwerken verteilt und können dem Ausfall einer Festplatte standhalten.
@@ -134,7 +134,7 @@ Im unteren Bereich der Seite wird die Quell-VM (oder mehrere VMs) angezeigt, fü
 
 . Überprüfen Sie auf der Seite *Bereitstellungsplan prüfen* die geschätzten monatlichen Kosten für alle VMs, die Sie migrieren möchten.
 +
-Oben auf der Seite werden die monatlichen Kosten für alle implementierten VMs und FSX für ONTAP-Dateisysteme beschrieben. Sie können jeden Abschnitt erweitern, um Details für die „Empfohlene Amazon FSX für ONTAP Filesystem-Konfiguration“, „geschätzte Kosten-Aufschlüsselung“, „Volume-Konfiguration“, „Sizing-Annahmen“ und technische „Haftungsausschlüsse“ anzuzeigen.
+Oben auf der Seite werden die monatlichen Kosten für alle implementierten VMs und FSX für ONTAP-Dateisysteme beschrieben. Sie können jeden Abschnitt erweitern, um Details für die „Empfohlene Amazon FSX for ONTAP-Dateisystemkonfiguration“, „geschätzte Kostenaufschlüsselung“, „Volume-Konfiguration“, „Größenannahmen“ und technische „Haftungsausschlüsse“ anzuzeigen.
 
 . Wenn Sie mit dem Migrationsplan zufrieden sind, haben Sie ein paar Möglichkeiten:
 +
@@ -157,10 +157,7 @@ Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, au
 
 .Schritte
 . Melden Sie sich bei Workload Factory an.
-. Wählen Sie in der Kachel VMware Workloads *Plan and Deploy* aus, und die Hauptseite von VMware Migration Advisor wird angezeigt.
-+
-image:screenshot-choose-method-import.png["Ein Screenshot mit den verschiedenen Methoden zum Laden der aktuellen VM-Konfigurationsinformationen"]
-
+. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu VMware Cloud on AWS* aus. Die Hauptseite des VMware Migration Advisor wird angezeigt.
 . Wählen Sie *Import eines vorhandenen Bereitstellungsplans*.
 . Wählen Sie die vorhandene Plandatei aus image:button-upload-file.png["Die Schaltfläche „Hochladen“"] , die Sie im Migrationsberater importieren möchten.
 . Wählen Sie *Weiter*, und die Seite Plan überprüfen wird angezeigt.

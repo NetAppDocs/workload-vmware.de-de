@@ -18,9 +18,6 @@
   <block id="3650e2eb7f7794332db7036831f768dd" category="paragraph">Beachten Sie, dass Sie, wenn Sie langfristige Statistiken aus Ihren VMs erfassen möchten (Tagesstatistiken), in der vSphere-Managementkonsole (VMware-Managementumgebung) die Statistikebene 3 oder höher aktiviert haben müssen.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Schritte</block>
   <block id="d34fab7936dd110b003945d679bb4133" category="list-text">Melden Sie sich bei Workload Factory an.</block>
-  <block id="e89045fcaeea0596351f980d8876a90a" category="list-text">Wählen Sie in der VMware-Kachel *Plan and Deploy* aus.</block>
-  <block id="56dbec4488b5001a29504a3a766a4f86" category="inline-image-macro">Ein Screenshot mit den verschiedenen Methoden zum Sammeln Ihrer aktuellen VM-Konfigurationsinformationen</block>
-  <block id="ab42a9ea30ee72a49c9dd83c04a1fa74" category="paragraph"><block ref="ab42a9ea30ee72a49c9dd83c04a1fa74" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7733cfea4c10d8edbae71f745c8adcc4" category="list-text">Wählen Sie *Create a New Deployment Plan*, wählen Sie die Option *Use the Migration Advisor VMware Data Collector* und wählen Sie *Next* aus.</block>
   <block id="7797697bf5f4b38c4de3f12c9a5194ac" category="paragraph">Die Seite *Prepare for VMware Cloud on AWS Migration* wird angezeigt.</block>
   <block id="f383f073a6edf7564d29459bef094282" category="inline-image-macro">Die Download-Schaltfläche</block>
@@ -30,7 +27,6 @@
   <block id="35fc8aad1c96a506870619b99b225bd3" category="list-text">Melden Sie sich beim System an, auf dem Sie den Data Collector heruntergeladen haben, auf dem PowerShell und PowerCLI installiert sind.</block>
   <block id="ea290aa0b4fc7a1e5e3a3d4108b40f29" category="list-text">Stellen Sie eine Verbindung zu Ihrem VMware vCenter-Server her, indem Sie den folgenden Befehl ausführen:</block>
   <block id="8283e4c9758f438b06e1efdea761629b" category="paragraph">Ersetzen Sie &lt;server_IP&gt; durch die IP-Adresse oder den Hostnamen Ihres VMware-Servers.</block>
-  <block id="b882080acef378635311a1d56cbfd3e5" category="list-text">Führen Sie das heruntergeladene Datensammlerskript aus und legen Sie die Datenerfassungsoption für die VM-Statistik „täglich“ oder „stündlich“ fest.</block>
   <block id="5976be1a3647c1d1d6df4ce77cd4c6de" category="paragraph">Wo?</block>
   <block id="f463cab33838fd5d10abccaf72330f35" category="list-text">*True* erfasst IOPS und Durchsatzdaten für die letzten 24 Stunden in 5-Minuten-Intervallen</block>
   <block id="14b13715e39f4ef8d6e21c37afc154b7" category="list-text">*False* erfasst IOPS und Durchsatzdaten für die letzten 1 Stunde mit Intervallen von 20 Sekunden.</block>
@@ -46,11 +42,9 @@
   <block id="1121913c71bf9c4dfefecfd1802408c4" category="paragraph">Dadurch werden Informationen über diesen vCenter-Server erfasst.</block>
   <block id="418e7e2732f5b077d0a55b9086325810" category="list-text">Exportieren Sie Ihre VMware-Informationen in eine xlsx- oder xls-Datei.</block>
   <block id="1abe5a39abd90cfac9ffa06b90b781c1" category="inline-link">RVTools-Dokumentation</block>
-  <block id="7d2cf15a702542e944716ce9fffaed68" category="paragraph">Weitere Informationen finden Sie im Kapitel „Kommandozeilenparameter“ in der<block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block> .</block>
   <block id="67ec8486a529d78b43140379c2ad7aff" category="paragraph">Die xlsx- oder xls-Datei mit Ihren Ergebnissen wird in Ihrem Arbeitsverzeichnis gespeichert.</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">Was kommt als Nächstes?</block>
   <block id="a178c2b3af2dda868c902f74b1f1d2a0" category="inline-link-macro">Erstellen eines Implementierungsplans mithilfe des Migrationsberaters</block>
-  <block id="ed04dfca3ba99cc02a56786b8fee09d3" category="paragraph"><block ref="b33ad552760aea505851a4e799b84f84" category="inline-link-macro-rx"></block>.</block>
   <block id="a409bb04787a5ddb8911b653d035c75e" category="summary">Nach der Implementierung eines FSX für ONTAP-Filesystems müssen Sie dieses System mit Ihrer VMware Cloud on AWS-Infrastruktur verbinden. Das SDDC bietet Netzwerkoptionen zur Verbindung mit dem Filesystem FSX for ONTAP mithilfe der VPC-Peering-Funktion zur Erweiterung der Netzwerkkonnektivität zu den externen NFS-Storage-Volumes.</block>
   <block id="07413029412abf4b07d59a7418a48d98" category="doc">Verbinden Sie Ihre FSX for ONTAP-Dateisysteme mit VMware Cloud on AWS</block>
   <block id="ff8452c1f30c7c23563874f41490c4aa" category="paragraph">Nach der Implementierung von FSX for ONTAP-Filesystemen müssen Sie dieses System mit Ihrer VMware Cloud on AWS-Infrastruktur verbinden. Das softwaredefinierte Datacenter (SDDC) bietet Netzwerkoptionen zur Verbindung mit dem Filesystem FSX for ONTAP mithilfe von VPC Peering-Funktion zur Erweiterung der Netzwerkverbindung zu den externen NFS-Storage-Volumes.</block>
@@ -76,7 +70,6 @@
   <block id="359e1e6f7c29e9b4dac5878404beab8e" category="list-text">*Tags*: Optional können Sie Tags hinzufügen, um dieses FSX für ONTAP Dateisystem zu kategorisieren.</block>
   <block id="f6da2acef7db3c4a718d343f3dfe3c4c" category="list-text">Geben Sie im Abschnitt „Netzwerk und Sicherheit“ die folgenden Informationen ein:</block>
   <block id="7d41d89314fd1a2df6210e91f6da55a7" category="list-text">*Region &amp; VPC*: Wählen Sie die Region und die VPC, wo das Dateisystem FSX for ONTAP bereitgestellt wird.</block>
-  <block id="875cc5528c7347167f10ab54d3e80c6b" category="paragraph">Die Implementierung sollte in einer VPC erfolgen, die von der VPC unterscheidet, bei der VMware Cloud auf AWS implementiert wird.</block>
   <block id="d7b999322a22682588eba6652df7e969" category="list-text">*Sicherheitsgruppe*: Wenn Sie die Option *Advanced create* verwenden, können Sie die Standardsicherheitsgruppe für das FSX für ONTAP VPC auswählen, so dass der gesamte Verkehr auf das FSX für ONTAP Dateisystem zugreifen kann.</block>
   <block id="955565afef9175d40dc796c8c08484e8" category="paragraph">Sie können eine eingehende Regel hinzufügen, die einschränkt, welche anderen AWS-Services auf das Filesystem FSX für ONTAP zugreifen können. Dadurch wird die Anzahl der offenen Services blockiert. Die Mindestports und Protokolle sind:</block>
   <block id="9985b4390c40137573e6da05caf85874" category="cell">Protokolle</block>
@@ -184,9 +177,6 @@
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Ein Screenshot, der die Aktionen zeigt, die Sie nach Auswahl des Menüs in der letzten Spalte der Tabelle durchführen können.</block>
   <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2559e4d6b9e2e602a91b8df995b458c8" category="summary">Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware Migration Advisor zuzugreifen. Befolgen Sie die Schritte des Assistenten, um einen auf Ihre Anforderungen zugeschnittenen Bereitstellungsplan oder Migrationsplan zu erstellen.</block>
-  <block id="31f8985acb8af1ba9c63a40c3a7ceeee" category="paragraph">Mithilfe des Migrationsberaters kann ein Implementierungsplan für die folgenden Szenarien erstellt werden:</block>
-  <block id="c2fc31ef454cc8e0f7af0db95923a688" category="inline-xref">Um Ihre aktuelle lokale vSphere Umgebung in die Cloud zu migrieren.</block>
-  <block id="e8fd05295638b6180f44a5f4c0d57bf4" category="list-text"><block ref="5a7eb2b4bf76f0222b9bec2f2e8b4fa9" category="inline-xref-macro-rx"></block></block>
   <block id="28a3e421e42b408e3e4ff1bca62ee052" category="inline-xref">Bereitstellen eines Systems in der Cloud basierend auf einem bestehenden Implementierungsplan mit ähnlichen Anforderungen</block>
   <block id="c31c21e843fdb59a8add150356c11304" category="list-text"><block ref="5fa6f23430006bdd76a7952ab9b38e33" category="inline-xref-macro-rx"></block></block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">Hier</block>
@@ -194,9 +184,6 @@
   <block id="8209a613eadf680eb0da074479c79a0b" category="section-title">Erstellen Sie einen Implementierungsplan basierend auf einer lokalen vSphere-Umgebung</block>
   <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphere-Umgebungen auf Virtual Machines in VMware Cloud on AWS migrieren und die benutzerdefinierten Amazon FSX for NetApp ONTAP-Dateisysteme als externe Datastores verwenden.</block>
   <block id="b13e28ff6e5b463fac6d9d320af1db48" category="list-text">Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, auf die Bestandsdatei zugreifen können.</block>
-  <block id="2627024352d67ddaed97566f9597199d" category="list-text">Wählen Sie in der Kachel VMware Workloads *Plan and Deploy* aus, und die Hauptseite von VMware Migration Advisor wird angezeigt.</block>
-  <block id="cff0ff09fa5d46af3e6c32d9a5e2d408" category="inline-image-macro">Ein Screenshot mit den verschiedenen Methoden zum Laden der aktuellen VM-Konfigurationsinformationen</block>
-  <block id="be546eb7700a271b12e087db71616a76" category="paragraph"><block ref="be546eb7700a271b12e087db71616a76" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e805dde1d276b6165ec64309a45ea71e" category="list-text">Wählen Sie *Neuen Bereitstellungsplan erstellen*.</block>
   <block id="4f85817ed18f4d26c6d18e7183794766" category="list-text">Wählen Sie die Art der Bestandsdatei aus, die Sie verwenden werden, um Workload Factory mit Ihrer aktuellen VM-Konfiguration zu füllen, und wählen Sie *Weiter*.</block>
   <block id="e7864d4b66ace757c2a108b5b0e4db3e" category="list-text">Wählen Sie *Use the Migration Advisor VMware Data Collector* aus, um die .csv-Datei zu verwenden, die Sie mit dem VMware Data Collector erstellt haben.</block>
@@ -220,13 +207,11 @@
   <block id="35c06a302c6771923f1bf0ae87021382" category="list-text">*Durchschnittliche I/O-Blockgröße*: Die Größe jedes Blocks mit Lese- oder Schreibvorgängen. Die Standardgröße beträgt 4 KB. Bei umfangreichen sequenziellen Lese- und Schreib-Workloads ist eine größere Blockgröße möglicherweise besser. Eine kleinere Blockgröße bietet möglicherweise bessere Performance bei Workloads, die kleine zufällige Schreibvorgänge auf wenige Dateien oder große Dateien ausführen.</block>
   <block id="671f570e3ea106a7c662d27393517d77" category="list-text">*Durchschnittliches Schreibverhältnis*: Der Prozentsatz der Operationen, die Schreibvorgänge für Ihre Workloads sind. Das Standardverhältnis beträgt 30 % Schreibvorgänge und 70 % Lesevorgänge.</block>
   <block id="8cee69b8c05f31ed2796e76723e0346d" category="list-text">Wählen Sie im Abschnitt _Überlegungen zur VM-Storage-Kapazität_ aus einigen Storage-Optionen aus.</block>
-  <block id="6f46f8eb6a78042e25d606c158b4f91b" category="list-text">*Durchschnittliches Datenreduzierungsverhältnis*: Wählen Sie aus den drei gängigen Auswahlwerten für die Datenreduzierung. Wählen Sie „1:1 - Keine Reduzierung“, „1:1.25 - 20% Reduktion“ oder „1:1.5 - 33% Reduktion“.</block>
   <block id="0c47db7e17a6772593257a96d46f5cef" category="list-text">*Reserveprozentsatz*: Geben Sie den Prozentsatz des Kapazitätswachstums ein, der der Kapazität für Ihre FSX for ONTAP-Dateisysteme hinzugefügt wird.</block>
   <block id="aebce73a3f5f4b5eb62667bc03380901" category="paragraph">Beachten Sie, dass bei einer Auswahl von weniger als 20 % keine Volume-Snapshots zum Schutz und für langfristige Backups erstellt werden können.</block>
   <block id="b861243dc465efb48d26f7b08e8092dd" category="list-text">Wählen Sie *Next* und die Seite „VMware Cloud on AWS Node Configuration“ wird angezeigt.</block>
   <block id="eb45b66ef322066cb931c800b0ff5a5d" category="paragraph">Auf dieser Seite können Sie die VMware Cloud auf AWS Cluster-Konfiguration anhand einer Analyse der geschätzten Einsparungen und des empfohlenen Node-Typs definieren. Sie können Folgendes konfigurieren:</block>
   <block id="c89e6e0aa2bb09c1d7b8e38b112b33e1" category="list-text">*VSAN-Architektur*: Wählen Sie aus, ob Sie die vSAN Express Storage Architecture (ESA) oder die vSAN Original Storage Architecture (OSA) verwenden möchten.</block>
-  <block id="43a0e9cbfc582c1e66e7982369aae32e" category="list-text">*VSAN Fault Tolerance*: Wählen Sie die für die VMs erforderliche Fehlertoleranzstufe. Sie können „Auto“ wählen, die empfohlen wird, oder aus einer Vielzahl von RAID-Levels.</block>
   <block id="74ea3f5cdcbfe5071a021f2bcbcf8f1d" category="list-text">RAID-1 (FTT 1): Besteht aus einer exakten Kopie (oder Spiegelung) eines Datensatzes auf 2 oder mehr Festplatten.</block>
   <block id="afd103de82421fcd40e3a247053edca8" category="list-text">RAID-5 (FTT 1): Besteht aus Striping auf Blockebene mit verteilter Parität. Die Paritätsinformationen werden auf 3 oder mehr Laufwerken verteilt und können dem Ausfall einer Festplatte standhalten.</block>
   <block id="540c7a94a98b70d6ef1eca9ecb05237b" category="list-text">RAID-5 (FTT 2): Besteht aus Striping auf Blockebene mit verteilter Parität. Die Paritätsinformationen werden auf 4 oder mehr Laufwerken verteilt und können 2 gleichzeitige Festplattenausfälle überstehen.</block>
@@ -245,7 +230,6 @@
   <block id="4345e81606df5dc45287de1f6571b7e8" category="paragraph">Im unteren Bereich der Seite wird die Quell-VM (oder mehrere VMs) angezeigt, für die diese neue VM und der neue Datenspeicher bereitgestellt werden.</block>
   <block id="370536ffe24c99675c2d3115f877ecb6" category="list-text">Wenn Sie wissen, wie Ihre Datastores bereitgestellt werden, wählen Sie *Next*.</block>
   <block id="365938d07c3056cb5ddd57ae13a34718" category="list-text">Überprüfen Sie auf der Seite *Bereitstellungsplan prüfen* die geschätzten monatlichen Kosten für alle VMs, die Sie migrieren möchten.</block>
-  <block id="6337ff3f1523ba47c97a795e4b5bbc20" category="paragraph">Oben auf der Seite werden die monatlichen Kosten für alle implementierten VMs und FSX für ONTAP-Dateisysteme beschrieben. Sie können jeden Abschnitt erweitern, um Details für die „Empfohlene Amazon FSX für ONTAP Filesystem-Konfiguration“, „geschätzte Kosten-Aufschlüsselung“, „Volume-Konfiguration“, „Sizing-Annahmen“ und technische „Haftungsausschlüsse“ anzuzeigen.</block>
   <block id="8687a48178491c960e3d406f98cbf29c" category="list-text">Wenn Sie mit dem Migrationsplan zufrieden sind, haben Sie ein paar Möglichkeiten:</block>
   <block id="0afb54dff7a72cd0654a60ad3ddcbeca" category="inline-link-macro">Erfahren Sie, wie Sie ein FSX für ONTAP-Dateisystem implementieren</block>
   <block id="97d5613878abc66cd0377bc72293e1c7" category="list-text">Wählen Sie *Deploy*, um die FSX for ONTAP-Dateisysteme zur Unterstützung Ihrer VMs bereitzustellen. <block ref="6d03875f1725fb0475157a3f38b365e6" category="inline-link-macro-rx"></block>.</block>
@@ -255,7 +239,6 @@
   <block id="eb0382b6d1486520f7db805842e3cb39" category="section-title">Erstellen Sie einen Bereitstellungsplan auf der Grundlage eines vorhandenen Plans</block>
   <block id="8c7f50d238649f9f07e3c2778bd32944" category="paragraph">Wenn Sie eine neue Bereitstellung planen, die einem vorhandenen Bereitstellungsplan ähnelt, den Sie in der Vergangenheit verwendet haben, können Sie diesen Plan importieren, Änderungen vornehmen und als neuen Bereitstellungsplan speichern.</block>
   <block id="2ba4d56c67bf769878bdd42cd7cca655" category="paragraph">Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, auf die .json-Datei für den vorhandenen Bereitstellungsplan zugreifen können.</block>
-  <block id="8e6d200b693c56bf0c412dc1466869ca" category="paragraph"><block ref="8e6d200b693c56bf0c412dc1466869ca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0cf508bfdfca6645623887a9bbdf21a6" category="list-text">Wählen Sie *Import eines vorhandenen Bereitstellungsplans*.</block>
   <block id="5f729e0cf80af6c0509f40c4e10b8e21" category="list-text">Wählen Sie die vorhandene Plandatei aus <block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block> , die Sie im Migrationsberater importieren möchten.</block>
   <block id="8909739edfc984376de0bcbd81aa6b66" category="list-text">Wählen Sie *Weiter*, und die Seite Plan überprüfen wird angezeigt.</block>
@@ -263,25 +246,19 @@
   <block id="ad004cea2e3efcaa61893ef5d25d7633" category="list-text">Nachdem Sie den Plan an Ihre Anforderungen angepasst haben, können Sie den Plan speichern oder den Bereitstellungsprozess für Ihre Datastores auf FSX for ONTAP-Dateisystemen starten.</block>
   <block id="44e948f72707f7630f611b68923bfc83" category="summary">Workload Factory für VMware bietet Tools zum Verschieben von Daten von On-Premises-Systemen in die VMware Cloud on AWS. Mit dem VMware Migrationsberater können Sie Ihre aktuellen Virtual Machine-Konfigurationen in lokalen vSphere-Umgebungen analysieren, einen Plan zur Implementierung empfohlener VM Layouts für VMware Cloud auf AWS vSphere-Cluster erstellen und die benutzerdefinierten Amazon FSX für NetApp ONTAP-Filesysteme als externe Datastores verwenden.</block>
   <block id="be5711eda7e0bf4f780900d61a066a0c" category="doc">Erfahren Sie mehr über Workload Factory für VMware</block>
-  <block id="9a65636d5ca5b878904a6057dac83843" category="paragraph">Workload Factory für VMware bietet Tools zum Verschieben von Daten von On-Premises-Systemen in VMware Cloud on AWS (VMC). Mit dem VMware Migrationsberater können Sie Ihre aktuellen Virtual Machine-Konfigurationen in lokalen vSphere-Umgebungen analysieren, einen Plan zur Implementierung empfohlener VM Layouts für VMware Cloud auf AWS vSphere-Cluster erstellen und die benutzerdefinierten Amazon FSX für NetApp ONTAP-Filesysteme als externe Datastores verwenden.</block>
-  <block id="95b939b0f0e220091a7ff9d176a3097b" category="paragraph">Amazon FSX for NetApp ONTAP ist ein externer NFS-Datastore, der auf dem ONTAP-Filesystem von NetApp basiert und an die VMware Cloud auf AWS vSphere-Clustern angebunden werden kann. Es muss nicht mehr Hosts hinzugefügt werden, um den verfügbaren Storage zu erweitern. Stattdessen sollten Sie FSX for ONTAP Volumes nur als externe Datastores verwenden, um vSAN Datastores zu ergänzen. Dadurch erhalten Sie eine flexible, hochperformante virtualisierte Storage-Infrastruktur, die unabhängig von den Rechenressourcen skaliert werden kann.</block>
   <block id="30141ccedd6bc04bfcb3e98195efc3cb" category="inline-image-macro">Ein Diagramm mit der Architektur</block>
   <block id="b3bddd6280dd2182432a9d3160f06da2" category="paragraph"><block ref="b3bddd6280dd2182432a9d3160f06da2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ccaa90f171b926c0ccd9ee1bae9f5282" category="section-title">Funktionsweise des VMware Migrationsberaters</block>
-  <block id="7d197b845beffcefcc2b7624db4536bc" category="paragraph">Der Migrationsberater unterstützt Sie beim Verschieben von lokalen Virtual Machines (VMs) und ihrer Daten, die auf beliebigen von VMware unterstützten Datastores ausgeführt werden, in VMware-Cloud-Datastores, mit ergänzenden NFS-Datastores auf einem FSX für ONTAP-Filesystem.</block>
   <block id="3104e285f52d2373db8e64fa25908a0a" category="inline-image-macro">Ein Diagramm mit einem Beispiel für eine alte Architektur und eine neue Architektur nach der Migration.</block>
   <block id="793538922c4536c046db4d0b15151ec1" category="paragraph"><block ref="793538922c4536c046db4d0b15151ec1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f16579e3ec27716e8cd4980fbae4d3e4" category="paragraph">Beachten Sie, dass Sie bis zu vier (4) FSX für ONTAP-Volumes an ein einzelnes vSphere-Cluster in VMware Cloud on AWS anschließen können.</block>
   <block id="389a4416c476e7624728b96c49b3cce2" category="section-title">Funktionen des Migrationsberaters im Einsatz</block>
   <block id="a5f8a88b580feb03d498f8605e413984" category="paragraph">Der Migrationsberater stellt folgende Funktionen zur Verfügung:</block>
   <block id="8cab295292831bfdeb59bccbb79bdd46" category="list-text">Analyse aktueller VM-Konfigurationen vor Ort</block>
-  <block id="c25aec1fd0ebfaedc74c756cad69abd2" category="list-text">Bestimmen der VMs für die Migration zu VMware Cloud on AWS</block>
   <block id="1a05637cb863ca10f5a7d788eab39615" category="list-text">Ermitteln Sie den Speicherplatz, der auf FSX für ONTAP-Volumes zur Nutzung als externe VM-Datastores erforderlich ist</block>
   <block id="feb18d16cfa710c71684233bc628e803" category="list-text">Überprüfen Sie den Ergebnisbericht, um die Implementierungsschritte zu verstehen</block>
   <block id="ecd032206ca6be7b4497c7dadd4679ff" category="list-text">Durchführung der eigentlichen Implementierung</block>
-  <block id="404d1cf9d1cf2f009727efa79f365ed0" category="paragraph">Der Migrationsberater unterstützt die Konfigurationsplanung für einen einzelnen VMware Cloud on AWS-Cluster, der mit einem einzigen FSX for ONTAP-Filesystem verbunden ist.</block>
   <block id="59a64ee2ba08e22b44728c86d8f75c1b" category="section-title">Vorteile des Migrationsberaters</block>
-  <block id="68b045681603b3999a47a329a1c2f2f2" category="paragraph">Die Umstellung von Teilen Ihrer aktuellen Infrastruktur auf VMware Cloud on AWS mit Amazon FSX for ONTAP als externe NFS-Datastores bietet folgende Vorteile:</block>
   <block id="633d759efd4c2199d984faea480082ad" category="list-text">Kostenoptimierung durch Entkopplung von Host und Storage und erweiterte Dateneffizienz</block>
   <block id="52800f54ef93212b18b3653970aa2ed4" category="list-text">Bedarfsunabhängige Erweiterung der Storage-Kapazität, ohne dass zusätzliche Host-Instanzen angeschafft werden müssen</block>
   <block id="17167f5b04002560e9e2c5818b543bfa" category="list-text">NetApp ONTAP Datenmanagementfunktionen in der Cloud wie z. B. platzsparende Snapshots, Klonen, Komprimierung, Deduplizierung, Data-Compaction und Replizierung</block>
@@ -323,13 +300,10 @@
   <block id="2281d47edbe43f0701ce273bb95a9f2f" category="summary">Verwenden Sie ein Tool wie VMware Hybrid Cloud Extension, um Ihre Daten aus Ihrem alten Virtual Machine Storage in das FSX für NetApp ONTAP Volumes zu verschieben, das mit Ihren neuen Virtual Machines verbunden ist. Die Kernfunktionen von VMware HCX ermöglichen Ihnen die transparente Migration von Workloads von Ihrem lokalen Datacenter zu Ihrem SDDC.</block>
   <block id="2066c133f5c3f51fd034acd791ddedb4" category="doc">Migrieren Sie Ihre Daten zur neuen Infrastruktur</block>
   <block id="63796ed0675a30eed387ff515fb4109d" category="paragraph">Verwenden Sie ein Tool wie VMware Hybrid Cloud Extension (HCX), um Ihre Daten aus Ihrem alten Virtual-Machine-Storage in die FSX for NetApp ONTAP Volumes zu verschieben, die mit Ihren neuen Virtual Machines verbunden sind. Die Kernfunktionen von VMware HCX ermöglichen Ihnen die transparente Migration von Workloads von Ihrem lokalen Rechenzentrum in Ihr softwaredefiniertes Rechenzentrum (SDDC).</block>
-  <block id="81296b60bd3fac67fc4c879b35c21ce7" category="inline-link">Weitere Informationen finden Sie in der VMware HCX-Dokumentation</block>
-  <block id="38b89112e54a0592b6516a64ce8ab7cd" category="paragraph"><block ref="38b89112e54a0592b6516a64ce8ab7cd" category="inline-link-rx"></block></block>
   <block id="5944c69245ff8965d3ea01f690fb5c93" category="paragraph">Nachdem Sie nun Ihre Daten in externe Datastores in VMware Cloud on AWS und Amazon FSX for NetApp ONTAP migriert haben, können Sie wichtige Daten in Ihrem FSX for ONTAP-Filesystem sichern und schützen, um sicherzustellen, dass Ihre Daten immer verfügbar sind.</block>
   <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link">Dokumentation zu Amazon FSX für NetApp ONTAP</block>
   <block id="0eb8b604056cff3e56816d6bff3e3b57" category="paragraph">Informationen zum Verwalten Ihres FSX für ONTAP-Dateisystems finden Sie unter, um die<block ref="fbab171416a38225bcf6963b32f6d497" category="inline-link-rx"></block> Backup- und Schutzfunktionen anzuzeigen, die Sie verwenden können.</block>
   <block id="b7c19b7e4e8df7fa64586112497c63f5" category="summary">Steigen Sie mit dem VMware Migrationsberater ein, um Ihre aktuelle Infrastruktur mithilfe von Amazon FSX for ONTAP als externe NFS-Datastores in VMware Cloud on AWS zu verlagern.</block>
-  <block id="4a715abf409664eac4dbee272a84b726" category="doc">Schnelleinstieg für die Nutzung des VMware Migrationsberaters</block>
   <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link">Betriebsmodi</block>
   <block id="02d45e6950dba7745c9b6afe3c8338ca" category="paragraph">Bevor Sie beginnen, sollten Sie ein Verständnis von haben<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block></block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Eins</block>
@@ -417,7 +391,6 @@
   <block id="1a61f87dd9021f3f5868a4a4418a6116" category="sidebar">Optimieren Sie Migrationen aus lokalen vSphere-Umgebungen zu VMware Cloud on AWS und implementieren Sie angepasste FSX für ONTAP-Filesysteme als externe Datastores.</block>
   <block id="73f5c244b09686e8501c3a915df34d30" category="sidebar">Workload Factory für VMware Dokumentation</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Los geht's</block>
-  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">Schnellstart</block>
   <block id="9faf81d72d2e94d2a3b1079129468863" category="sidebar">Nutzen Sie den VMware Migrationsberater</block>
   <block id="1a686aeebb374b70871c49c0a3a9e04d" category="sidebar">Verbinden Sie FSX für ONTAP-Dateisysteme mit VMware Cloud on AWS</block>
   <block id="114262d24985ba4272fb41b60a7a9b81" category="sidebar">VMware-Workload-Dokumentation</block>
@@ -427,4 +400,75 @@
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Wissen und Support</block>
   <block id="b315d9d256afa359134156c4a3ba121a" category="list-text">Sie müssen die Inventardatei aus Ihren vorhandenen Systemen mithilfe des VM-Collectors des Migrationsberaters (.csv-Datei) oder mithilfe von RVTools (.xlsx-Datei) erstellt haben.</block>
   <block id="acac926eb24cce36b7b6f36c0db430ca" category="list-text">Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu VMware Cloud on AWS* aus. Die Hauptseite des VMware Migration Advisor wird angezeigt.</block>
+  <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">Migrieren Sie zu Amazon EC2</block>
+  <block id="a8d4a316d0df9e6b884220ad60451578" category="paragraph">Workload Factory für VMware unterstützt jetzt die Migration zu Amazon EC2 mithilfe des VMware Migrationsberaters.</block>
+  <block id="1f1840a1cd78fc828b7bf5b09ef626dd" category="doc">Erfassen Sie Ihre aktuellen VM-Konfigurationen, bevor Sie zu Amazon EC2 migrieren</block>
+  <block id="1af00da7b1991dc3522efa12b13d06a5" category="list-text">Wählen Sie in der VMware-Kachel *Access und Plan* aus.</block>
+  <block id="d33a9cde7de06ccdf8aba953dd2aeb0d" category="list-text">Führen Sie das heruntergeladene Datensammlerskript aus und legen Sie die Datenerfassungsoption für die VM-Statistik „täglich“ oder „stündlich“ fest.</block>
+  <block id="8109466383788459676a9b2ec067ebe7" category="paragraph">Das Skript gibt eine komprimierte Datei mit einem Zeitstempel im Namen im aktuellen Arbeitsverzeichnis aus. Die ZIP-Datei enthält eine Liste aller VMs und ihrer Eigenschaften sowie ihrer IOPS- und Durchsatzdaten.</block>
+  <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph"><block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block>Weitere Informationen finden Sie im Kapitel „Kommandozeilenparameter“ in der.</block>
+  <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">Erstellung eines Amazon EC2-Implementierungsplans über den Migrationsberater</block>
+  <block id="414196819b55791be7e7314c3ef3e1cb" category="paragraph"><block ref="256f57bc6446332fd4641ea86650235a" category="inline-link-macro-rx"></block>.</block>
+  <block id="2937dfbcdcb41e8eba68b50ecd25d526" category="doc">Erfassen Sie Ihre aktuellen VM-Konfigurationen, bevor Sie zu VMware Cloud migrieren</block>
+  <block id="ad593b2d0fe3cbb86e53650eaaf4824a" category="list-text">Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu VMware Cloud on AWS* aus.</block>
+  <block id="f04f84e2375dd70545e2146f2d203aa3" category="paragraph">Die Hauptseite des VMware Migration Advisor wird angezeigt.</block>
+  <block id="0c9cddf33e5d4dde0908a43c0281f4c9" category="inline-link-macro">Erstellen Sie mithilfe des Migrationsberaters einen Implementierungsplan für VMware Cloud on AWS</block>
+  <block id="4768fe1dcba86ded88bcf4933b3796e9" category="paragraph"><block ref="a42505b35c6e27042bbc626caf0dab0e" category="inline-link-macro-rx"></block>.</block>
+  <block id="4b4cbcf57cb0bd98e4741d1d43b22196" category="list-title">Anforderungen für Implementierungen in VMware Cloud on AWS</block>
+  <block id="5d103325262d22fbc44efacfdca8a26f" category="list-title">Anforderungen für die Implementierung auf Amazon EC2</block>
+  <block id="40e4643f209887a63ee9e277510c8d21" category="list-text">Das Root-Volume des FSX für ONTAP Filesystems muss als EBS Volume erstellt werden.</block>
+  <block id="8c762f17b3d2ee1292e4c6d599e3c4f4" category="paragraph">Wenn Sie VMware Cloud auf AWS implementieren möchten, stellen Sie sicher, dass Sie die Implementierung in einer VPC durchführen, die anders ist als die VPC, bei der VMware Cloud auf AWS implementiert wird.</block>
+  <block id="d738890a4c9a0f96c08ae0ba66a626a1" category="doc">Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters</block>
+  <block id="12108488b525984a76d1a39aeb4948cb" category="paragraph">Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphere Umgebungen auf Virtual Machines in Amazon EC2 migrieren und die angepassten Dateisysteme von Amazon FSX for NetApp ONTAP als externe Datastores verwenden.</block>
+  <block id="5dff619fafdcb02708f9c4517a7bb8fe" category="list-text">Sie müssen die Bestandsdatei aus Ihren vorhandenen Systemen mithilfe des VM-Collectors des Migrationsberaters (.zip-Datei) oder mithilfe von RVTools (.xlsx-Datei) erstellt haben.</block>
+  <block id="278a85e02b26dbd2e7a5074820679e8c" category="list-text">Wählen Sie *Verwenden Sie den Migrationsberater VMware Data Collector*, um die Datei zu verwenden, die Sie mit dem VMware Data Collector erstellt haben.</block>
+  <block id="26a805e1dd0fca3151bedb2d8e12a651" category="paragraph">Die Seite „Prepare for AWS Cloud Onboarding“ wird angezeigt.</block>
+  <block id="5d962e477a215e1da47c1123eb0453bc" category="list-text">Wählen Sie im Abschnitt _VM-Konfiguration hochladen_ <block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>die zu verwendende Bestandsdatei aus, und wählen Sie sie aus.</block>
+  <block id="6b5dae90780a08c5ba86866abd8a1432" category="list-text">Wählen Sie die ZIP-Datei aus, wenn Sie den VM-Collector von Migration Advisor verwenden.</block>
+  <block id="c3fb55d7fbab2ce4cf38cd35ab2765e2" category="paragraph">Der Abschnitt *VMs summary* wird aus der Bestandsdatei ausgefüllt, um die Anzahl der VMs und die gesamte Speicherkapazität zu reflektieren.</block>
+  <block id="1a04b9149745d21476396398a73240e3" category="list-text">*Betrachten Sie VMs*: Geben Sie an, welche VMs basierend auf ihrem Betriebszustand aus der Bestandsdatei extrahiert werden. Sie können alle VMs oder nur die VMs einschalten, deaktivieren oder suspendiert.</block>
+  <block id="5e6d5c629d61f338ad33388904a1a38d" category="list-text">Geben Sie im Abschnitt _Cloud Deployment Configuration_ Details zur erforderlichen Amazon EC2-Konfiguration ein.</block>
+  <block id="284c0194166a2962fd51534f6158914b" category="list-text">*Region*: Wählen Sie die Region aus, in der Amazon FSX für NetApp ONTAP-Dateisysteme bereitgestellt werden sollen.</block>
+  <block id="57fd0f79436be23d539fc3dd6791b37f" category="paragraph">Um eine optimale Performance und Kosteneffizienz zu erzielen, ist dies in der Regel die gleiche Region wie das vorhandene Amazon EC2 SDDC.</block>
+  <block id="aec55cbdf93104d8f633395f34d47241" category="list-text">*Durchschnittliche I/O-Blockgröße*: Die Größe jedes Blocks mit Lese- oder Schreibvorgängen. Die Standardgröße beträgt 4 KB. Bei umfangreichen sequenziellen Lese- und Schreib-Workloads empfiehlt sich eine größere Blockgröße. Eine kleinere Blockgröße bietet möglicherweise bessere Performance bei Workloads, die kleine zufällige Schreibvorgänge auf wenige Dateien oder große Dateien ausführen.</block>
+  <block id="212e4a78a96c4a6a7cb8d8168f38a132" category="list-text">Wählen Sie im Abschnitt _Zielkapazität und Schutzaspekte_ aus einigen Speicheroptionen aus.</block>
+  <block id="2371c65768dba03d44190d2797940527" category="list-text">*Durchschnittliches Datenreduzierungsverhältnis*: Wählen Sie aus den drei gängigen Datenreduzierungsverhältnissen. Wählen Sie „1:1 - Keine Reduzierung“, „1:1.25 - 20 % Reduzierung“ oder „1:1.5 - 33 % Reduzierung“.</block>
+  <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">Beachten Sie, dass bei einer Auswahl von weniger als 20 % keine Volume-Snapshots zum Schutz und für langfristige Backups erstellt werden können.</block>
+  <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">*VM Snapshot-Schutz*: Aktivieren Sie diese Option, um die VMs mit Snapshots zu schützen.</block>
+  <block id="989b80d51d89a9c4e98f8e9d93a8b430" category="list-text">Prüfen Sie auf der Seite *Review EC2 Volumes* die VM-Informationen, Volume-Klassifizierungsregeln, Volume-Zuweisungen und eine Liste der Volumes, die im Rahmen der Bereitstellung migriert werden.</block>
+  <block id="0bd2351ba13aaa50e485f5d6ed8991d1" category="list-text">Überprüfen Sie auf der Seite *Instance Storage prüfen* die EC2-Instanzen und die Volumes, die verschiedenen FSX für ONTAP-Cluster zugewiesen sind.</block>
+  <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">Oben auf der Seite werden die monatlichen Kosten für alle implementierten VMs und FSX für ONTAP-Dateisysteme beschrieben. Sie können jeden Abschnitt erweitern, um Details für die „Empfohlene Amazon FSX for ONTAP-Dateisystemkonfiguration“, „geschätzte Kostenaufschlüsselung“, „Volume-Konfiguration“, „Größenannahmen“ und technische „Haftungsausschlüsse“ anzuzeigen.</block>
+  <block id="772ab2cb66607567ceddf170a9c148d1" category="doc">Erstellen Sie mit dem Migrationsberater einen Implementierungsplan für VMware Cloud on AWS</block>
+  <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">Bei der Migration zu VMware Cloud können Sie mit dem Migrationsberater einen Bereitstellungsplan für folgende Szenarien erstellen:</block>
+  <block id="dafb3c70bc12caaeab402760a87e98d9" category="inline-xref">Um Ihre aktuelle lokale vSphere Umgebung in die VMware Cloud zu migrieren.</block>
+  <block id="59bf0f7e79d795451ad94f36b9896e02" category="list-text"><block ref="d7d9086f96876c516cd0685f13fc1fe9" category="inline-xref-macro-rx"></block></block>
+  <block id="547bc0b99ec96bc4efdb00bc0ff7eccd" category="list-text">*Durchschnittliches Datenreduzierungsverhältnis*: Wählen Sie aus den drei gängigen Auswahlwerten für die Datenreduzierung. Wählen Sie „1:1 - Keine Reduzierung“, „1:1.25 - 20 % Reduzierung“ oder „1:1.5 - 33 % Reduzierung“.</block>
+  <block id="9b33daba55511d7238a85d7736fbd98f" category="list-text">*VSAN Fault Tolerance*: Wählen Sie die für die VMs erforderliche Fehlertoleranzstufe. Sie können „Auto“ wählen, was empfohlen wird, oder aus einer Vielzahl von RAID-Levels.</block>
+  <block id="64b1201878c295edf1882326e991ba6c" category="paragraph">Workload Factory für VMware bietet Tools zum Verschieben von Daten von On-Premises-Systemen in VMware Cloud on AWS (VMC) oder Amazon EC2. Mit dem VMware Migrationsberater können Sie Ihre aktuellen Virtual Machine-Konfigurationen in lokalen vSphere-Umgebungen analysieren, einen Plan zur Implementierung empfohlener VM-Layouts für Amazon EC2- oder VMware Cloud on AWS vSphere-Cluster erstellen und die benutzerdefinierten Amazon FSX for NetApp ONTAP-Filesysteme als externe Datastores verwenden.</block>
+  <block id="d76132d0cba84b58ca2dcb647eda106b" category="paragraph">Amazon FSX for NetApp ONTAP ist ein externer NFS-Datastore, der auf dem ONTAP-Filesystem von NetApp basiert und an Amazon EC2 Instanzen oder VMware Cloud on AWS vSphere Cluster angebunden werden kann. Es muss nicht mehr Hosts hinzugefügt werden, um den verfügbaren Storage zu erweitern. Stattdessen sollten Sie FSX for ONTAP Volumes nur als externe Datastores verwenden, um vSAN Datastores zu ergänzen. Dadurch erhalten Sie eine flexible, hochperformante virtualisierte Storage-Infrastruktur, die unabhängig von den Rechenressourcen skaliert werden kann.</block>
+  <block id="1050240de009d728cf8820bddb4f10af" category="paragraph">Der Migrationsberater unterstützt Sie beim Verschieben von lokalen Virtual Machines (VMs) und deren Daten, die auf beliebigen von VMware unterstützten Datastores ausgeführt werden, zu Amazon EC2 oder VMware Cloud Datastores. Dieser umfasst zusätzliche NFS-Datastores auf einem FSX for ONTAP Filesystem.</block>
+  <block id="d371f01eca51770f71308170e7000111" category="list-text">Bestimmen der VMs, die zu Amazon EC2 oder VMware Cloud on AWS migriert werden sollen</block>
+  <block id="060a8c21670f2278959efb3bd6dcdbf8" category="paragraph">Der Migrationsberater unterstützt die Konfigurationsplanung für eine einzelne Amazon EC2 Instanz oder für VMware Cloud on AWS Cluster, die mit einem einzelnen FSX for ONTAP-Filesystem verbunden sind.</block>
+  <block id="794575b7b1daf584d278fad81412fd2b" category="paragraph">Die Transition von Teilen Ihrer aktuellen Infrastruktur zu Amazon EC2 oder VMware Cloud on AWS mit Amazon FSX for ONTAP als externe NFS-Datastores bietet folgende Vorteile:</block>
+  <block id="f261a631c51179505f4fc191ce3709be" category="summary">Verwenden Sie ein Tool wie AWS Application Migration Service (MGN), um Ihre Daten aus Ihrem alten Virtual Machine Storage in die FSX for NetApp ONTAP Volumes zu verschieben, die mit Ihren neuen Virtual Machines verbunden sind.</block>
+  <block id="8d8d941840593c266de0ff70d190c4d6" category="paragraph">AWS MGN ermöglicht Ihnen die Migration Ihrer Applikationen zu FSX for NetApp ONTAP Volumes in Amazon EC2.</block>
+  <block id="55b3c4f530374071eeab11ad7c800812" category="inline-link">Lesen Sie die Dokumentation zum AWS Application Migration Service</block>
+  <block id="dd71a9ab0a6d12ec3b7055ec9fb57af5" category="paragraph"><block ref="6d9771562af57950e6338ef52b98a7fc" category="inline-link-rx"></block> Genaue Informationen.</block>
+  <block id="4f4118147c2e5c1031ff5e9b1275a455" category="paragraph">Nachdem Sie nun Ihre Daten zu externen Datastores in AWS und Amazon FSX for NetApp ONTAP migriert haben, können Sie die wichtigen Daten in Ihrem FSX für ONTAP Filesystem sichern und schützen, damit Ihre Daten immer verfügbar sind.</block>
+  <block id="5cf77a6cd1a6546f96141615c376acb2" category="inline-link">Lesen Sie die VMware HCX-Dokumentation</block>
+  <block id="1cdaa881e46a57173b4ffb5ec3faacc3" category="paragraph"><block ref="cef3bc29c9f27088570c1e3262538cf8" category="inline-link-rx"></block> Genaue Informationen.</block>
+  <block id="e893ba46613a19a9294b7b151c4df83e" category="summary">Steigen Sie mit dem VMware Migrationsberater ein, um Ihre aktuelle Infrastruktur mithilfe von Amazon FSX for ONTAP als externe NFS-Datastores zu Amazon EC2 zu migrieren.</block>
+  <block id="294f9af291a855904cc69ccf0e3c306f" category="doc">Schneller Einstieg für die Migration zu Amazon EC2 über den VMware Migrationsberater</block>
+  <block id="b0e3e3f0b950f1696359666176a911cc" category="paragraph">Sie können Workload Factory im _Basic_-Modus verwenden, ohne Anmeldedaten für den Zugriff auf Ihr AWS-Konto hinzuzufügen. Durch das Hinzufügen von AWS Zugangsdaten zu Workload Factory im Modus _Lesen_ oder _Automatisieren_ erhält Ihr Workload Factory-Konto die Berechtigungen, die zum Erstellen und Managen von FSX for ONTAP-Dateisystemen sowie zum Bereitstellen und Managen von Workloads innerhalb von Amazon EC2 erforderlich sind.</block>
+  <block id="9cd1f8c893219dcc9697141d6585e5d9" category="paragraph"><block ref="ab4df44eb8806514d8649fc0b63ead31" category="inline-link-macro-rx"></block>.</block>
+  <block id="d645e6b9cc715485914696dcaeed7e40" category="paragraph">Starten Sie den VMware Migrationsberater und wählen Sie die VMs aus, die Sie zur Amazon EC2 Infrastruktur migrieren möchten. Dazu verwenden Sie ein Filesystem von Amazon FSX für ONTAP als externe NFS-Datastores. Sie können einige Änderungen vornehmen, bevor Sie den Plan speichern.</block>
+  <block id="362f02ec410356642b41d807749588d9" category="paragraph"><block ref="d6918f6a6163624fe27be3a8b64bdb49" category="inline-link-macro-rx"></block>.</block>
+  <block id="2f2f1ce9d4f5decb03f093128a1fc15e" category="paragraph">Implementieren Sie das neue Filesystem FSX für ONTAP, das die Datastores für Ihre VMs in Ihrer Amazon EC2 Infrastruktur zur Verfügung stellt.</block>
+  <block id="d8329106d0f4da40a239ea890e93904c" category="doc">Schneller Start für die Migration zu VMware Cloud on AWS mit dem VMware Migrationsberater</block>
+  <block id="b5cef683aab00353096b98823a237e69" category="section-title">1 September 2024</block>
+  <block id="aebd84094284845d3e849298624e3ce8" category="sidebar">Schneller Einstieg: Migrieren Sie zu VMware Cloud on AWS</block>
+  <block id="a529cc49011230ace4aa0d605878b3a7" category="sidebar">Schneller Einstieg: Migration zu Amazon EC2</block>
+  <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">Migrieren Sie zu VMware Cloud on AWS</block>
+  <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">Schnellstart für die Migration zu VMware Cloud on AWS</block>
+  <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">Schneller Einstieg für die Migration zu Amazon EC2</block>
 </blocks>

@@ -13,9 +13,11 @@ indexpage:
     links:
     - title: Erfahren Sie mehr über Workload Factory für VMware
       url: learn-about-vmware-workloads.html
-    - title: Schnellstart
+    - title: 'Schneller Einstieg: Migrieren Sie zu VMware Cloud on AWS'
       url: quick-start.html
-  - title: Nutzen Sie den VMware Migrationsberater
+    - title: 'Schneller Einstieg: Migration zu Amazon EC2'
+      url: quick-start-native.html
+  - title: Migrieren Sie zu VMware Cloud on AWS
     links:
     - title: Erfassung Ihrer aktuellen VM-Konfigurationen
       url: capture-vm-configurations.html
@@ -27,3 +29,13 @@ indexpage:
       url: connect-sddc-to-fsx.html
     - title: Migrieren Sie Ihre Daten zur neuen Infrastruktur
       url: migrate-data.html
+  - title: Migrieren Sie zu Amazon EC2
+    links:
+    - title: Erfassung Ihrer aktuellen VM-Konfigurationen
+      url: capture-vm-configurations-native.html
+    - title: Erstellen eines Implementierungsplans mithilfe des Migrationsberaters
+      url: launch-onboarding-advisor-native.html
+    - title: Stellen Sie das empfohlene FSX für ONTAP-Dateisystem bereit
+      url: deploy-fsx-file-system.html
+    - title: Migrieren Sie Ihre Daten zur neuen Infrastruktur
+      url: migrate-data-native.html

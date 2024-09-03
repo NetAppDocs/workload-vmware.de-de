@@ -1,0 +1,102 @@
+---
+sidebar: sidebar 
+permalink: launch-onboarding-advisor-native.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works 
+summary: Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware Migration Advisor zuzugreifen. Befolgen Sie die Schritte des Assistenten, um einen auf Ihre Anforderungen zugeschnittenen Bereitstellungsplan oder Migrationsplan zu erstellen. 
+---
+= Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware Migration Advisor zuzugreifen. Befolgen Sie die Schritte des Assistenten, um einen auf Ihre Anforderungen zugeschnittenen Bereitstellungsplan oder Migrationsplan zu erstellen.
+
+Beachten Sie, dass Sie über einen Benutzernamen und ein Passwort verfügen müssen, um auf Workload Factory zuzugreifen. Wenn Sie keinen Zugriff haben, erstellen Sie jetzt ein Konto. Siehe die Anleitung https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Hier"].
+
+
+
+== Erstellen Sie einen Implementierungsplan basierend auf einer lokalen vSphere-Umgebung
+
+Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphere Umgebungen auf Virtual Machines in Amazon EC2 migrieren und die angepassten Dateisysteme von Amazon FSX for NetApp ONTAP als externe Datastores verwenden.
+
+.Anforderungen
+* Sie müssen die Bestandsdatei aus Ihren vorhandenen Systemen mithilfe des VM-Collectors des Migrationsberaters (.zip-Datei) oder mithilfe von RVTools (.xlsx-Datei) erstellt haben.
+* Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, auf die Bestandsdatei zugreifen können.
+
+
+.Schritte
+. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu VMware Cloud on AWS* aus. Die Hauptseite des VMware Migration Advisor wird angezeigt.
+. Wählen Sie *Neuen Bereitstellungsplan erstellen*.
+. Wählen Sie die Art der Bestandsdatei aus, die Sie verwenden werden, um Workload Factory mit Ihrer aktuellen VM-Konfiguration zu füllen, und wählen Sie *Weiter*.
++
+** Wählen Sie *Verwenden Sie den Migrationsberater VMware Data Collector*, um die Datei zu verwenden, die Sie mit dem VMware Data Collector erstellt haben.
+** Wählen Sie *Verwenden Sie RVTools*, um die .xlsx-Datei zu verwenden, die Sie mit RVTools erstellt haben.
+
+
++
+Die Seite „Prepare for AWS Cloud Onboarding“ wird angezeigt.
+
+. Wählen Sie im Abschnitt _VM-Konfiguration hochladen_ image:button-upload-file.png["Die Schaltfläche „Hochladen“"]die zu verwendende Bestandsdatei aus, und wählen Sie sie aus.
++
+** Wählen Sie die ZIP-Datei aus, wenn Sie den VM-Collector von Migration Advisor verwenden.
+** Wählen Sie die .xlsx-Datei aus, wenn Sie RVTools verwenden.
+
+
++
+Der Abschnitt *VMs summary* wird aus der Bestandsdatei ausgefüllt, um die Anzahl der VMs und die gesamte Speicherkapazität zu reflektieren.
+
+. Wählen Sie im Abschnitt _VM-Bestandsaufnahme Überlegungen_ die Optionen aus, um die Liste der VMs zu filtern, die Sie migrieren möchten.
++
+.. *Betrachten Sie VMs*: Geben Sie an, welche VMs basierend auf ihrem Betriebszustand aus der Bestandsdatei extrahiert werden. Sie können alle VMs oder nur die VMs einschalten, deaktivieren oder suspendiert.
+.. *Zu berücksichtigende VM-Speicherung*: Wählen Sie aus, ob die für jede einbezogene VM erstellten Datenspeicher auf der Grundlage ihrer aktuell verwendeten Größe (empfohlen) oder ihrer bereitgestellten Größe dimensioniert sind.
++
+Die externen Datastores werden mit Amazon FSX für NetApp ONTAP-Dateisystemvolumes implementiert.
+
+
+
+. Geben Sie im Abschnitt _Cloud Deployment Configuration_ Details zur erforderlichen Amazon EC2-Konfiguration ein.
++
+.. *Region*: Wählen Sie die Region aus, in der Amazon FSX für NetApp ONTAP-Dateisysteme bereitgestellt werden sollen.
++
+Um eine optimale Performance und Kosteneffizienz zu erzielen, ist dies in der Regel die gleiche Region wie das vorhandene Amazon EC2 SDDC.
+
+.. *VM Estimated Performance Requirements*: Diese Option ist nur bei Verwendung von RVTools verfügbar. Der VM-Collector Migration Advisor erfasst diese Informationen aus Ihrer Umgebung. Geben Sie die folgenden durchschnittlichen Performance-Parameter pro Virtual Machine an, die Sie auf Ihre neu zu implementierenden VMs anwenden möchten:
++
+*** *Durchschnittliche IOPS pro VM*: Geben Sie die Anzahl der für Ihre Dateisysteme erforderlichen IOPS ein. Wenn Sie sich nicht sicher sind, können Sie den Standardwert von 3 IOPS pro gib SSD-Speicher für Amazon FSX für ONTAP-Dateisysteme verwenden. Wenn Sie beispielsweise 2,000 gib Kapazität bereitstellen, wird dies auf 6,000 IOPS übersetzt. Wir empfehlen, zunächst mit einer kleineren IOPS-Einstellung zu beginnen. Sie können die bereitgestellten SSD-IOPS erhöhen, nachdem das Filesystem beim Migrieren oder Einsetzen von Workloads erstellt wurde.
+*** *Durchschnittliche I/O-Blockgröße*: Die Größe jedes Blocks mit Lese- oder Schreibvorgängen. Die Standardgröße beträgt 4 KB. Bei umfangreichen sequenziellen Lese- und Schreib-Workloads empfiehlt sich eine größere Blockgröße. Eine kleinere Blockgröße bietet möglicherweise bessere Performance bei Workloads, die kleine zufällige Schreibvorgänge auf wenige Dateien oder große Dateien ausführen.
+*** *Durchschnittliches Schreibverhältnis*: Der Prozentsatz der Operationen, die Schreibvorgänge für Ihre Workloads sind. Das Standardverhältnis beträgt 30 % Schreibvorgänge und 70 % Lesevorgänge.
+
+
+
+
+. Wählen Sie im Abschnitt _Zielkapazität und Schutzaspekte_ aus einigen Speicheroptionen aus.
++
+.. *Durchschnittliches Datenreduzierungsverhältnis*: Wählen Sie aus den drei gängigen Datenreduzierungsverhältnissen. Wählen Sie „1:1 - Keine Reduzierung“, „1:1.25 - 20 % Reduzierung“ oder „1:1.5 - 33 % Reduzierung“.
+.. *Reserveprozentsatz*: Geben Sie den Prozentsatz des Kapazitätswachstums ein, der der Kapazität für Ihre FSX for ONTAP-Dateisysteme hinzugefügt wird.
++
+Beachten Sie, dass bei einer Auswahl von weniger als 20 % keine Volume-Snapshots zum Schutz und für langfristige Backups erstellt werden können.
+
+.. *VM Snapshot-Schutz*: Aktivieren Sie diese Option, um die VMs mit Snapshots zu schützen.
+
+
+. Wählen Sie *Weiter*.
+
+
+. Prüfen Sie auf der Seite *Review EC2 Volumes* die VM-Informationen, Volume-Klassifizierungsregeln, Volume-Zuweisungen und eine Liste der Volumes, die im Rahmen der Bereitstellung migriert werden.
+. Wählen Sie *Weiter*.
+. Überprüfen Sie auf der Seite *Instance Storage prüfen* die EC2-Instanzen und die Volumes, die verschiedenen FSX für ONTAP-Cluster zugewiesen sind.
+. Überprüfen Sie auf der Seite *Bereitstellungsplan prüfen* die geschätzten monatlichen Kosten für alle VMs, die Sie migrieren möchten.
++
+Oben auf der Seite werden die monatlichen Kosten für alle implementierten VMs und FSX für ONTAP-Dateisysteme beschrieben. Sie können jeden Abschnitt erweitern, um Details für die „Empfohlene Amazon FSX for ONTAP-Dateisystemkonfiguration“, „geschätzte Kostenaufschlüsselung“, „Volume-Konfiguration“, „Größenannahmen“ und technische „Haftungsausschlüsse“ anzuzeigen.
+
+. Wenn Sie mit dem Migrationsplan zufrieden sind, haben Sie ein paar Möglichkeiten:
++
+** Wählen Sie *Deploy*, um die FSX for ONTAP-Dateisysteme zur Unterstützung Ihrer VMs bereitzustellen. link:deploy-fsx-file-system.html["Erfahren Sie, wie Sie ein FSX für ONTAP-Dateisystem implementieren"].
+** Wählen Sie *Download Plan > VM Deployment*, um den Migrationsplan im .csv-Format herunterzuladen, damit Sie damit Ihre neue Cloud-basierte intelligente Dateninfrastruktur erstellen können.
+** Wählen Sie *Download Plan > Planbericht*, um den Migrationsplan im .pdf-Format herunterzuladen, damit Sie den Plan zur Überprüfung verteilen können.
+** Wählen Sie *Plan exportieren*, um den Migrationsplan als Vorlage im .json-Format zu speichern. Sie können den Plan zu einem späteren Zeitpunkt importieren und ihn als Vorlage verwenden, wenn Sie Systeme mit ähnlichen Anforderungen bereitstellen.
+
+
+
