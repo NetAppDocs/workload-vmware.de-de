@@ -92,11 +92,8 @@ Beachten Sie, dass bei einer Auswahl von weniger als 20 % keine Volume-Snapshots
 Oben auf der Seite werden die monatlichen Kosten für alle implementierten VMs und FSX für ONTAP-Dateisysteme beschrieben. Sie können jeden Abschnitt erweitern, um Details für die „Empfohlene Amazon FSX for ONTAP-Dateisystemkonfiguration“, „geschätzte Kostenaufschlüsselung“, „Volume-Konfiguration“, „Größenannahmen“ und technische „Haftungsausschlüsse“ anzuzeigen.
 
 . Wenn Sie mit dem Migrationsplan zufrieden sind, haben Sie ein paar Möglichkeiten:
-+
-** Wählen Sie *Deploy*, um die FSX for ONTAP-Dateisysteme zur Unterstützung Ihrer VMs bereitzustellen. link:deploy-fsx-file-system.html["Erfahren Sie, wie Sie ein FSX für ONTAP-Dateisystem implementieren"].
-** Wählen Sie *Download Plan > VM Deployment*, um den Migrationsplan im .csv-Format herunterzuladen, damit Sie damit Ihre neue Cloud-basierte intelligente Dateninfrastruktur erstellen können.
-** Wählen Sie *Download Plan > Planbericht*, um den Migrationsplan im .pdf-Format herunterzuladen, damit Sie den Plan zur Überprüfung verteilen können.
-** Wählen Sie *Plan exportieren*, um den Migrationsplan als Vorlage im .json-Format zu speichern. Sie können den Plan zu einem späteren Zeitpunkt importieren und ihn als Vorlage verwenden, wenn Sie Systeme mit ähnlichen Anforderungen bereitstellen.
 
 
+* Wählen Sie *Download Plan > Instance Storage Deployment*, um den Plan für die Bereitstellung des externen Datastores im .csv-Format herunterzuladen, damit Sie damit Ihre neue Cloud-basierte intelligente Dateninfrastruktur erstellen können.
+* Wählen Sie *Plan herunterladen > Bericht planen*, um den Bereitstellungsplan im PDF-Format herunterzuladen, damit Sie den Plan zur Überprüfung verteilen können.
 

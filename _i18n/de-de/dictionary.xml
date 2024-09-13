@@ -472,4 +472,6 @@
   <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">Schnellstart für die Migration zu VMware Cloud on AWS</block>
   <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">Schneller Einstieg für die Migration zu Amazon EC2</block>
   <block id="71f8c32a3420de60438e9dc0e0e66db0" category="list-text">Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus. Die Hauptseite des VMware Migration Advisor wird angezeigt.</block>
+  <block id="15cd8c066461a2900cdb71fc53b09930" category="list-text">Wählen Sie *Download Plan &gt; Instance Storage Deployment*, um den Plan für die Bereitstellung des externen Datastores im .csv-Format herunterzuladen, damit Sie damit Ihre neue Cloud-basierte intelligente Dateninfrastruktur erstellen können.</block>
+  <block id="74f9ca267e4b5efb489a146170987dbb" category="list-text">Wählen Sie *Plan herunterladen &gt; Bericht planen*, um den Bereitstellungsplan im PDF-Format herunterzuladen, damit Sie den Plan zur Überprüfung verteilen können.</block>
 </blocks>
