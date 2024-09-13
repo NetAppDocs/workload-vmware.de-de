@@ -27,7 +27,7 @@ Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphe
 
 
 .Schritte
-. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu VMware Cloud on AWS* aus. Die Hauptseite des VMware Migration Advisor wird angezeigt.
+. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus. Die Hauptseite des VMware Migration Advisor wird angezeigt.
 . Wählen Sie *Neuen Bereitstellungsplan erstellen*.
 . Wählen Sie die Art der Bestandsdatei aus, die Sie verwenden werden, um Workload Factory mit Ihrer aktuellen VM-Konfiguration zu füllen, und wählen Sie *Weiter*.
 +
