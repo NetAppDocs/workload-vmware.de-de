@@ -15,6 +15,18 @@ Informieren Sie sich über die Neuerungen bei der Komponente VMware Cloud Migrat
 
 
 
+== 19 September 2024
+
+
+
+=== Verbesserungen bei VMware Migration Advisor
+
+Diese Version von Workload Factory für VMware bietet Verbesserungen an Funktionalität und Stabilität sowie die Möglichkeit, Migrationspläne mithilfe des VMware Migrationsberaters zu importieren und zu exportieren.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters"]
+
+
+
 == 1 September 2024
 
 

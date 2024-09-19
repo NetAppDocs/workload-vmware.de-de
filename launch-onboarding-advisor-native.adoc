@@ -27,7 +27,11 @@ Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphe
 
 
 .Schritte
-. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus. Die Hauptseite des VMware Migration Advisor wird angezeigt.
+. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus. Der Begrüßungsbildschirm von VMware Migration Advisor wird angezeigt.
++
+Informationen zu den Vorteilen des Migrationsberaters finden Sie hier.
+
+. Wenn Sie fertig sind, wählen Sie *Let's Start*.
 . Wählen Sie *Neuen Bereitstellungsplan erstellen*.
 . Wählen Sie die Art der Bestandsdatei aus, die Sie verwenden werden, um Workload Factory mit Ihrer aktuellen VM-Konfiguration zu füllen, und wählen Sie *Weiter*.
 +
@@ -82,18 +86,39 @@ Beachten Sie, dass bei einer Auswahl von weniger als 20 % keine Volume-Snapshots
 
 
 . Wählen Sie *Weiter*.
-
-
-. Prüfen Sie auf der Seite *Review EC2 Volumes* die VM-Informationen, Volume-Klassifizierungsregeln, Volume-Zuweisungen und eine Liste der Volumes, die im Rahmen der Bereitstellung migriert werden.
+. Prüfen Sie auf der Seite *Review EC2 Volume Assignment* die VM-Informationen, Volume-Klassifizierungsregeln, Volume-Zuweisungen und Liste der Volumes, die im Rahmen der Bereitstellung migriert werden.
 . Wählen Sie *Weiter*.
-. Überprüfen Sie auf der Seite *Instance Storage prüfen* die EC2-Instanzen und die Volumes, die verschiedenen FSX für ONTAP-Cluster zugewiesen sind.
-. Überprüfen Sie auf der Seite *Bereitstellungsplan prüfen* die geschätzten monatlichen Kosten für alle VMs, die Sie migrieren möchten.
+. Überprüfen Sie auf der Seite *Überprüfung der Instance Storage Assignment* die EC2-Instanzen und die Volumes, die verschiedenen FSX für ONTAP-Cluster zugewiesen sind.
+. Überprüfen Sie auf der Seite *Überprüfen Sie Ihren Migrationsplan* die geschätzten monatlichen Kosten für alle VMs, die Sie migrieren möchten.
 +
-Oben auf der Seite werden die monatlichen Kosten für alle implementierten VMs und FSX für ONTAP-Dateisysteme beschrieben. Sie können jeden Abschnitt erweitern, um Details für die „Empfohlene Amazon FSX for ONTAP-Dateisystemkonfiguration“, „geschätzte Kostenaufschlüsselung“, „Volume-Konfiguration“, „Größenannahmen“ und technische „Haftungsausschlüsse“ anzuzeigen.
+Oben auf der Seite werden die monatlichen Einsparungen für FSX für ONTAP-Filesysteme und EBS-Volumes geschätzt. Sie können jeden Abschnitt erweitern, um Details zur vorgeschlagenen Dateisystemkonfiguration, geschätzte Einsparungen, Annahmen und technische Haftungsausschlüsse anzuzeigen.
 
 . Wenn Sie mit dem Migrationsplan zufrieden sind, haben Sie ein paar Möglichkeiten:
 
 
 * Wählen Sie *Download Plan > Instance Storage Deployment*, um den Plan für die Bereitstellung des externen Datastores im .csv-Format herunterzuladen, damit Sie damit Ihre neue Cloud-basierte intelligente Dateninfrastruktur erstellen können.
 * Wählen Sie *Plan herunterladen > Bericht planen*, um den Bereitstellungsplan im PDF-Format herunterzuladen, damit Sie den Plan zur Überprüfung verteilen können.
+* Wählen Sie *Plan exportieren*, um den Migrationsplan als Vorlage im .json-Format zu speichern. Sie können den Plan zu einem späteren Zeitpunkt importieren und ihn als Vorlage verwenden, wenn Sie Systeme mit ähnlichen Anforderungen bereitstellen.
+
+
+
+
+== Erstellen Sie einen Bereitstellungsplan auf der Grundlage eines vorhandenen Plans
+
+Wenn Sie eine neue Bereitstellung planen, die einem vorhandenen Bereitstellungsplan ähnelt, den Sie in der Vergangenheit verwendet haben, können Sie diesen Plan importieren, Änderungen vornehmen und als neuen Bereitstellungsplan speichern.
+
+.Anforderungen
+Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, auf die .json-Datei für den vorhandenen Bereitstellungsplan zugreifen können.
+
+.Schritte
+. Melden Sie sich bei Workload Factory an.
+. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus.
+. Wählen Sie *Import eines vorhandenen Bereitstellungsplans*.
+. Wählen Sie image:button-upload-file.png["Die Schaltfläche „Hochladen“"]die vorhandene Json-Plandatei aus, die Sie im Migrationsberater importieren möchten.
+. Wählen Sie *Weiter*.
++
+Die Seite Prüfplan wird angezeigt.
+
+. Sie können *Previous* auswählen, um auf vorherige Seiten zuzugreifen und die Einstellungen für den Plan wie im vorherigen Abschnitt beschrieben zu ändern.
+. Nachdem Sie den Plan an Ihre Anforderungen angepasst haben, können Sie den Plan speichern oder den Planbericht als PDF-Datei herunterladen.
 
