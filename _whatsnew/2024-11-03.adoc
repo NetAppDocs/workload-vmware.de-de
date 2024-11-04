@@ -1,0 +1,11 @@
+= Das Datenreduzierungsverhältnis von VMware Migration Advisor hilft Ihnen dabei
+:allow-uri-read: 
+
+
+
+
+=== Das Datenreduzierungsverhältnis von VMware Migration Advisor hilft Ihnen dabei
+
+Diese Version von Workload Factory für VMware umfasst einen Assistenten zur Datenreduzierung. Mit dem Assistenten zur Datenreduzierung können Sie entscheiden, welches Verhältnis für Ihren VMware Bestand und Ihren Storage-Bestand am besten ist, wenn Sie sich für das AWS Cloud Onboarding vorbereiten.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters"]

@@ -488,4 +488,8 @@
   <block id="eb5a861bf39cbc8f1c04a5223199b242" category="list-text">Sie können *Previous* auswählen, um auf vorherige Seiten zuzugreifen und die Einstellungen für den Plan wie im vorherigen Abschnitt beschrieben zu ändern.</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">Nachdem Sie den Plan an Ihre Anforderungen angepasst haben, können Sie den Plan speichern oder den Planbericht als PDF-Datei herunterladen.</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">19 September 2024</block>
+  <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">Das Datenreduzierungsverhältnis von VMware Migration Advisor hilft Ihnen dabei</block>
+  <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">Diese Version von Workload Factory für VMware umfasst einen Assistenten zur Datenreduzierung. Mit dem Assistenten zur Datenreduzierung können Sie entscheiden, welches Verhältnis für Ihren VMware Bestand und Ihren Storage-Bestand am besten ist, wenn Sie sich für das AWS Cloud Onboarding vorbereiten.</block>
+  <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">Wählen Sie *Helfen Sie mir bei der Entscheidung*, wenn Sie sich nicht sicher sind, welches Verhältnis Sie wählen sollen. Das Dialogfeld _Data Reduction Ratio Assistant_ wird angezeigt. Wählen Sie alle Aussagen für Ihren VM-Bestand und Ihren Storage-Bestand aus. Der Assistent empfiehlt eine entsprechende Datenreduktionsrate. Wählen Sie *Anwenden*, um das empfohlene Verhältnis zu verwenden.</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">Bis 3. November 2024</block>
 </blocks>
