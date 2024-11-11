@@ -6,4 +6,4 @@
 
 === Migrieren Sie zu Amazon EC2
 
-Workload Factory für VMware unterstützt jetzt die Migration zu Amazon EC2 mithilfe des VMware Migrationsberaters.
+Die Workload-Farm für VMware unterstützt jetzt die Migration zu Amazon EC2 mithilfe des VMware Migrationsberaters.

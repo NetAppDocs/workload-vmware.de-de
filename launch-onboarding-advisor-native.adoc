@@ -13,7 +13,7 @@ summary: Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware M
 [role="lead"]
 Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware Migration Advisor zuzugreifen. Befolgen Sie die Schritte des Assistenten, um einen auf Ihre Anforderungen zugeschnittenen Bereitstellungsplan oder Migrationsplan zu erstellen.
 
-Beachten Sie, dass Sie über einen Benutzernamen und ein Passwort verfügen müssen, um auf Workload Factory zuzugreifen. Wenn Sie keinen Zugriff haben, erstellen Sie jetzt ein Konto. Siehe die Anleitung https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Hier"].
+Beachten Sie, dass Sie einen Benutzernamen und ein Passwort für den Zugriff auf die Workload Factory benötigen. Wenn Sie keinen Zugriff haben, erstellen Sie jetzt ein Konto. Siehe die Anleitung https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Hier"].
 
 
 
@@ -23,17 +23,18 @@ Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphe
 
 .Anforderungen
 * Sie müssen die Bestandsdatei aus Ihren vorhandenen Systemen mithilfe des VM-Collectors des Migrationsberaters (.zip-Datei) oder mithilfe von RVTools (.xlsx-Datei) erstellt haben.
-* Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, auf die Bestandsdatei zugreifen können.
+* Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, Zugriff auf die Bestandsdatei haben.
 
 
 .Schritte
+. Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
 . Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus. Der Begrüßungsbildschirm von VMware Migration Advisor wird angezeigt.
 +
 Informationen zu den Vorteilen des Migrationsberaters finden Sie hier.
 
 . Wenn Sie fertig sind, wählen Sie *Let's Start*.
 . Wählen Sie *Neuen Bereitstellungsplan erstellen*.
-. Wählen Sie die Art der Bestandsdatei aus, die Sie verwenden werden, um Workload Factory mit Ihrer aktuellen VM-Konfiguration zu füllen, und wählen Sie *Weiter*.
+. Wählen Sie die Art der Bestandsdatei aus, die Sie verwenden werden, um die Workload Factory mit Ihrer aktuellen VM-Konfiguration zu füllen, und wählen Sie *Weiter*.
 +
 ** Wählen Sie *Verwenden Sie den Migrationsberater VMware Data Collector*, um die Datei zu verwenden, die Sie mit dem VMware Data Collector erstellt haben.
 ** Wählen Sie *Verwenden Sie RVTools*, um die .xlsx-Datei zu verwenden, die Sie mit RVTools erstellt haben.
@@ -114,7 +115,7 @@ Wenn Sie eine neue Bereitstellung planen, die einem vorhandenen Bereitstellungsp
 Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, auf die .json-Datei für den vorhandenen Bereitstellungsplan zugreifen können.
 
 .Schritte
-. Melden Sie sich bei Workload Factory an.
+. Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
 . Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus.
 . Wählen Sie *Import eines vorhandenen Bereitstellungsplans*.
 . Wählen Sie image:button-upload-file.png["Die Schaltfläche „Hochladen“"]die vorhandene Json-Plandatei aus, die Sie im Migrationsberater importieren möchten.

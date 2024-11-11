@@ -13,18 +13,17 @@ summary: Steigen Sie mit dem VMware Migrationsberater ein, um Ihre aktuelle Infr
 [role="lead"]
 Steigen Sie mit dem VMware Migrationsberater ein, um Ihre aktuelle Infrastruktur mithilfe von Amazon FSX for ONTAP als externe NFS-Datastores in VMware Cloud on AWS zu verlagern.
 
-Bevor Sie beginnen, sollten Sie ein Verständnis von haben https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Betriebsmodi"^]
+Bevor Sie beginnen, sollten Sie ein Verständnis von haben https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Betriebsmodi"^].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Registrieren Sie sich und erstellen Sie ein Konto für Workload Factory
-[role="quick-margin-para"]
-Gehen Sie zu https://console.workloads.netapp.com["Workload Factory-Konsole"^] und melden Sie sich an. https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Erfahren Sie mehr über das Erstellen von Konten"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Melden Sie sich bei Workload Factory an
+Sie müssen https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Richten Sie ein Konto mit Workload Factory ein"^] sich mit einem der anmelden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Fügen Sie Ihrem Konto AWS-Anmeldedaten und -Berechtigungen hinzu
 [role="quick-margin-para"]
-Sie können Workload Factory im _Basic_-Modus verwenden, ohne Anmeldedaten für den Zugriff auf Ihr AWS-Konto hinzuzufügen. Durch das Hinzufügen von AWS-Anmeldeinformationen zu Workload Factory im Modus _Lesen_ oder _Automatisieren_ erhält Ihr Workload Factory-Konto die Berechtigungen, die zum Erstellen und Verwalten von FSX für ONTAP-Dateisysteme sowie zum Bereitstellen und Managen von Workloads in VMware Cloud erforderlich sind.
+Sie können die Workload-Fabrik im Modus _Basic_ verwenden, ohne Anmeldedaten für den Zugriff auf Ihr AWS-Konto hinzuzufügen. Durch das Hinzufügen von AWS-Zugangsdaten zur Workload-Fabrik im Modus _Lesen_ oder _Automatisieren_ erhält Ihr Workload-Werkskonto die Berechtigungen, die zum Erstellen und Managen von FSX für ONTAP-Dateisysteme sowie zum Bereitstellen und Managen von Workloads in VMware Cloud erforderlich sind.
 
 [role="quick-margin-para"]
-https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Erfahren Sie, wie Sie Anmeldeinformationen und Berechtigungen hinzufügen"^]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Erfahren Sie, wie Sie Anmeldeinformationen und Berechtigungen hinzufügen"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Erfassen Sie Ihre aktuellen VM-Konfigurationen in Ihrer vSphere-Umgebung
 [role="quick-margin-para"]
@@ -52,7 +51,7 @@ link:deploy-fsx-file-system.html["Erfahren Sie, wie Sie Ihr neues FSX für ONTAP
 Das softwaredefinierte Datacenter (SDDC) bietet Netzwerkoptionen zur Verbindung mit dem Filesystem FSX for ONTAP mithilfe von VPC Peering-Funktion zur Erweiterung der Netzwerkverbindung zu den externen NFS-Storage-Volumes.
 
 [role="quick-margin-para"]
-link:connect-sddc-to-fsx.html["Weitere Informationen zur Migration Ihrer Daten"].
+link:connect-sddc-to-fsx.html["Erfahren Sie, wie Sie Ihre FSX für ONTAP-Dateisysteme verbinden"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["Sieben"] Migrieren Sie Daten von Ihren alten Systemen in Ihr neues FSX für ONTAP-Dateisystem
 [role="quick-margin-para"]

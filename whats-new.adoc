@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: Informieren Sie sich über die Neuerungen bei der Komponente VMware Migration Advisor von Workload Factory. 
+summary: Informieren Sie sich über die Neuerungen bei der Komponente VMware Migration Advisor für die Workload-Farm. 
 ---
 = Was ist neu
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Informieren Sie sich über die Neuerungen bei der Komponente VMware Mig
 
 
 [role="lead"]
-Informieren Sie sich über die Neuerungen bei der Komponente VMware Cloud Migration Advisor von Workload Factory.
+Informieren Sie sich über die Neuerungen bei der Komponente VMware Cloud Migration Advisor für die Workload-Farm.
 
 
 
@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Verbesserungen bei VMware Migration Advisor
 
-Diese Version von Workload Factory für VMware bietet Verbesserungen an Funktionalität und Stabilität sowie die Möglichkeit, Migrationspläne mithilfe des VMware Migrationsberaters zu importieren und zu exportieren.
+Diese Version der Workload-Farm für VMware bietet Funktions- und Stabilitätsverbesserungen sowie die Möglichkeit, Migrationspläne mithilfe des VMware Migration Advisor zu importieren und zu exportieren.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters"]
 
@@ -45,7 +45,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Migrieren Sie zu Amazon EC2
 
-Workload Factory für VMware unterstützt jetzt die Migration zu Amazon EC2 mithilfe des VMware Migrationsberaters.
+Die Workload-Farm für VMware unterstützt jetzt die Migration zu Amazon EC2 mithilfe des VMware Migrationsberaters.
 
 
 
@@ -53,6 +53,6 @@ Workload Factory für VMware unterstützt jetzt die Migration zu Amazon EC2 mith
 
 
 
-=== Erstversion von Workload Factory für VMware
+=== Erstversion der Workload-Farm für VMware
 
 Die erste Version umfasst die Möglichkeit, mithilfe des VMware Migrationsberaters Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphere Umgebungen zu analysieren, einen Plan für die Implementierung empfohlener VM-Layouts in VMware Cloud on AWS zu erstellen und die benutzerdefinierten Amazon FSX for NetApp ONTAP Filesysteme als externe Datastores zu verwenden.

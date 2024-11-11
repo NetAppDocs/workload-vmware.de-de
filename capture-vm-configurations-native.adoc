@@ -33,7 +33,7 @@ Das System, auf dem Sie das Collector-Skript ausführen, muss die folgenden Anfo
 Beachten Sie, dass Sie, wenn Sie langfristige Statistiken aus Ihren VMs erfassen möchten (Tagesstatistiken), in der vSphere-Managementkonsole (VMware-Managementumgebung) die Statistikebene 3 oder höher aktiviert haben müssen.
 
 .Schritte
-. Melden Sie sich bei Workload Factory an.
+. Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
 . Wählen Sie in der VMware-Kachel *Access und Plan* aus.
 . Wählen Sie *Create a New Deployment Plan*, wählen Sie die Option *Use the Migration Advisor VMware Data Collector* und wählen Sie *Next* aus.
 +
