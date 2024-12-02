@@ -7,7 +7,7 @@ summary:
 = Rechtliche Hinweise
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -47,8 +47,4 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.
 
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["Workload Factory"^]
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-databases-notice.pdf["Workload Factory für Datenbanken"^]
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-genai-notice.pdf["Workload Factory für GenAI"^]
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-vmware-notice.pdf["Workload-Fabrik für VMware"^]
-
+https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["BlueXP -Workload ist werkseitig eingestellt"^]

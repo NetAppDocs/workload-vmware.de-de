@@ -34,12 +34,16 @@ Beachten Sie, dass Sie, wenn Sie langfristige Statistiken aus Ihren VMs erfassen
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
-. Wählen Sie in der VMware-Kachel *Access und Plan* aus.
-. Wählen Sie *Create a New Deployment Plan*, wählen Sie die Option *Use the Migration Advisor VMware Data Collector* und wählen Sie *Next* aus.
+. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus. Der Begrüßungsbildschirm von VMware Migration Advisor wird angezeigt.
 +
-Die Seite *Prepare for VMware Cloud on AWS Migration* wird angezeigt.
+Informationen zu den Vorteilen des Migrationsberaters finden Sie hier.
 
-. Wählen Sie im Codebox-Fenster entweder aus image:button-download-codebox.png["Die Download-Schaltfläche"] , um das Migrations Advisor VM Collector-Skript (mit dem Namen "list-vms.ps1") auf dem Zielsystem zu speichern, oder wählen Sie aus image:button-copy-codebox.png["Die Schaltfläche „Kopieren“"] , um das Skript zu kopieren, damit Sie es auf das entsprechende System einfügen können.
+. Wenn Sie fertig sind, wählen Sie *Let's Start*.
+. Wählen Sie die Kachel *Detailplanung* aus und wählen Sie *Weiter* aus.
++
+Das Codebox-Fenster wird rechts auf der Seite angezeigt.
+
+. Wählen Sie im Codebox-Fenster entweder ausimage:button-download-codebox.png["Die Download-Schaltfläche"], um das Data Collector-Skript Migration Advisor (mit dem Namen "list-vms.ps1") auf dem Zielsystem zu speichern, oder wählen Sie ausimage:button-copy-codebox.png["Die Schaltfläche „Kopieren“"], um das Skript zu kopieren, damit Sie es auf das entsprechende System einfügen können.
 . Führen Sie diese Schritte aus, um die Konfigurationen Ihrer aktuellen VMs zu erfassen:
 +
 .. Melden Sie sich beim System an, auf dem Sie den Data Collector heruntergeladen haben, auf dem PowerShell und PowerCLI installiert sind.
