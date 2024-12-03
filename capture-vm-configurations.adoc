@@ -4,7 +4,7 @@ permalink: capture-vm-configurations.html
 keywords: vm workloads, capture vm details 
 summary: Sie können das VM-Collector-Skript Migration Advisor oder RVTools verwenden, um Ihre aktuellen VM-Konfigurationen zu erfassen. Wir empfehlen die Verwendung des VM-Collector-Skripts Migration Advisor, da es sowohl VM-Konfigurations- als auch Performance-Daten für den genauesten Plan erfasst. 
 ---
-= Erfassen Sie Ihre aktuellen VM-Konfigurationen, bevor Sie zu VMware Cloud migrieren
+= Erfassen Sie Ihre VM-Konfigurationen, bevor Sie mit VMware-Workloads zu VMware Cloud migrieren
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

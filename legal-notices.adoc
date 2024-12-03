@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Rechtliche Hinweise
+= Rechtliche Hinweise für die BlueXP -Workload-Fabrik für VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

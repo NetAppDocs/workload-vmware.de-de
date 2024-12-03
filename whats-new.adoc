@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
 summary: Informieren Sie sich über die Neuerungen bei der Komponente VMware Migration Advisor für die Workload-Farm. 
 ---
-= Was ist neu
+= Neuerungen bei der BlueXP -Workload-Farm für VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
