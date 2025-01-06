@@ -11,9 +11,9 @@ summary: Bevor Sie einen Support-Fall beim technischen NetApp eröffnen können,
 
 
 [role="lead"]
-Für den Support von Workload Factory und seinen Storage-Lösungen und -Services ist eine Support-Registrierung erforderlich. Sie müssen sich für Support über die BlueXP Konsole registrieren, einer separaten webbasierten Konsole von Workload Factory.
+Für den Support ist eine Registrierung erforderlich, um technischen Support zu erhalten, der speziell für die BlueXP  Workload-Fabrik und die Storage-Lösungen und -Services von NetApp vorgesehen ist. Sie müssen sich für den Support über die BlueXP -Konsole registrieren, bei der es sich um eine separate webbasierte Konsole von der Workload-Werkseinstellung handelt.
 
-Durch die Registrierung für den Support wird die NetApp-Unterstützung für einen Fileservice eines Cloud-Providers nicht aktiviert. Technischer Support im Zusammenhang mit einem Fileservice eines Cloud-Providers, seiner Infrastruktur oder einer Lösung, die den Service verwendet, finden Sie unter „Hilfe erhalten“ in der Dokumentation zu Workload Factory für dieses Produkt.
+Durch die Registrierung für den Support wird die NetApp-Unterstützung für einen Fileservice eines Cloud-Providers nicht aktiviert. Technischer Support zu einem Fileservice eines Cloud-Providers, seiner Infrastruktur oder einer Lösung, die den Service verwendet, finden Sie unter „Hilfe erhalten“ in der Dokumentation zur Workload-Farm des jeweiligen Produkts.
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX für ONTAP"^]
 
@@ -38,7 +38,7 @@ Um sich für den Support zu registrieren und die Supportberechtigung zu aktivier
 Wenn Sie ein NetApp Kunde mit einem NSS-Konto sind, müssen Sie sich lediglich für den Support über BlueXP registrieren.
 
 .Schritte
-. Wählen Sie oben rechts in der Workload Factory-Konsole *Hilfe > Support* aus.
+. Wählen Sie oben rechts in der Arbeitslastwerkkonsole *Hilfe > Support* aus.
 +
 Wenn Sie diese Option auswählen, wird die BlueXP Konsole um eine neue Browserregisterkarte geöffnet und das Support Dashboard geladen.
 
@@ -80,7 +80,7 @@ Wenn Sie bereits NetApp Kunde sind und über vorhandene Lizenzen und Seriennumme
 Wenn Sie neu bei NetApp sind und über keinen NSS-Account verfügen, befolgen Sie jeden Schritt unten.
 
 .Schritte
-. Wählen Sie oben rechts in der Workload Factory-Konsole *Hilfe > Support* aus.
+. Wählen Sie oben rechts in der Arbeitslastwerkkonsole *Hilfe > Support* aus.
 +
 Wenn Sie diese Option auswählen, wird die BlueXP Konsole um eine neue Browserregisterkarte geöffnet und das Support Dashboard geladen.
 

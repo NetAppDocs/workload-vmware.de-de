@@ -11,13 +11,13 @@ summary: 'NetApp bietet Support für die Workload-Fabrik auf verschiedene Weise.
 
 
 [role="lead"]
-NetApp bietet für Workload Factory und die zugehörigen Cloud-Services unterschiedliche Unterstützung. Umfassende kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, wie etwa Knowledge Base-Artikel (KB) und ein Community-Forum. Ihre Support-Registrierung umfasst technischen Remote-Support über Web-Ticketing.
+NetApp bietet Unterstützung für die BlueXP -Workload-Fabrik und seine Cloud-Services auf unterschiedliche Weise. Umfassende kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, wie etwa Knowledge Base-Artikel (KB) und ein Community-Forum. Ihre Support-Registrierung umfasst technischen Remote-Support über Web-Ticketing.
 
 
 
 == Erhalten Sie Support für FSX für ONTAP
 
-Für technischen Support in Bezug auf FSX for ONTAP, seine Infrastruktur oder jede Lösung, die den Service verwendet, siehe „Hilfe erhalten“ in der Dokumentation zu Workload Factory für dieses Produkt.
+Für technischen Support in Bezug auf FSX for ONTAP, seine Infrastruktur oder jede Lösung, die den Service verwendet, siehe „Hilfe erhalten“ in der Dokumentation zur Workload-Fabrik für dieses Produkt.
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX für ONTAP"^]
 
@@ -31,7 +31,7 @@ Diese Optionen sind kostenlos verfügbar, 24 Stunden am Tag, 7 Tage die Woche:
 
 * Dokumentation
 +
-Die Workload Factory-Dokumentation, die Sie derzeit anzeigen.
+Die Arbeitslastwerkdokumentation, die Sie derzeit anzeigen.
 
 * https://kb.netapp.com["Wissensdatenbank"^]
 +
@@ -50,10 +50,10 @@ Treten Sie der Workload Factory Community bei, um laufende Diskussionen zu verfo
 Zusätzlich zu den oben genannten Self-Support-Optionen können Sie gemeinsam mit einem NetApp Support-Experten eventuelle Probleme nach der Aktivierung des Supports beheben.
 
 .Bevor Sie beginnen
-Um die Funktion *Fall erstellen* nutzen zu können, müssen Sie sich zunächst für den Support registrieren. Verknüpfen Sie Ihre Zugangsdaten für die NetApp Support-Website mit Ihrer Workload Factory Anmeldung. link:support-registration.html["Erfahren Sie, wie Sie sich für Support registrieren"].
+Um die Funktion *Fall erstellen* nutzen zu können, müssen Sie sich zunächst für den Support registrieren. Verknüpfen Sie Ihre Zugangsdaten für die NetApp Support-Website mit Ihren werkseitigen Workload-Anmeldedaten. link:support-registration.html["Erfahren Sie, wie Sie sich für Support registrieren"].
 
 .Schritte
-. Wählen Sie oben rechts in der Workload Factory-Konsole *Hilfe > Support* aus.
+. Wählen Sie oben rechts in der Arbeitslastwerkkonsole *Hilfe > Support* aus.
 +
 Wenn Sie diese Option auswählen, wird die BlueXP Konsole um eine neue Browserregisterkarte geöffnet und das Support Dashboard geladen.
 
@@ -124,7 +124,7 @@ Weitere Informationen erhalten Sie in den Schritten unten.
 
 
 .Schritte
-. Wählen Sie oben rechts in der Workload Factory-Konsole *Hilfe > Support* aus.
+. Wählen Sie oben rechts in der Arbeitslastwerkkonsole *Hilfe > Support* aus.
 +
 Wenn Sie diese Option auswählen, wird die BlueXP Konsole um eine neue Browserregisterkarte geöffnet und das Support Dashboard geladen.
 
