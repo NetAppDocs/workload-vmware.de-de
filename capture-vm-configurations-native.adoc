@@ -34,7 +34,7 @@ Beachten Sie, dass Sie, wenn Sie langfristige Statistiken aus Ihren VMs erfassen
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
-. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus. Der Begrüßungsbildschirm von VMware Migration Advisor wird angezeigt.
+. Wählen Sie in der VMware-Workload-Kachel *bewerten und planen* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus. Der Begrüßungsbildschirm von VMware Migration Advisor wird angezeigt.
 +
 Informationen zu den Vorteilen des Migrationsberaters finden Sie hier.
 

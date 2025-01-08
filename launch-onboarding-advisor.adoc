@@ -34,7 +34,7 @@ Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphe
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
-. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu VMware Cloud on AWS* aus.
+. Wählen Sie in der VMware-Workload-Kachel *Assess and Plan* aus und wählen Sie dann *Migration to VMware Cloud on AWS* aus.
 +
 Die Hauptseite des VMware Migration Advisor wird angezeigt.
 
@@ -158,7 +158,7 @@ Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, au
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
-. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu VMware Cloud on AWS* aus. Die Hauptseite des VMware Migration Advisor wird angezeigt.
+. Wählen Sie in der VMware-Workload-Kachel *Assess and Plan* aus und wählen Sie dann *Migration to VMware Cloud on AWS* aus. Die Hauptseite des VMware Migration Advisor wird angezeigt.
 . Wählen Sie *Import eines vorhandenen Bereitstellungsplans*.
 . Wählen Sie die vorhandene Plandatei aus image:button-upload-file.png["Die Schaltfläche „Hochladen“"] , die Sie im Migrationsberater importieren möchten.
 . Wählen Sie *Weiter*, und die Seite Plan überprüfen wird angezeigt.

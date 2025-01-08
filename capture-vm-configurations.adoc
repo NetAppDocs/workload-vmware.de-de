@@ -36,7 +36,7 @@ Beachten Sie, dass Sie, wenn Sie langfristige Statistiken aus Ihren VMs erfassen
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
-. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu VMware Cloud on AWS* aus.
+. Wählen Sie in der VMware-Workload-Kachel *Assess and Plan* aus und wählen Sie dann *Migration to VMware Cloud on AWS* aus.
 +
 Die Hauptseite des VMware Migration Advisor wird angezeigt.
 

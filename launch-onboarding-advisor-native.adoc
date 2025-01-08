@@ -28,7 +28,7 @@ Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphe
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
-. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus. Der Begrüßungsbildschirm von VMware Migration Advisor wird angezeigt.
+. Wählen Sie in der VMware-Workload-Kachel *bewerten und planen* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus. Der Begrüßungsbildschirm von VMware Migration Advisor wird angezeigt.
 +
 Informationen zu den Vorteilen des Migrationsberaters finden Sie hier.
 
@@ -148,7 +148,7 @@ Oben auf der Seite werden die monatlichen Einsparungen für FSX für ONTAP-Files
 ====
 Wenn Sie mit dem Migrationsplan zufrieden sind, haben Sie ein paar Möglichkeiten:
 
-* Wählen Sie *Plan verwalten > Plan speichern*, um die Daten des Bereitstellungsplans in Ihrem Konto zu speichern. So können Sie den Plan zu einem späteren Zeitpunkt importieren, um ihn als Vorlage zu verwenden, wenn Sie Systeme mit ähnlichen Anforderungen bereitstellen. Sie können den Plan benennen, bevor Sie ihn speichern.
+* Wählen Sie *Plan verwalten > Plan speichern*, um die Daten des Bereitstellungsplans in Ihrem Konto zu speichern. So können Sie den Plan zu einem späteren Zeitpunkt importieren, um ihn als Vorlage zu verwenden, wenn Sie Systeme mit ähnlichen Anforderungen bereitstellen. Sie können den Plan benennen, bevor Sie ihn speichern (der Benutzername und der Zeitstempel werden dem von Ihnen angegebenen Namen hinzugefügt).
 * Wählen Sie *Plan verwalten > Plan exportieren*, um den Migrationsplan als Vorlage im .json-Format auf Ihrem Computer zu speichern. Sie können den Plan zu einem späteren Zeitpunkt importieren und ihn als Vorlage verwenden, wenn Sie Systeme mit ähnlichen Anforderungen bereitstellen.
 * Wählen Sie *Plan verwalten > Bericht herunterladen*, um den Bereitstellungsplan im PDF-Format herunterzuladen, damit Sie den Plan zur Überprüfung verteilen können.
 * Wählen Sie *Manage Plan > Download Instance Storage Deployment*, um den externen Datastore-Bereitstellungsplan im .csv-Format herunterzuladen, damit Sie damit Ihre neue Cloud-basierte intelligente Dateninfrastruktur erstellen können.
@@ -167,7 +167,7 @@ Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, au
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
-. Wählen Sie in der VMware-Workload-Kachel *Access und Plan* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus.
+. Wählen Sie in der VMware-Workload-Kachel *bewerten und planen* aus und wählen Sie dann *Migration zu AWS nativem Compute* aus.
 . Wählen Sie *Plan importieren*.
 . Führen Sie einen der folgenden Schritte aus:
 +
@@ -180,10 +180,13 @@ Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, au
 ** Wählen Sie *von meinem Computer aus*.
 +
 ... Wählen Sie die vorhandene .json-Plandatei aus, die Sie im Migrationsberater importieren möchten, und wählen Sie dann *Open* aus.
++
+Die Seite *Prüfplan* wird angezeigt.
 
 
 
 
 
+. Sie können *Previous* auswählen, um auf die vorherigen Seiten zuzugreifen und die Einstellungen für den Plan wie im vorherigen Abschnitt beschrieben zu ändern.
+. Nachdem Sie den Plan an Ihre Anforderungen angepasst haben, können Sie den Plan speichern oder den Planbericht als PDF-Datei herunterladen.
 
-Die Seite *Prüfplan* wird angezeigt. . Sie können *Previous* auswählen, um auf die vorherigen Seiten zuzugreifen und die Einstellungen für den Plan wie im vorherigen Abschnitt beschrieben zu ändern. . Nachdem Sie den Plan an Ihre Anforderungen angepasst haben, können Sie den Plan speichern oder den Planbericht als PDF-Datei herunterladen.
