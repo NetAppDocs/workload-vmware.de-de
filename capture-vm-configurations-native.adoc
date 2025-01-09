@@ -49,22 +49,31 @@ Das Codebox-Fenster wird rechts auf der Seite angezeigt.
 .. Melden Sie sich beim System an, auf dem Sie den Data Collector heruntergeladen haben, auf dem PowerShell und PowerCLI installiert sind.
 .. Stellen Sie eine Verbindung zu Ihrem VMware vCenter-Server her, indem Sie den folgenden Befehl ausführen:
 +
- Connect-VIServer -server <server_IP>
+[source, console]
+----
+Connect-VIServer -server <server_IP>
+----
 +
 Ersetzen Sie <server_IP> durch die IP-Adresse oder den Hostnamen Ihres VMware-Servers.
 
-.. Führen Sie das heruntergeladene Datensammlerskript aus und legen Sie die Datenerfassungsoption für die VM-Statistik „täglich“ oder „stündlich“ fest.
+.. Führen Sie das heruntergeladene Datensammlerskript aus und legen Sie die Datenerfassungsoption für die VM-Statistik „stündlich“ oder „täglich“ fest.
 +
- .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+[source, console]
+----
+./list-vms.ps1 -PerformanceStatisticsTimePeriod <LastHour | LastDay>
+----
 +
 Wo?
 
 +
-*** *True* sammelt IOPS- und Durchsatzdaten für einen benutzerdefinierten Zeitraum in 1-Stunden-Intervallen.
-*** *False* erfasst IOPS und Durchsatzdaten für die letzten 1 Stunde mit Intervallen von 20 Sekunden.
+*** *LastHour* erfasst IOPS und Durchsatzdaten für die letzten 1 Stunde mit Intervallen von 20 Sekunden.
+*** *LastDay* erfasst IOPS und Durchsatzdaten der letzten 24 Stunden in 5-Minuten-Intervallen.
 
 
 
+
++
+Optional können Sie das Datensammlerskript ohne Angabe von Optionen ausführen; dies ermöglicht Ihnen, den Datenerfassungszeitraum aus dem interaktiven Menü auszuwählen.
 
 
 
