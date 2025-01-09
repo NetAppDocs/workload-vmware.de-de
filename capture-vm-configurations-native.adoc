@@ -17,7 +17,11 @@ Sie können das VM-Collector-Skript Migration Advisor oder RVTools verwenden, um
 ====
 .Verwenden Sie das Migrationberater VM-Collector-Skript
 --
-Das VM-Collector-Skript des NetApp Migrationsberaters erfasst VM-Konfigurationsinformationen aus Ihrem vCenter, ähnlich wie RVTools die aktuellen VM-Leistungsdaten erfasst, um tatsächliche Lese- und Schreib-IOPS und Durchsatzstatistiken bereitzustellen. Sie können das Skript in einem von zwei Modi verwenden: * Kurzfristige Datenerhebung * langfristige Datenerhebung
+Das VM-Collector-Skript des NetApp Migrationsberaters erfasst VM-Konfigurationsinformationen aus Ihrem vCenter, ähnlich wie RVTools die aktuellen VM-Leistungsdaten erfasst, um tatsächliche Lese- und Schreib-IOPS und Durchsatzstatistiken bereitzustellen. Sie können das Skript in einem von zwei Modi verwenden:
+
+* Stündliche Datenerfassung
+* Tägliche Datenerfassung
+
 
 Sie müssen den Migrationsberater starten, um das Migrationberater VM-Collector-Skript aus dem Codebox-Fenster zu kopieren.
 
