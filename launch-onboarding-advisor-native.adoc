@@ -88,8 +88,15 @@ Beachten Sie, dass bei einer Auswahl von weniger als 20 % keine Volume-Snapshots
 
 . Wählen Sie *Weiter*.
 . Wählen Sie auf der Seite *Scope* die VMs aus der Liste aus, die Sie in die AWS-Migration aufnehmen möchten. Sie können die Liste nach dem Stromstatus jeder VM und nach dem Datacenter und Cluster, in dem sich die VM befindet, filtern.
++
+In der Liste VM können Sie auswählen, welche Arten von VM-Informationen als Spalten angezeigt werden sollen. Wenn Sie beispielsweise „_Estimated Instance type_“ auswählen, wird basierend auf den Anforderungen der VM-Ressourcen eine Spalte mit dem geschätzten Amazon EC2 Instanztyp für jede VM angezeigt.
+
 . Wählen Sie *Weiter*.
 . Überprüfen Sie auf der Seite *Classify* die VM-Informationen, Volume-Klassifizierungsregeln, Volume-Zuweisungen und die Liste der Volumes, die im Rahmen der Bereitstellung migriert werden, und wählen Sie dann *Weiter* aus.
++
+
+NOTE: Wenn ein Volume über Kapazitäts- oder Performance-Anforderungen verfügt, die die Möglichkeiten eines Amazon FSX für NetApp ONTAP-Dateisystems in einer bestimmten Region übersteigen, empfiehlt der Migrationsberater, das Volume in einem Amazon EBS-Dateisystem zu implementieren.
+
 . Überprüfen Sie auf der Seite *Paket* die EC2-Instanzen und die Volumes, die verschiedenen FSX für ONTAP-Cluster zugewiesen sind, und wählen Sie dann *Weiter* aus.
 . Überprüfen Sie auf der Seite *Plan überprüfen* die geschätzten monatlichen Einsparungen und Kostenschätzungen für alle VMs, die Sie migrieren möchten.
 +
@@ -133,10 +140,14 @@ Beachten Sie, dass bei einer Auswahl von weniger als 20 % keine Volume-Snapshots
 . Wählen Sie *Weiter*.
 . Wählen Sie auf der Seite *Scope* die VMs aus der Liste aus, die Sie in die AWS-Migration aufnehmen möchten. Sie können die Liste nach dem Stromstatus jeder VM und nach dem Datacenter und Cluster, in dem sich die VM befindet, filtern.
 +
-In der Liste VM können Sie auswählen, welche Arten von VM-Informationen als Spalten angezeigt werden sollen.
+In der Liste VM können Sie auswählen, welche Arten von VM-Informationen als Spalten angezeigt werden sollen. Wenn Sie beispielsweise „_Estimated Instance type_“ auswählen, wird basierend auf den Anforderungen der VM-Ressourcen eine Spalte mit dem geschätzten Amazon EC2 Instanztyp für jede VM angezeigt.
 
 . Wählen Sie *Weiter*.
 . Überprüfen Sie auf der Seite *Classify* die VM-Informationen, Volume-Klassifizierungsregeln, Volume-Zuweisungen und die Liste der Volumes, die im Rahmen der Bereitstellung migriert werden, und wählen Sie dann *Weiter* aus.
++
+
+NOTE: Wenn ein Volume über Kapazitäts- oder Performance-Anforderungen verfügt, die die Möglichkeiten eines Amazon FSX für NetApp ONTAP-Dateisystems in einer bestimmten Region übersteigen, empfiehlt der Migrationsberater, das Volume in einem Amazon EBS-Dateisystem zu implementieren.
+
 . Überprüfen Sie auf der Seite *Paket* die EC2-Instanzen und die Volumes, die verschiedenen FSX für ONTAP-Cluster zugewiesen sind, und wählen Sie dann *Weiter* aus.
 . Überprüfen Sie auf der Seite *Plan überprüfen* die geschätzten monatlichen Einsparungen und Kostenschätzungen für alle VMs, die Sie migrieren möchten.
 +
