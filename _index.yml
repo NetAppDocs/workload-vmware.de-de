@@ -37,3 +37,11 @@ indexpage:
       url: launch-onboarding-advisor-native.html
     - title: Stellen Sie das empfohlene FSX für ONTAP-Dateisystem bereit
       url: deploy-fsx-file-system.html
+  - title: Blogs und Community
+    links:
+    - title: NetApp Community
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: BlueXP Blogs
+      url: https://bluexp.netapp.com/blog
+    - title: Cloud-Webinare
+      url: https://bluexp.netapp.com/events
