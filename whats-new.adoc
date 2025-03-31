@@ -15,6 +15,22 @@ Informieren Sie sich über die Neuerungen bei der Komponente VMware Migration Ad
 
 
 
+== 30 März 2025
+
+
+
+=== Verbesserungen bei Amazon EC2 Migration Advisor
+
+Diese Version der BlueXP  Workload-Farm für VMware bietet mehrere Verbesserungen bei der Erfahrung des Amazon EC2 Migration Advisor:
+
+* *Verbesserte Anleitung zur Volume-Zuweisung*: Die Informationen zur Volume-Zuweisung im EC2-Migrationsberater „Classify“ und „Package“ bietet eine verbesserte Lesbarkeit und Benutzerfreundlichkeit. Es werden nützlichste Informationen zu jedem Volume angezeigt, sodass Sie Volumes besser identifizieren und festlegen können, wie sie zugewiesen werden.
+* *Data Collector-Skript-Effizienzverbesserungen*: Das Data Collector-Skript des EC2-Migrationsberaters optimiert die CPU-Nutzung bei der Erfassung von Daten für kleinere VM-Bereitstellungen.
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters"]
+
+
+
 == 2 März 2025
 
 
@@ -44,11 +60,7 @@ Diese Version der BlueXP  Workload-Farm für VMware enthält mehrere Verbesseru
 * *Verbesserte VM-Auswahl*: Die BlueXP  Workload Factory für VMware unterstützt jetzt das Filtern und Durchsuchen der Liste der VMs, die Sie in Ihre Migrationsbereitstellung aufnehmen möchten.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters"]
-
-
-
-== Bis 1. Dezember 2024
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters"] == 1. Dezember 2024
 
 
 
@@ -61,7 +73,11 @@ Diese Version der BlueXP  Workload-Farm für VMware enthält mehrere Verbesseru
 * *Quick vs. Advanced Experience*: Wenn Sie den Migrationsberater verwenden, können Sie jetzt eine schnelle Migration mit RVTools oder die erweiterte Erfahrung auswählen, die den Datensammler des Migrationsberaters verwendet.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters"] == 3. November 2024
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters"]
+
+
+
+== Bis 3. November 2024
 
 
 
