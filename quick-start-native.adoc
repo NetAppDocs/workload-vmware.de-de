@@ -28,7 +28,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Erfahre
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Erfassen Sie Ihre aktuellen VM-Konfigurationen in Ihrer vSphere-Umgebung
 [role="quick-margin-para"]
-Sie können das VM-Collector-Skript Migration Advisor oder RVTools verwenden, um Ihre aktuellen VM-Konfigurationen zu erfassen und einen Bereitstellungsplan zu erstellen. Sie können auch einen vorhandenen Bereitstellungsplan als Vorlage importieren und dann alle erforderlichen Attribute ändern.
+Sie können das VM-Kollektorskript „Migration Advisor“, „RVTools“ oder „Einblicke in die NetApp-Dateninfrastruktur“ verwenden, um Ihre aktuellen VM-Konfigurationen zu erfassen, bevor Sie einen Bereitstellungsplan erstellen. Sie können auch einen vorhandenen Bereitstellungsplan als Vorlage importieren und dann alle erforderlichen Attribute ändern.
 
 [role="quick-margin-para"]
 link:capture-vm-configurations-native.html["Erfahren Sie, wie Sie Ihre aktuellen VM-Konfigurationen erfassen"].

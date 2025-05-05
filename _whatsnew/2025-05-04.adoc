@@ -1,0 +1,19 @@
+= Verbesserungen bei Amazon EC2 Migration Advisor
+:allow-uri-read: 
+
+
+
+
+=== Verbesserungen bei Amazon EC2 Migration Advisor
+
+Diese Version der BlueXP  Workload-Farm für VMware umfasst folgende Verbesserungen zur Nutzung des Amazon EC2 Migrationsberaters:
+
+*Einblicke in die NetApp-Dateninfrastruktur als Datenquelle*: Workload Factory stellt jetzt eine direkte Verbindung mit NetApp Data Infrastructure Insights her, um VMware Implementierungsinformationen zu erfassen, wenn Sie den Data Collector des EC2 Migration Advisor verwenden.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters"]
+
+
+
+=== Terminologie für Berechtigungen wurde aktualisiert
+
+Die Benutzeroberfläche und Dokumentation der Workload Factory verwenden jetzt „Read-Only“, um auf Leseberechtigungen und „Read-Write“ zu verweisen, um Berechtigungen zu automatisieren.

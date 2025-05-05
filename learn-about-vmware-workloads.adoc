@@ -65,18 +65,7 @@ Die Transition von Teilen Ihrer aktuellen Infrastruktur zu Amazon EC2 oder VMwar
 * Kosten- und Latenzreduzierung für einzelne-AZ-Konfigurationen, die VPC-Peering ohne Transit-Gateway verwenden
 
 
-
-
-== Tools zur Verwendung der Workload Factory
-
-Sie können die BlueXP -Workload-Fabrik mit den folgenden Tools verwenden:
-
-* *Workload Factory Konsole*: Die Workload Factory Konsole bietet eine visuelle Schnittstelle, die Ihnen einen ganzheitlichen Blick auf Ihre Anwendungen und Projekte gibt.
-* *BlueXP -Konsole*: Die BlueXP -Konsole bietet eine Hybrid-Interface-Erfahrung, so dass Sie BlueXP  Workload Factory zusammen mit anderen BlueXP -Diensten nutzen können.
-* *REST-API*: Mit REST-APIs für Workload Factory können Sie Ihre FSX for ONTAP-Dateisysteme und andere AWS-Ressourcen implementieren und managen
-* *CloudFormation*: AWS CloudFormation-Code ermöglicht die Durchführung der in der Workload-Factory-Konsole definierten Aktionen für die Modellierung, Bereitstellung und das Management von AWS- und Drittanbieterressourcen vom CloudFormation-Stack in Ihrem AWS-Konto.
-* *Terraform BlueXP -Workload-Factory-Provider*: Mit Terraform können Sie Infrastruktur-Workflows erstellen und managen, die in der Workload-Factory-Konsole generiert werden.
-
+https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
 
 
 

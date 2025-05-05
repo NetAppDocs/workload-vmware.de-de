@@ -36,17 +36,17 @@ Informationen zu den Vorteilen des Migrationsberaters finden Sie hier.
 . Wählen Sie die Detailstufe und Methode, die Sie während des Prozesses zur Erstellung eines Bereitstellungsplans bevorzugen:
 +
 ** *Quick Assessment*: Diese Option verwendet eine RVTools-Bestandsdatei, um Informationen über Ihre VMs während eines beschleunigten Prozesses abzurufen, was zu einem Design-Blueprint für Ihre Cloud-Migration führt.
-** *Ausführliche Planung*: Verwenden Sie die Data Collector Inventory File des Migrationsberaters, um detaillierte Informationen zu sammeln, was zu einem einsatzbereiten Design führt.
+** *Detailplanung*: Diese Optionen nutzen entweder die Data Collector Inventory File des Migrationsberaters oder den direkten API-Zugriff auf NetApp Dateninfrastrukturdaten-Insights, um detaillierte Informationen zu sammeln, was zu einem einsatzbereiten Design führt.
 
 
 
 
 [role="tabbed-block"]
 ====
-.Schnelle Beurteilung
+.RVTools (Schnellbewertung)
 --
 .Schritte
-. Wählen Sie die Kachel *Quick Assessment* aus und wählen Sie *Next* aus.
+. Wählen Sie die Kachel *RVTools* aus und wählen Sie *Weiter*.
 +
 Die Seite *Prepare for AWS Cloud Onboarding* wird angezeigt.
 
@@ -105,10 +105,10 @@ Oben auf der Seite werden die monatlichen Einsparungen für FSX für ONTAP-Files
 
 
 --
-.Detaillierte Planung
+.Migration Advisor Datensammler (Detailplanung)
 --
 .Schritte
-. Wählen Sie die Kachel *Detailplanung* aus und wählen Sie *Weiter* aus.
+. Wählen Sie die Kachel *Migration Advisor Data Collector* aus und wählen Sie *Next* aus.
 +
 Die Seite *Prepare for AWS Cloud Onboarding* wird angezeigt.
 
@@ -118,6 +118,62 @@ Der Abschnitt *Datenerfassungsdetails* enthält den Datumsbereich und die Anzahl
 
 +
 Der Abschnitt *VM Inventory summary* wird aus der Bestandsdatei ausgefüllt, um die Anzahl der VMs und die gesamte Speicherkapazität zu berücksichtigen.
+
+. Wählen Sie im Abschnitt _VM Inventory Überlegungen_ die Region aus, in der Amazon FSX for NetApp ONTAP-Dateisysteme bereitgestellt werden sollen. Um eine optimale Performance und Kosteneffizienz zu erzielen, ist dies in der Regel die gleiche Region wie das vorhandene Amazon EC2 SDDC.
+. Wählen Sie im Abschnitt _Zielkapazität und Schutzaspekte_ aus einigen Speicheroptionen aus.
++
+.. *Zu berücksichtigende VM-Speicherung*: Wählen Sie aus, ob die für jede einbezogene VM erstellten Datenspeicher auf der Grundlage ihrer aktuell verwendeten Größe (empfohlen) oder ihrer bereitgestellten Größe dimensioniert sind.
++
+Die externen Datastores werden mit Amazon FSX für NetApp ONTAP-Dateisystemvolumes implementiert.
+
+.. *Durchschnittliches Datenreduzierungsverhältnis*: Wählen Sie aus den drei gängigen Datenreduzierungsverhältnissen. Wählen Sie „1:1 - Keine Reduzierung“, „1:1.25 - 20 % Reduzierung“ oder „1:1.5 - 33 % Reduzierung“.
++
+Wählen Sie *Helfen Sie mir bei der Entscheidung*, wenn Sie sich nicht sicher sind, welches Verhältnis Sie wählen sollen. Das Dialogfeld _Data Reduction Ratio Assistant_ wird angezeigt. Wählen Sie alle Aussagen für Ihren VM-Bestand und Ihren Storage-Bestand aus. Der Assistent empfiehlt eine entsprechende Datenreduktionsrate. Wählen Sie *Anwenden*, um das empfohlene Verhältnis zu verwenden.
+
+.. *Reserveprozentsatz*: Geben Sie den Prozentsatz des Kapazitätswachstums ein, der der Kapazität für Ihre FSX for ONTAP-Dateisysteme hinzugefügt wird.
++
+Beachten Sie, dass bei einer Auswahl von weniger als 20 % keine Volume-Snapshots zum Schutz und für langfristige Backups erstellt werden können.
+
+.. *VM Snapshot-Schutz*: Aktivieren Sie diese Option, um die VMs mit Snapshots zu schützen.
+
+
+. Wählen Sie *Weiter*.
+. Wählen Sie auf der Seite *Scope* die VMs aus der Liste aus, die Sie in die AWS-Migration aufnehmen möchten. Sie können die Liste nach dem Stromstatus jeder VM und nach dem Datacenter und Cluster, in dem sich die VM befindet, filtern.
++
+In der Liste VM können Sie auswählen, welche Arten von VM-Informationen als Spalten angezeigt werden sollen. Wenn Sie beispielsweise „_Estimated Instance type_“ auswählen, wird basierend auf den Anforderungen der VM-Ressourcen eine Spalte mit dem geschätzten Amazon EC2 Instanztyp für jede VM angezeigt.
+
+. Wählen Sie *Weiter*.
+. Überprüfen Sie auf der Seite *Classify* die VM-Informationen, Volume-Klassifizierungsregeln, Volume-Zuweisungen und die Liste der Volumes, die im Rahmen der Bereitstellung migriert werden, und wählen Sie dann *Weiter* aus.
++
+
+NOTE: Wenn ein Volume über Kapazitäts- oder Performance-Anforderungen verfügt, die die Möglichkeiten eines Amazon FSX für NetApp ONTAP-Dateisystems in einer bestimmten Region übersteigen, empfiehlt der Migrationsberater, das Volume in einem Amazon EBS-Dateisystem zu implementieren.
+
+. Überprüfen Sie auf der Seite *Paket* die EC2-Instanzen und die Volumes, die verschiedenen FSX für ONTAP-Cluster zugewiesen sind, und wählen Sie dann *Weiter* aus.
+. Überprüfen Sie auf der Seite *Plan überprüfen* die geschätzten monatlichen Einsparungen und Kostenschätzungen für alle VMs, die Sie migrieren möchten.
++
+Oben auf der Seite werden die monatlichen Einsparungen für FSX für ONTAP-Filesysteme und EBS-Volumes geschätzt. Sie können jeden Abschnitt erweitern, um Details zur vorgeschlagenen Dateisystemkonfiguration, geschätzte Einsparungen, Annahmen und technische Haftungsausschlüsse anzuzeigen.
+
+
+
+--
+.Einblicke in die NetApp-Dateninfrastruktur (detaillierte Planung)
+--
+.Schritte
+. Wählen Sie die Kachel *NetApp Data Infrastructure Insights* aus und wählen Sie *Weiter* aus.
++
+Die Seite *Prepare for AWS Cloud Onboarding* wird angezeigt.
+
+. Geben Sie im Abschnitt _NetApp Data Infrastructure Insights Connection Configuration_ den Mandantenendpunkt für die Einblicke in die Dateninfrastruktur ein.
++
+Dies sollte die URL sein, über die Sie auf Data Infrastructure Insights zugreifen.
+
+. Wenn Sie noch kein API-Zugriffstoken für Data Infrastructure Insights generiert haben, befolgen Sie die Anweisungen auf der Seite, um ein Token zu erstellen. Andernfalls fügen Sie Ihr API-Zugriffstoken in das Textfeld *Enter API Access Token* ein.
+. Wählen Sie *Verbinden*.
++
+Die Workload-Fabrik sammelt Informationen aus Data Infrastructure Insights.
+
++
+Der Abschnitt *VM Inventory summary* wird aus den gesammelten Informationen ausgefüllt, um die Anzahl der VMs und die gesamte Speicherkapazität zu reflektieren.
 
 . Wählen Sie im Abschnitt _VM Inventory Überlegungen_ die Region aus, in der Amazon FSX for NetApp ONTAP-Dateisysteme bereitgestellt werden sollen. Um eine optimale Performance und Kosteneffizienz zu erzielen, ist dies in der Regel die gleiche Region wie das vorhandene Amazon EC2 SDDC.
 . Wählen Sie im Abschnitt _Zielkapazität und Schutzaspekte_ aus einigen Speicheroptionen aus.
