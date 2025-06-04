@@ -21,7 +21,7 @@ Sie müssen https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Fügen Sie Ihrem Konto AWS-Anmeldedaten und -Berechtigungen hinzu
 [role="quick-margin-para"]
-Sie können die Workload-Fabrik im Modus _Basic_ verwenden, ohne Anmeldedaten für den Zugriff auf Ihr AWS-Konto hinzuzufügen. Durch das Hinzufügen von AWS Zugangsdaten zur Workload-Fabrik im Modus _Lesen_ oder _Automatisieren_ erhält Ihr Workload-Werkskonto die Berechtigungen, die zum Erstellen und Managen von FSX für ONTAP-Dateisysteme sowie zum Bereitstellen und Managen von Workloads innerhalb von Amazon EC2 erforderlich sind.
+Sie können die Workload-Fabrik im Modus _Basic_ verwenden, ohne Anmeldedaten für den Zugriff auf Ihr AWS-Konto hinzuzufügen. Durch das Hinzufügen von AWS-Anmeldeinformationen zur Workload Factory im _Nur-Lese-_ oder _Lese-/Schreib-_Modus erhält Ihr Workload Factory-Konto die erforderlichen Berechtigungen zum Erstellen und Verwalten von FSx für ONTAP-Dateisystemen sowie zum Bereitstellen und Verwalten von Workloads innerhalb von Amazon EC2.
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Erfahren Sie, wie Sie Anmeldeinformationen und Berechtigungen hinzufügen"^].

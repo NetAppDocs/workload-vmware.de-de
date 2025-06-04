@@ -16,4 +16,4 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Terminologie für Berechtigungen wurde aktualisiert
 
-Die Benutzeroberfläche und Dokumentation der Workload Factory verwenden jetzt „Read-Only“, um auf Leseberechtigungen und „Read-Write“ zu verweisen, um Berechtigungen zu automatisieren.
+In der Benutzeroberfläche und Dokumentation der Workload Factory wird jetzt „schreibgeschützt“ für Leseberechtigungen und „Lesen/Schreiben“ für automatisierte Berechtigungen verwendet.
