@@ -15,6 +15,18 @@ Informieren Sie sich über die Neuerungen bei der Komponente VMware Migration Ad
 
 
 
+== 29 Juni 2025
+
+
+
+=== Einführung der Migrationsberater-Unterstützung für Amazon Elastic VMWare Service
+
+Die BlueXP Workload Factory für VMware unterstützt jetzt Amazon Elastic VMware Service. Mit dem Migration Advisor können Sie Ihre lokalen VMware-Workloads schnell zu Amazon Elastic VMware Service migrieren. Das optimiert die Kosten und ermöglicht Ihnen mehr Kontrolle über Ihre VMware-Umgebung, ohne Ihre Anwendungen umgestalten oder auf eine neue Plattform umstellen zu müssen.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Erstellen Sie einen Bereitstellungsplan für Amazon EVS mit dem Migrationsberater"]
+
+
+
 == 4 Mai 2025
 
 
@@ -47,11 +59,7 @@ Diese Version der BlueXP  Workload-Farm für VMware bietet mehrere Verbesserung
 * *Data Collector-Skript-Effizienzverbesserungen*: Das Data Collector-Skript des EC2-Migrationsberaters optimiert die CPU-Nutzung bei der Erfassung von Daten für kleinere VM-Bereitstellungen.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters"]
-
-
-
-== 2 März 2025
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters"] == 2. März 2025
 
 
 
@@ -64,7 +72,11 @@ Diese Version der BlueXP  Workload-Farm für VMware bietet mehrere Verbesserung
 * * Verbesserte automatische Dateisystemzuweisung*: Amazon FSX für NetApp ONTAP Dateisystemzuweisung wurde verbessert, um Kosten besser zu optimieren und Durchsatz zu minimieren.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters"] == 5. Januar 2025
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Erstellen eines Implementierungsplans für Amazon EC2 mithilfe des Migrationsberaters"]
+
+
+
+== 5 Januar 2025
 
 
 
