@@ -79,6 +79,16 @@ Sie sollten dieselbe Verfügbarkeitszone auswählen, in der Ihr VMware SDDC impl
 .. *Speicher-VM-Anmeldeinformationen* (nur Advanced create): Geben Sie das Passwort für die Speicher-VM ein und bestätigen Sie es. Das Kennwort kann spezifisch für dieses Dateisystem sein, oder Sie können dasselbe Kennwort verwenden, das für die ONTAP-Anmeldeinformationen eingegeben wurde.
 
 
+. Geben Sie im Abschnitt „EVS-Cluster-Anhang“ die folgenden Informationen ein:
++
+.. *Optionen zum Einbinden von Datenspeichern*: Aktivieren Sie optional die Option *Datenspeicher in EVS-Cluster einbinden*, um die Datenspeicher automatisch mit dem Amazon EVS-Cluster zu verbinden.  Diese Option bewirkt außerdem, dass die Workload Factory die VMware ESXi-Hosteinstellungen so konfiguriert, dass sie den Best Practice-Empfehlungen von ONTAP entsprechen.  Bevor Sie das Dateisystem bereitstellen, können Sie die Plandetails im Abschnitt *Zusammenfassung* überprüfen, um die geänderten Einstellungen anzuzeigen.
+.. *Details zur EVS-Cluster-vSphere-Konsole*: Geben Sie die IP-Adresse oder den FQDN des VMware vCenter-Servers ein, der eine Verbindung zu Amazon EVS herstellen soll.
+.. *Geheime ARN für vSphere-Administratoranmeldeinformationen*: Wählen Sie die geheime ARN für die vSphere-Administratoranmeldeinformationen.  Diese Anmeldeinformationen werden zum Mounten von Datenspeichern und Konfigurieren empfohlener VMware-Einstellungen verwendet.
++
+Wenn Amazon EVS in dieser Region nicht verfügbar ist oder Ihr Konto nicht über die Berechtigung zum Abrufen der Liste der verfügbaren geheimen ARNs verfügt, können Sie manuell einen geheimen ARN-Wert eingeben.
+
+
+
 . Im Abschnitt *Zusammenfassung* können Sie die FSX für ONTAP Dateisystem- und Datastore-Konfiguration anzeigen, die der VMware Migration Advisor basierend auf Ihren Informationen entwickelt hat.
 . Wählen Sie *Erstellen*, um das FSX für ONTAP-Dateisystem bereitzustellen. Dieser Vorgang kann bis zu 2 Stunden dauern.
 +

@@ -1,0 +1,19 @@
+= Verbesserte Migrationsberaterunterstützung für Amazon Elastic VMWare Service
+:allow-uri-read: 
+
+
+
+
+=== Verbesserte Migrationsberaterunterstützung für Amazon Elastic VMWare Service
+
+Der Migrationsberater des Amazon Elastic VMware Service unterstützt jetzt die automatische Bereitstellung und Bereitstellung Ihres Amazon FSx for NetApp ONTAP Dateisystems.  Auf diese Weise können Sie mit der Bereitstellung Ihrer VMs auf FSx für ONTAP -Dateisystemen beginnen, wenn die Migration zur Amazon EVS-Umgebung abgeschlossen ist.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Erstellen Sie einen Bereitstellungsplan für Amazon EVS mit dem Migrationsberater"]
+
+
+
+=== Berechnen Sie die Kosteneinsparungen durch die Migration zum Amazon Elastic VMware Service
+
+Sie können jetzt die potenziellen Einsparungen durch die Migration Ihrer VMware-Workloads zu Amazon Elastic VMware Service (EVS) erkunden.  Mit dem Einsparungsrechner können Sie die Kosten für die Verwendung von Amazon EVS mit und ohne Amazon FSx for NetApp ONTAP als zugrunde liegenden Speicher vergleichen.  Der Rechner zeigt potenzielle Einsparungen in Echtzeit an, während Sie die Eigenschaften Ihrer Umgebung anpassen.
+
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Entdecken Sie die Einsparungen für Amazon Elastic VMware Service mit der BlueXP workload factory"]

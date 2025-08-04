@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: calculate-evs-savings.html 
+keywords: vm workloads, deploy fsx, deploy storage for vms, evs, savings, calculate, tco 
+summary: Berechnen Sie, wie viel Sie durch die Verwendung von Amazon EVS mit FSx für ONTAP sparen können. 
+---
+= Entdecken Sie die Einsparungen für Amazon Elastic VMware Service mit der BlueXP workload factory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Entdecken Sie potenzielle Einsparungen durch die Migration Ihrer VMware-Workloads zu Amazon Elastic VMware Service (EVS).  Mit dem Rechner können Sie die Kosten für die Verwendung von Amazon EVS mit und ohne Amazon FSx for NetApp ONTAP als Speicher vergleichen.
+
+Wenn der Einsparungsrechner ermittelt, dass FSx für ONTAP der kostengünstigste Speicher ist, können Sie eine detaillierte Bewertung erstellen, die einen Migrationsplan bereitstellt, den Sie vor der Verwendung überprüfen können.  Anschließend können Sie mit der Codebox Infrastructure-as-Code-Vorlagen generieren.
+
+
+
+== Entdecken Sie Einsparungen für EVS-Umgebungen
+
+Befolgen Sie diese Schritte, um potenzielle Einsparungen bei einer geplanten Migration zu einer Amazon EVS-Umgebung zu ermitteln.
+
+
+NOTE: Lesen Sie vor dem Fortfahren den Haftungsausschluss unten im Sparrechner, um mehr darüber zu erfahren, wie die Preisschätzungen berechnet werden.
+
+.Schritte
+. Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
+. Wählen Sie auf der Kachel „VMware-Workloads“ die Option „Einsparungen erkunden“ und dann „Amazon Elastic VMware Service (EVS)“ aus.  Der Sparrechner wird angezeigt.
++
+Der Bereich *Umgebungseinstellungen* bietet Schieberegler, die Sie je nach den Anforderungen Ihrer Umgebung anpassen können.
+
+. Passen Sie die folgenden Schieberegler nach Bedarf an, um Echtzeit-Einsparungsberechnungen für die von Ihnen ausgewählten Werte anzuzeigen.  Wenn Sie eine Tastatur verwenden, können Sie mit den Pfeiltasten kleine Anpassungen vornehmen:
++
+.. *Erforderliche physische CPU (Anzahl)*
+.. *Erforderlicher physischer Speicher (GiB)*
+.. *Erforderlicher VM-Speicher (TiB)*
+.. *EVS-Abrechnungsplan*
+
+
+. Führen Sie einen der folgenden Schritte aus:
++
+** Um den Migrationsratgeber zu verwenden,link:launch-migration-advisor-evs-manual.html["Erstellen Sie einen Bereitstellungsplan"] Wählen Sie für eine Amazon EVS-Umgebung *Detaillierte Bewertung erstellen* aus.
+** Wählen Sie *Schließen*, um den TCO-Rechner zu schließen.
+
+
+

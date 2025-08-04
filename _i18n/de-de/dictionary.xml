@@ -629,8 +629,38 @@
   <block id="d245f7ce84d001c84c5d15b65c1e1f82" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Stellen Sie das empfohlene FSX für ONTAP-Dateisystem bereit</block>
   <block id="c62281747a6b17066b21d48dd60f5008" category="paragraph"><block ref="9e8ee83580ea37ccc569fc72280596e1" category="inline-link-macro-rx"></block>.</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">29 Juni 2025</block>
-  <block id="b86dc1705dea7f37874d95dc0b3ecb5d" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 2. März 2025</block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">5 Januar 2025</block>
   <block id="e4358de2a09588cec13214adc031a6e1" category="sidebar">Schnellstart für die Migration zu Amazon EVS</block>
   <block id="b217f7353b9ad5ed58a9d5b9ee531f78" category="sidebar">Migration zum Amazon Elastic VMware Service</block>
+  <block id="424013c53fd9187a66e051bb44ddaa34" category="doc">Verbesserte Migrationsberaterunterstützung für Amazon Elastic VMWare Service</block>
+  <block id="37ac2db5bb5bc7f50e3b58bbb706b64b" category="paragraph">Der Migrationsberater des Amazon Elastic VMware Service unterstützt jetzt die automatische Bereitstellung und Bereitstellung Ihres Amazon FSx for NetApp ONTAP Dateisystems.  Auf diese Weise können Sie mit der Bereitstellung Ihrer VMs auf FSx für ONTAP -Dateisystemen beginnen, wenn die Migration zur Amazon EVS-Umgebung abgeschlossen ist.</block>
+  <block id="93c34ab13f70b21f6935de45dacb9ae3" category="section-title">Berechnen Sie die Kosteneinsparungen durch die Migration zum Amazon Elastic VMware Service</block>
+  <block id="b1da4fce8da5117e3a9e1041d1749074" category="paragraph">Sie können jetzt die potenziellen Einsparungen durch die Migration Ihrer VMware-Workloads zu Amazon Elastic VMware Service (EVS) erkunden.  Mit dem Einsparungsrechner können Sie die Kosten für die Verwendung von Amazon EVS mit und ohne Amazon FSx for NetApp ONTAP als zugrunde liegenden Speicher vergleichen.  Der Rechner zeigt potenzielle Einsparungen in Echtzeit an, während Sie die Eigenschaften Ihrer Umgebung anpassen.</block>
+  <block id="b5ddf28fa6b1419129cc60c87384d5f3" category="inline-link">Entdecken Sie die Einsparungen für Amazon Elastic VMware Service mit der BlueXP workload factory</block>
+  <block id="e5201134512b46a1979954f15ddb8c25" category="paragraph"><block ref="e5201134512b46a1979954f15ddb8c25" category="inline-link-rx"></block></block>
+  <block id="89737fdc47d2ffa6f11712bb340e2a19" category="summary">Berechnen Sie, wie viel Sie durch die Verwendung von Amazon EVS mit FSx für ONTAP sparen können.</block>
+  <block id="c99c39a5824ae2c9be487d0de19febcd" category="paragraph">Entdecken Sie potenzielle Einsparungen durch die Migration Ihrer VMware-Workloads zu Amazon Elastic VMware Service (EVS).  Mit dem Rechner können Sie die Kosten für die Verwendung von Amazon EVS mit und ohne Amazon FSx for NetApp ONTAP als Speicher vergleichen.</block>
+  <block id="85f9ebcaf90aa1d0aea8e19f23446085" category="paragraph">Wenn der Einsparungsrechner ermittelt, dass FSx für ONTAP der kostengünstigste Speicher ist, können Sie eine detaillierte Bewertung erstellen, die einen Migrationsplan bereitstellt, den Sie vor der Verwendung überprüfen können.  Anschließend können Sie mit der Codebox Infrastructure-as-Code-Vorlagen generieren.</block>
+  <block id="b23b05aa1d44c04b2da76aa4c7408d6c" category="section-title">Entdecken Sie Einsparungen für EVS-Umgebungen</block>
+  <block id="15783568389e909d8a2f1f68183d26bb" category="paragraph">Befolgen Sie diese Schritte, um potenzielle Einsparungen bei einer geplanten Migration zu einer Amazon EVS-Umgebung zu ermitteln.</block>
+  <block id="37ef970024a5557ba41801e6f2130fd9" category="admonition">Lesen Sie vor dem Fortfahren den Haftungsausschluss unten im Sparrechner, um mehr darüber zu erfahren, wie die Preisschätzungen berechnet werden.</block>
+  <block id="1811dba1a30bbfb16d7bd36ec7e8759c" category="list-text">Wählen Sie auf der Kachel „VMware-Workloads“ die Option „Einsparungen erkunden“ und dann „Amazon Elastic VMware Service (EVS)“ aus.  Der Sparrechner wird angezeigt.</block>
+  <block id="d8307a61b3e78cafe3dd2ba07854d83f" category="paragraph">Der Bereich *Umgebungseinstellungen* bietet Schieberegler, die Sie je nach den Anforderungen Ihrer Umgebung anpassen können.</block>
+  <block id="a48f1fc19140e11332765f3ad9d224e1" category="list-text">Passen Sie die folgenden Schieberegler nach Bedarf an, um Echtzeit-Einsparungsberechnungen für die von Ihnen ausgewählten Werte anzuzeigen.  Wenn Sie eine Tastatur verwenden, können Sie mit den Pfeiltasten kleine Anpassungen vornehmen:</block>
+  <block id="b17baab6ba72f6d1c79c0b2294137330" category="list-text">*Erforderliche physische CPU (Anzahl)*</block>
+  <block id="f1696c7a8437d9eca6a19bba82e206b9" category="list-text">*Erforderlicher physischer Speicher (GiB)*</block>
+  <block id="739cbbb6eaaeacf2d24f8a62a80b3ffe" category="list-text">*Erforderlicher VM-Speicher (TiB)*</block>
+  <block id="24bfaef9fff964e64a0151dab805a3f3" category="list-text">*EVS-Abrechnungsplan*</block>
+  <block id="7f2cda45c5fe4fce268e76d710242e93" category="inline-link-macro">Erstellen Sie einen Bereitstellungsplan</block>
+  <block id="daf54dbe224e77cbcdfb24a59c9f9099" category="list-text">Um den Migrationsratgeber zu verwenden,<block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block> Wählen Sie für eine Amazon EVS-Umgebung *Detaillierte Bewertung erstellen* aus.</block>
+  <block id="27cecac020f0eb3b6379d7eaa39d9edb" category="list-text">Wählen Sie *Schließen*, um den TCO-Rechner zu schließen.</block>
+  <block id="f38938fbcb9223342e98b8ed0b99af19" category="list-text">Geben Sie im Abschnitt „EVS-Cluster-Anhang“ die folgenden Informationen ein:</block>
+  <block id="2e06075a8c3ccf8cb8ba301a238ce6f3" category="list-text">*Optionen zum Einbinden von Datenspeichern*: Aktivieren Sie optional die Option *Datenspeicher in EVS-Cluster einbinden*, um die Datenspeicher automatisch mit dem Amazon EVS-Cluster zu verbinden.  Diese Option bewirkt außerdem, dass die Workload Factory die VMware ESXi-Hosteinstellungen so konfiguriert, dass sie den Best Practice-Empfehlungen von ONTAP entsprechen.  Bevor Sie das Dateisystem bereitstellen, können Sie die Plandetails im Abschnitt *Zusammenfassung* überprüfen, um die geänderten Einstellungen anzuzeigen.</block>
+  <block id="a1a0d005c4592b98541d6f6fb0d51c8e" category="list-text">*Details zur EVS-Cluster-vSphere-Konsole*: Geben Sie die IP-Adresse oder den FQDN des VMware vCenter-Servers ein, der eine Verbindung zu Amazon EVS herstellen soll.</block>
+  <block id="8216b024615cc78b62369ac15275d617" category="list-text">*Geheime ARN für vSphere-Administratoranmeldeinformationen*: Wählen Sie die geheime ARN für die vSphere-Administratoranmeldeinformationen.  Diese Anmeldeinformationen werden zum Mounten von Datenspeichern und Konfigurieren empfohlener VMware-Einstellungen verwendet.</block>
+  <block id="83fcfa0f731c9eadc58dd7b0bbe13131" category="paragraph">Wenn Amazon EVS in dieser Region nicht verfügbar ist oder Ihr Konto nicht über die Berechtigung zum Abrufen der Liste der verfügbaren geheimen ARNs verfügt, können Sie manuell einen geheimen ARN-Wert eingeben.</block>
+  <block id="a2e98ef8c2ce2e5671fe4097dbf5f4ce" category="section-title">3. August 2025</block>
+  <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2. März 2025</block>
+  <block id="bb0d319ea44614c003c0a5e9c6e4f1a6" category="sidebar">Schnellstart: Migration zum Amazon Elastic VMware Service</block>
+  <block id="cf48d7891f28d92c4308fb5debb574b0" category="sidebar">Sparmöglichkeiten entdecken</block>
 </blocks>
