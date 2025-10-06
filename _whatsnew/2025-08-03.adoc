@@ -6,7 +6,7 @@
 
 === Verbesserte Migrationsberaterunterstützung für Amazon Elastic VMWare Service
 
-Der Migrationsberater des Amazon Elastic VMware Service unterstützt jetzt die automatische Bereitstellung und Bereitstellung Ihres Amazon FSx for NetApp ONTAP Dateisystems.  Auf diese Weise können Sie mit der Bereitstellung Ihrer VMs auf FSx für ONTAP -Dateisystemen beginnen, wenn die Migration zur Amazon EVS-Umgebung abgeschlossen ist.
+NetApp Workload Factory unterstützt jetzt die automatische Bereitstellung und Einbindung Ihres Amazon FSx for NetApp ONTAP Dateisystems.  Auf diese Weise können Sie mit der Bereitstellung Ihrer VMs auf FSx für ONTAP -Dateisystemen beginnen, wenn die Migration zur Amazon EVS-Umgebung abgeschlossen ist.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Erstellen Sie einen Bereitstellungsplan für Amazon EVS mit dem Migrationsberater"]
 

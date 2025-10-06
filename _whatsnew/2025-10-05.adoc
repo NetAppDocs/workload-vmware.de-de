@@ -15,3 +15,11 @@ BlueXP wurde umbenannt und neu gestaltet, um seine Rolle bei der Verwaltung Ihre
 Mit dem VMware Workloads-Planungscenter können Sie Ihr VM-Inventar und Ihre Migrationspläne von einem Ort aus anzeigen und verwalten.  Sie können mehrere VM-Inventare aus unterschiedlichen Umgebungen hochladen und speichern und für jedes davon mit der Planung einer Migration zu AWS EC2 oder dem Amazon Elastic VMware-Dienst beginnen.  Sie können auch AWS EC2- oder EVS-Migrationspläne erstellen und speichern.
 
 https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["Entdecken Sie das VMware Workloads-Planungscenter"]
+
+
+
+=== Einführung der Migrationsberater-Unterstützung für Amazon Elastic VMWare Service
+
+Mit BlueXP Workload Factory für VMware können Sie jetzt den Migrationsberater des Amazon Elastic VMware Service verwenden, um Ihre lokalen VMware-Workloads schnell zum Amazon Elastic VMware Service zu migrieren.  Nachdem Sie mit dem Migrationsberater einen Migrationsplan erstellt haben, wird dieser automatisch in der Liste der Migrationspläne im Planungscenter gespeichert.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs.html["Erstellen Sie einen Bereitstellungsplan für Amazon EVS mit dem Migrationsberater"]
