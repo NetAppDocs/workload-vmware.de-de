@@ -6,10 +6,10 @@
 
 === Verbesserungen bei Amazon EC2 Migration Advisor
 
-Diese Version der BlueXP  Workload-Farm für VMware enthält mehrere Verbesserungen beim Migrationsberater:
+Diese Version von NetApp Workload Factory für VMware bietet mehrere Verbesserungen der Migrationsberatung:
 
-* *Datenerfassung*: Die BlueXP  Workload Factory für VMware unterstützt die Möglichkeit, Daten für einen bestimmten Zeitraum zu erfassen, wenn Sie den Migrationsberater verwenden.
-* *VM Selection*: Die BlueXP  Workload Factory für VMware unterstützt jetzt die Auswahl von VMs, die Sie in Ihre Migrationsimplementierung aufnehmen möchten.
+* *Datenerfassung*: BlueXP Workload Factory für VMware unterstützt die Möglichkeit, Daten für einen bestimmten Zeitraum zu erfassen, wenn Sie den Migrationsberater verwenden.
+* *VM-Auswahl*: BlueXP Workload Factory für VMware unterstützt jetzt die Auswahl von VMs, die Sie in Ihre Migrationsbereitstellung einbeziehen möchten.
 * *Quick vs. Advanced Experience*: Wenn Sie den Migrationsberater verwenden, können Sie jetzt eine schnelle Migration mit RVTools oder die erweiterte Erfahrung auswählen, die den Datensammler des Migrationsberaters verwendet.
 
 

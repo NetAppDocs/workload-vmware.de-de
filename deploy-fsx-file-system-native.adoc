@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: deploy-fsx-file-system-native.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms 
-summary: Nachdem Sie überprüft haben, ob das empfohlene FSX für ONTAP-Dateisystem oder Dateisysteme in einigen Fällen Ihren genauen Anforderungen entspricht, können Sie das System mithilfe der Workload-Fabrik in Ihrer AWS-Umgebung implementieren. 
+summary: Nachdem Sie überprüft haben, dass das empfohlene FSx for ONTAP -Dateisystem oder in einigen Fällen die Dateisysteme Ihren genauen Anforderungen entsprechen, können Sie Workload Factory verwenden, um das System in Ihrer AWS-Umgebung bereitzustellen. 
 ---
 = Stellen Sie das empfohlene FSX für ONTAP-Dateisystem bereit
 :allow-uri-read: 
@@ -11,6 +11,6 @@ summary: Nachdem Sie überprüft haben, ob das empfohlene FSX für ONTAP-Dateisy
 
 
 [role="lead"]
-Nachdem Sie überprüft haben, ob das empfohlene Filesystem FSX für ONTAP (oder in einigen Fällen mehrere Filesysteme) Ihren genauen Anforderungen entspricht, können Sie das System mithilfe der Workload-Fabrik in Ihrer AWS-Umgebung implementieren.
+Nachdem Sie überprüft haben, dass das empfohlene FSx for ONTAP -Dateisystem (oder in einigen Fällen mehrere Dateisysteme) Ihren genauen Anforderungen entspricht, können Sie Workload Factory verwenden, um das System in Ihrer AWS-Umgebung bereitzustellen.
 
-Befolgen Sie die Anweisungen unterlink:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Erstellen Sie ein FSX für ONTAP-Dateisystem in der BlueXP -Workload-Fabrik"^], um das FSX für ONTAP-Dateisystem gemäß der von der Workload Factory empfohlenen Konfiguration bereitzustellen. Sie können die Schritte *Advanced create* in den Anweisungen verwenden, um das Dateisystem vollständig anzupassen.
+Befolgen Sie die Anweisungen inlink:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Erstellen Sie ein FSx für ONTAP -Dateisystem in NetApp Workload Factory"^] um das FSx for ONTAP -Dateisystem gemäß der von Workload Factory empfohlenen Konfiguration bereitzustellen.  Sie können die Schritte zur *Erweiterten Erstellung* in den Anweisungen verwenden, um das Dateisystem vollständig anzupassen.

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: launch-onboarding-advisor.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware Migration Advisor zuzugreifen. Befolgen Sie die Schritte des Assistenten, um einen auf Ihre Anforderungen zugeschnittenen Bereitstellungsplan oder Migrationsplan zu erstellen. 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works 
+summary: Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware-Migrationsberater zuzugreifen.  Sie folgen den Schritten des Assistenten, um einen Bereitstellungs- oder Migrationsplan zu erstellen, der auf Ihre Anforderungen zugeschnitten ist. 
 ---
 = Erstellen Sie mit dem VMware Workload Migration Advisor einen Implementierungsplan für VMware Cloud on AWS
 :allow-uri-read: 
@@ -11,15 +11,15 @@ summary: Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware M
 
 
 [role="lead"]
-Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware Migration Advisor zuzugreifen. Befolgen Sie die Schritte des Assistenten, um einen auf Ihre Anforderungen zugeschnittenen Bereitstellungsplan oder Migrationsplan zu erstellen.
+Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware-Migrationsberater zuzugreifen.  Sie folgen den Schritten des Assistenten, um einen Bereitstellungs- oder Migrationsplan zu erstellen, der auf Ihre Anforderungen zugeschnitten ist.
 
 Bei der Migration zu VMware Cloud können Sie mit dem Migrationsberater einen Bereitstellungsplan für folgende Szenarien erstellen:
 
 * <<Erstellen Sie einen Implementierungsplan basierend auf einer lokalen vSphere-Umgebung,Um Ihre aktuelle lokale vSphere Umgebung in die VMware Cloud zu migrieren.>>
-* <<Erstellen Sie einen Bereitstellungsplan auf der Grundlage eines vorhandenen Plans,Bereitstellen eines Systems in der Cloud basierend auf einem bestehenden Implementierungsplan mit ähnlichen Anforderungen>>
+* <<Create a deployment plan based on an existing plan,Bereitstellen eines Systems in der Cloud basierend auf einem bestehenden Implementierungsplan mit ähnlichen Anforderungen>>
 
 
-Beachten Sie, dass Sie einen Benutzernamen und ein Passwort für den Zugriff auf die Workload Factory benötigen. Wenn Sie keinen Zugriff haben, erstellen Sie jetzt ein Konto. Siehe die Anleitung https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Hier"].
+Beachten Sie, dass Sie für den Zugriff auf Workload Factory einen Benutzernamen und ein Kennwort benötigen.  Wenn Sie keinen Zugriff haben, erstellen Sie jetzt ein Konto.  Siehe die Anweisungen https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Hier"] .
 
 
 
@@ -29,17 +29,17 @@ Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphe
 
 .Anforderungen
 * Sie müssen die Inventardatei aus Ihren vorhandenen Systemen mithilfe des VM-Collectors des Migrationsberaters (.csv-Datei) oder mithilfe von RVTools (.xlsx-Datei) erstellt haben.
-* Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, Zugriff auf die Bestandsdatei haben.
+* Sie müssen Zugriff auf die Inventardatei des Systems haben, auf dem Sie sich bei Workload Factory anmelden.
 
 
 .Schritte
-. Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
-. Wählen Sie in der VMware-Workload-Kachel *Assess and Plan* aus und wählen Sie dann *Migration to VMware Cloud on AWS* aus.
+. Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
+. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.
 +
-Die Hauptseite des VMware Migration Advisor wird angezeigt.
+Das Planungszentrum wird angezeigt.
 
-. Wählen Sie *Neuen Bereitstellungsplan erstellen*.
-. Wählen Sie die Art der Bestandsdatei aus, die Sie verwenden werden, um die Workload Factory mit Ihrer aktuellen VM-Konfiguration zu füllen, und wählen Sie *Weiter*.
+. Wählen Sie *VMC planen und erstellen*.
+. Wählen Sie den Typ der Inventardatei aus, die Sie zum Auffüllen von Workload Factory mit Ihrer aktuellen VM-Konfiguration verwenden möchten, und wählen Sie *Weiter*.
 +
 ** Wählen Sie *Use the Migration Advisor VMware Data Collector* aus, um die .csv-Datei zu verwenden, die Sie mit dem VMware Data Collector erstellt haben.
 ** Wählen Sie *Verwenden Sie RVTools*, um die .xlsx-Datei zu verwenden, die Sie mit RVTools erstellt haben.
@@ -145,23 +145,4 @@ Oben auf der Seite werden die monatlichen Kosten für alle implementierten VMs u
 ** Wählen Sie *Plan exportieren*, um den Migrationsplan als Vorlage im .json-Format zu speichern. Sie können den Plan zu einem späteren Zeitpunkt importieren und ihn als Vorlage verwenden, wenn Sie Systeme mit ähnlichen Anforderungen bereitstellen.
 
 
-
-
-
-
-== Erstellen Sie einen Bereitstellungsplan auf der Grundlage eines vorhandenen Plans
-
-Wenn Sie eine neue Bereitstellung planen, die einem vorhandenen Bereitstellungsplan ähnelt, den Sie in der Vergangenheit verwendet haben, können Sie diesen Plan importieren, Änderungen vornehmen und als neuen Bereitstellungsplan speichern.
-
-.Anforderungen
-Sie müssen über das System, auf dem Sie sich bei Workload Factory anmelden, auf die .json-Datei für den vorhandenen Bereitstellungsplan zugreifen können.
-
-.Schritte
-. Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
-. Wählen Sie in der VMware-Workload-Kachel *Assess and Plan* aus und wählen Sie dann *Migration to VMware Cloud on AWS* aus. Die Hauptseite des VMware Migration Advisor wird angezeigt.
-. Wählen Sie *Import eines vorhandenen Bereitstellungsplans*.
-. Wählen Sie die vorhandene Plandatei aus image:button-upload-file.png["Die Schaltfläche „Hochladen“"] , die Sie im Migrationsberater importieren möchten.
-. Wählen Sie *Weiter*, und die Seite Plan überprüfen wird angezeigt.
-. Sie können *Previous* auswählen, um auf die Seite _Prepare for VMware Cloud Onboarding_ und die Seite _Select VMs_ zuzugreifen, um die Einstellungen für den Plan wie im vorherigen Abschnitt beschrieben zu ändern.
-. Nachdem Sie den Plan an Ihre Anforderungen angepasst haben, können Sie den Plan speichern oder den Bereitstellungsprozess für Ihre Datastores auf FSX for ONTAP-Dateisystemen starten.
 

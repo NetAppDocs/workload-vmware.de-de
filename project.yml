@@ -20,7 +20,7 @@ sidebar:
       url: "/whats-new.html"
   - title: Los geht's
     entries:
-    - title: Erfahren Sie mehr über die BlueXP -Workload-Fabrik für VMware
+    - title: Erfahren Sie mehr über NetApp Workload Factory für VMware
       url: "/learn-about-vmware-workloads.html"
     - title: Schnellstart für die Migration zu Amazon EVS
       url: "/quick-start-evs.html"
@@ -28,28 +28,30 @@ sidebar:
       url: "/quick-start-native.html"
     - title: Schnellstart für die Migration zu VMware Cloud on AWS
       url: "/quick-start.html"
-  - title: Nutzen Sie den VMware Migrationsberater
+    - title: Entdecken Sie das VMware-Planungscenter
+      url: "/explore-planning-center.html"
+  - title: Verwenden Sie das VMware-Planungscenter
     entries:
+    - title: Hochladen von VM-Inventardaten
+      url: "/upload-vm-inventory.html"
     - title: Migration zum Amazon Elastic VMware Service
       entries:
       - title: Sparmöglichkeiten entdecken
         url: "/calculate-evs-savings.html"
-      - title: Erstellen eines Implementierungsplans mithilfe des Migrationsberaters
+      - title: Manuelles Erstellen eines Bereitstellungsplans
         url: "/launch-migration-advisor-evs-manual.html"
+      - title: Erstellen eines Implementierungsplans mithilfe des Migrationsberaters
+        url: "/launch-migration-advisor-evs.html"
       - title: Stellen Sie das empfohlene FSX für ONTAP-Dateisystem bereit
         url: "/deploy-fsx-file-system-evs.html"
     - title: Migrieren Sie zu Amazon EC2
       entries:
-      - title: Erfassung Ihrer aktuellen VM-Konfigurationen
-        url: "/capture-vm-configurations-native.html"
       - title: Erstellen eines Implementierungsplans mithilfe des Migrationsberaters
         url: "/launch-onboarding-advisor-native.html"
       - title: Stellen Sie das empfohlene FSX für ONTAP-Dateisystem bereit
         url: "/deploy-fsx-file-system-native.html"
     - title: Migrieren Sie zu VMware Cloud on AWS
       entries:
-      - title: Erfassung Ihrer aktuellen VM-Konfigurationen
-        url: "/capture-vm-configurations.html"
       - title: Erstellen eines Implementierungsplans mithilfe des Migrationsberaters
         url: "/launch-onboarding-advisor.html"
       - title: Stellen Sie das empfohlene FSX für ONTAP-Dateisystem bereit
@@ -67,5 +69,5 @@ sidebar:
   - title: Rechtliche Hinweise
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP workload factory
+  name: NetApp Workload Factory
   repo: workload-family

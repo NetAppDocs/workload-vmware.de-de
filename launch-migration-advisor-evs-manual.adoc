@@ -1,19 +1,19 @@
 ---
 sidebar: sidebar 
 permalink: launch-migration-advisor-evs-manual.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works, migration, advisor, manual, specification, deploy, deployment, plan 
-summary: Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware Migration Advisor zuzugreifen. Befolgen Sie die Schritte des Assistenten, um einen auf Ihre Anforderungen zugeschnittenen Bereitstellungsplan oder Migrationsplan zu erstellen. 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works, migration, manual, specification, deploy, deployment, plan 
+summary: Melden Sie sich bei der NetApp Workload Factory an, um auf das VMware-Planungscenter zuzugreifen.  Sie können einen Bereitstellungsplan für EVS manuell erstellen. 
 ---
-= Erstellen Sie einen Bereitstellungsplan für Amazon EVS mit dem VMware Workloads Migration Advisor
+= Manuelles Erstellen eines Bereitstellungsplans für Amazon EVS
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware Migration Advisor zuzugreifen. Befolgen Sie die Schritte des Assistenten, um einen auf Ihre Anforderungen zugeschnittenen Bereitstellungsplan oder Migrationsplan zu erstellen.
+Melden Sie sich bei der NetApp Workload Factory an, um auf das VMware-Planungscenter zuzugreifen.  Von dort aus können Sie manuell einen Bereitstellungsplan oder Migrationsplan für Amazon EVS erstellen, der auf Ihre Anforderungen zugeschnitten ist.
 
-Beachten Sie, dass Sie einen Benutzernamen und ein Passwort für den Zugriff auf die Workload Factory benötigen. Wenn Sie keinen Zugriff haben, erstellen Sie jetzt ein Konto. Siehe die Anleitung https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Hier"].
+Beachten Sie, dass Sie für den Zugriff auf Workload Factory einen Benutzernamen und ein Kennwort benötigen.  Wenn Sie keinen Zugriff haben, erstellen Sie jetzt ein Konto.  Siehe die Anweisungen https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Hier"] .
 
 
 
@@ -26,10 +26,9 @@ Sie können Ihre Anforderungen für virtuelle Maschinen im Amazon Elastic VMware
 
 
 .Schritte
-. Melden Sie sich bei Workload Factory mit einem der https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^]an.
-. Wenn Sie optional über die Workload Factory-Konsole auf die Workload Factory zugegriffen haben, wählen Sie in der Kachel „VMware-Workloads“ die Option „Planen und erstellen“ und dann „Amazon Elastic VMware Service“ aus. Der Begrüßungsbildschirm von VMware Migration Advisor wird angezeigt.
-. Wählen Sie die Kachel *Amazon Elastic VMware-Dienst* aus.
-. Wenn Sie fertig sind, wählen Sie *Let's Start*.
+. Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
+. Wenn Sie Workload Factory über die Workload Factory-Konsole aufgerufen haben, wählen Sie optional in der Kachel „VMware-Workloads“ *VMware Planning Center* und dann *VMware Planning Center* aus.  Das VMware-Planungscenter wird angezeigt.
+. Wählen Sie *EVS-Plan manuell erstellen*.
 . Geben Sie die Anforderungen für Ihre VM-Umgebung ein.
 +
 [NOTE]
@@ -42,13 +41,13 @@ Beachten Sie die folgenden Leistungsanforderungen und Empfehlungen für die VM-M
 
 
 ====
-. Wenn Sie bereit sind, wählen Sie *Weiter* aus, um den Migrationsplan zu überprüfen.
+. Wenn Sie bereit sind, wählen Sie *Plan überprüfen* aus, um den Migrationsplan zu überprüfen.
 . Überprüfen Sie den Plan. Erweitern Sie jeden Abschnitt, um die Plandetails anzuzeigen.
-. Wenn Sie mit dem Migrationsplan zufrieden sind, können Sie ihn optional als Vorlage oder PDF speichern:
 +
-** Wählen Sie *Plan exportieren*, um den Migrationsplan als Vorlage in einem  `.json` Format auf Ihrem Computer. Sie können den Plan zu einem späteren Zeitpunkt importieren und ihn als Vorlage verwenden, wenn Sie Systeme mit ähnlichen Anforderungen bereitstellen.
-** Wählen Sie *Plan herunterladen*, um den Bereitstellungsplan in einem  `.pdf` Format, damit Sie den Plan zur Überprüfung verteilen können.
+Standardmäßig speichert Workload Factory den Migrationsplan im Planungscenter.  Sie können diese Option oben auf der Seite deaktivieren.
+
+. Wenn Sie mit dem Migrationsplan zufrieden sind, können Sie die Plandetails optional als PDF-Dokument herunterladen, indem Sie *Plan exportieren (PDF)* auswählen.
+. Wenn Sie bereit sind, den Bereitstellungsplan bereitzustellen, wählen Sie *Bereitstellen*.
 
 
-. link:deploy-fsx-file-system-evs.html["Implementieren Sie das von VMware-Workloads empfohlene FSX für ONTAP-Filesystem"].
-
+link:deploy-fsx-file-system-evs.html["Implementieren Sie das von VMware-Workloads empfohlene FSX für ONTAP-Filesystem"].

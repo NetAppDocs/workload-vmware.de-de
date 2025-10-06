@@ -2,24 +2,24 @@
 sidebar: sidebar 
 permalink: get-help.html 
 keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
-summary: 'NetApp bietet Support für die Workload-Fabrik auf verschiedene Weise. Umfassende kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, wie etwa Knowledge Base-Artikel (KB) und ein Community-Forum. Ihre Support-Registrierung umfasst technischen Remote-Support über Web-Ticketing.' 
+summary: 'NetApp bietet auf vielfältige Weise Unterstützung für Workload Factory. Umfangreiche kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, beispielsweise Knowledgebase-Artikel (KB) und ein Community-Forum. Ihre Support-Registrierung beinhaltet technischen Remote-Support per Web-Ticketing.' 
 ---
-= Informieren Sie sich bei der BlueXP -Workload-Fabrik für VMware
+= Erhalten Sie Hilfe zu NetApp Workload Factory für VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-NetApp bietet Unterstützung für die BlueXP -Workload-Fabrik und seine Cloud-Services auf unterschiedliche Weise. Umfassende kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, wie etwa Knowledge Base-Artikel (KB) und ein Community-Forum. Ihre Support-Registrierung umfasst technischen Remote-Support über Web-Ticketing.
+NetApp bietet auf vielfältige Weise Support für Workload Factory und seine Cloud-Dienste. Umfangreiche kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, beispielsweise Knowledgebase-Artikel (KB) und ein Community-Forum. Ihre Support-Registrierung beinhaltet technischen Remote-Support per Web-Ticketing.
 
 
 
 == Erhalten Sie Support für FSX für ONTAP
 
-Für technischen Support in Bezug auf FSX for ONTAP, seine Infrastruktur oder jede Lösung, die den Service verwendet, siehe „Hilfe erhalten“ in der Dokumentation zur Workload-Fabrik für dieses Produkt.
+Technischen Support zu FSx for ONTAP, seiner Infrastruktur oder anderen Lösungen, die den Service nutzen, erhalten Sie unter „Hilfe erhalten“ in der Workload Factory-Dokumentation für das jeweilige Produkt.
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX für ONTAP"^]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX für ONTAP"^]
 
 Nutzen Sie die unten beschriebenen Support-Optionen, um technischen Support für Workload Factory und seine Storage-Lösungen und -Services zu erhalten.
 
@@ -31,15 +31,15 @@ Diese Optionen sind kostenlos verfügbar, 24 Stunden am Tag, 7 Tage die Woche:
 
 * Dokumentation
 +
-Die Arbeitslastwerkdokumentation, die Sie derzeit anzeigen.
+Die Workload Factory-Dokumentation, die Sie gerade anzeigen.
 
 * https://kb.netapp.com["Wissensdatenbank"^]
 +
-Durchsuchen Sie die Workload Factory Knowledge Base, um hilfreiche Artikel zur Fehlerbehebung zu finden.
+Durchsuchen Sie die Wissensdatenbank von Workload Factory, um hilfreiche Artikel zur Problembehebung zu finden.
 
 * http://community.netapp.com/["Communitys"^]
 +
-Treten Sie der Workload Factory Community bei, um laufende Diskussionen zu verfolgen oder neue zu erstellen.
+Treten Sie der Workload Factory-Community bei, um laufende Diskussionen zu verfolgen oder neue zu starten.
 
 
 
@@ -50,12 +50,12 @@ Treten Sie der Workload Factory Community bei, um laufende Diskussionen zu verfo
 Zusätzlich zu den oben genannten Self-Support-Optionen können Sie gemeinsam mit einem NetApp Support-Experten eventuelle Probleme nach der Aktivierung des Supports beheben.
 
 .Bevor Sie beginnen
-Um die Funktion *Fall erstellen* nutzen zu können, müssen Sie sich zunächst für den Support registrieren. Verknüpfen Sie Ihre Zugangsdaten für die NetApp Support-Website mit Ihren werkseitigen Workload-Anmeldedaten. link:support-registration.html["Erfahren Sie, wie Sie sich für Support registrieren"].
+Um die Funktion *Fall erstellen* zu verwenden, müssen Sie sich zunächst für den Support registrieren. Verknüpfen Sie Ihre Anmeldeinformationen für die NetApp -Support-Site mit Ihrem Workload Factory-Login. link:support-registration.html["Erfahren Sie, wie Sie sich für Support registrieren"] .
 
 .Schritte
-. Wählen Sie oben rechts in der Arbeitslastwerkkonsole *Hilfe > Support* aus.
+. Wählen Sie oben rechts in der Workload Factory-Konsole *Hilfe > Support* aus.
 +
-Wenn Sie diese Option auswählen, wird die BlueXP Konsole um eine neue Browserregisterkarte geöffnet und das Support Dashboard geladen.
+Wenn Sie diese Option auswählen, wird die NetApp Konsole in einem neuen Browser-Tab geöffnet und das Support-Dashboard geladen.
 
 . Wählen Sie auf der Seite *Ressourcen* eine der verfügbaren Optionen unter Technischer Support:
 +
@@ -91,7 +91,7 @@ Es ist möglich, dass beim Versuch, einen Fall zu erstellen, möglicherweise die
 
 „Sie sind nicht berechtigt, einen Fall für den ausgewählten Service zu erstellen.“
 
-Dieser Fehler könnte bedeuten, dass das NSS-Konto und das Unternehmen des Datensatzes, mit dem es verbunden ist, nicht das gleiche Unternehmen des Eintrags für die BlueXP Account Seriennummer (dh 960xxxx) oder Seriennummer der Arbeitsumgebung. Sie können Hilfe mit einer der folgenden Optionen anfordern:
+Dieser Fehler könnte bedeuten, dass das NSS-Konto und das damit verknüpfte Unternehmen nicht dasselbe Unternehmen sind, für das die Seriennummer des NetApp Konsolenkontos gilt (d. h. 960xxxx) oder die Seriennummer des Systems. Sie können auf eine der folgenden Arten Hilfe anfordern:
 
 * Verwenden Sie den Chat im Produkt
 * Übermitteln Sie einen nicht-technischen Case unter https://mysupport.netapp.com/site/help[]
@@ -101,7 +101,7 @@ Dieser Fehler könnte bedeuten, dass das NSS-Konto und das Unternehmen des Daten
 
 == Managen Ihrer Support-Cases (Vorschau)
 
-Sie können aktive und gelöste Support-Cases direkt über BlueXP anzeigen und managen. Sie können die mit Ihrem NSS-Konto und Ihrem Unternehmen verbundenen Fälle verwalten.
+Sie können aktive und gelöste Supportfälle direkt von der NetApp Konsole aus anzeigen und verwalten. Sie können die mit Ihrem NSS-Konto und Ihrem Unternehmen verknüpften Fälle verwalten.
 
 Case Management ist als Vorschau verfügbar. Wir planen, diese Erfahrungen weiter zu verbessern und in zukünftigen Versionen Verbesserungen hinzuzufügen. Bitte senden Sie uns Ihr Feedback über den Product-Chat.
 
@@ -124,13 +124,13 @@ Weitere Informationen erhalten Sie in den Schritten unten.
 
 
 .Schritte
-. Wählen Sie oben rechts in der Arbeitslastwerkkonsole *Hilfe > Support* aus.
+. Wählen Sie oben rechts in der Workload Factory-Konsole *Hilfe > Support* aus.
 +
-Wenn Sie diese Option auswählen, wird die BlueXP Konsole um eine neue Browserregisterkarte geöffnet und das Support Dashboard geladen.
+Wenn Sie diese Option auswählen, wird in der NetApp Konsole ein neuer Browser-Tab geöffnet und das Support-Dashboard geladen.
 
-. Wählen Sie *Case Management* aus und fügen Sie bei Aufforderung Ihr NSS-Konto zu BlueXP hinzu.
+. Wählen Sie *Case Management* und fügen Sie bei entsprechender Aufforderung Ihr NSS-Konto zur NetApp Konsole hinzu.
 +
-Auf der Seite *Case Management* werden offene Fälle im Zusammenhang mit dem NSS-Konto angezeigt, das mit Ihrem BlueXP Benutzerkonto verknüpft ist. Dies ist das gleiche NSS-Konto, das oben auf der Seite *NSS Management* angezeigt wird.
+Auf der Seite *Fallverwaltung* werden offene Fälle angezeigt, die sich auf das NSS-Konto beziehen, das mit Ihrem NetApp Console-Benutzerkonto verknüpft ist. Dies ist dasselbe NSS-Konto, das oben auf der *NSS-Verwaltungsseite* angezeigt wird.
 
 . Ändern Sie optional die in der Tabelle angezeigten Informationen:
 +

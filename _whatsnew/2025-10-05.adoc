@@ -1,0 +1,17 @@
+= BlueXP workload factory jetzt NetApp Workload Factory
+:allow-uri-read: 
+
+
+
+
+=== BlueXP workload factory jetzt NetApp Workload Factory
+
+BlueXP wurde umbenannt und neu gestaltet, um seine Rolle bei der Verwaltung Ihrer Dateninfrastruktur besser widerzuspiegeln. Aus diesem Grund wurde die BlueXP workload factory in NetApp Workload Factory umbenannt.
+
+
+
+=== Einführung des VMware Workloads Planning Center
+
+Mit dem VMware Workloads-Planungscenter können Sie Ihr VM-Inventar und Ihre Migrationspläne von einem Ort aus anzeigen und verwalten.  Sie können mehrere VM-Inventare aus unterschiedlichen Umgebungen hochladen und speichern und für jedes davon mit der Planung einer Migration zu AWS EC2 oder dem Amazon Elastic VMware-Dienst beginnen.  Sie können auch AWS EC2- oder EVS-Migrationspläne erstellen und speichern.
+
+https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["Entdecken Sie das VMware Workloads-Planungscenter"]

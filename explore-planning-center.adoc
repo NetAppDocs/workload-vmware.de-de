@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: explore-planning-center.html 
+keywords: vm workloads, netapp Workload Factory 
+summary: Mit dem VMware-Planungscenter können Sie hochgeladene Inventardaten und von Ihnen erstellte Migrationspläne verwalten. 
+---
+= Entdecken Sie das VMware-Planungscenter
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Mit dem VMware-Planungscenter können Sie neue VM-Inventardaten hochladen und neue Migrationspläne erstellen sowie die VM-Inventardaten und Migrationspläne verwalten, die Sie bereits mit NetApp Workload Factory gespeichert haben.
+
+
+
+== Verwalten von VM-Inventardaten
+
+Verwenden Sie das Planungscenter, um VM-Inventardaten zu erstellen und zu verwalten.
+
+
+
+=== Hochladen von VM-Inventardaten
+
+Sie können VM-Inventardaten hochladen, wenn Sie bereit sind, Workload Factory zu verwenden, um Migrationsoptionen zu Amazon AWS-Umgebungen zu erkunden.  Siehelink:upload-vm-inventory.html["Hochladen von VM-Inventardaten"] Anweisungen hierzu finden Sie unter.
+
+
+
+=== Umbenennen eines Datasets
+
+Sie können den Namen eines gespeicherten Datensatzes ändern.
+
+.Schritte
+. Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
+. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.
+. Wählen Sie das Aktionsmenü (...) für den Datensatz aus, den Sie umbenennen möchten, und wählen Sie *Umbenennen*.
+. Geben Sie einen neuen Namen für den Datensatz ein und wählen Sie *Speichern*.
+
+
+
+
+=== Löschen eines Datasets
+
+Wenn ein Datensatz nicht mehr benötigt wird, können Sie ihn jederzeit löschen.
+
+.Schritte
+. Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
+. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.
+. Wählen Sie das Aktionsmenü (...) für den Datensatz aus, den Sie löschen möchten, und wählen Sie *Löschen*.
+. Wählen Sie *Löschen*, um die Aktion zu bestätigen.
+
+
+
+
+== Verwalten von Migrationsplänen
+
+Verwenden Sie das Migrationscenter, um Migrationspläne zu erstellen und zu verwalten.
+
+
+
+=== Bereitstellen eines Migrationsplans
+
+Sie können einen Migrationsplan auswählen und bereitstellen, sodass die VMs in die Amazon AWS-Umgebung Ihrer Wahl migriert werden.
+
+.Schritte
+. Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
+. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.
+. Wählen Sie das Menü *Migrationspläne*.
+. Wählen Sie das Aktionsmenü (...) für den Migrationsplan aus, den Sie bereitstellen möchten, und wählen Sie *Bereitstellen*.
+. Beachten Sie je nach Migrationsplan die Anweisungen zum Bereitstellen des Dateisystems:
++
+** link:deploy-fsx-file-system.html["Bereitstellen des Dateisystems für Amazon VMware Cloud-Pläne"]
+** link:deploy-fsx-file-system-native.html["Bereitstellen des Dateisystems für Amazon EC2-Pläne"]
+** link:deploy-fsx-file-system-evs.html["Bereitstellen des Dateisystems für Amazon Elastic VMware Service-Pläne"]
+
+
+
+
+
+
+=== Bearbeiten des Kommentars für einen Migrationsplan
+
+Wenn Sie Kommentardetails für einen Migrationsplan ändern müssen, bearbeiten Sie den Kommentar im Planungscenter.
+
+.Schritte
+. Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
+. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.
+. Wählen Sie die *Migrationspläne* aus.
+. Wählen Sie das Aktionsmenü (...) für den Migrationsplan aus, den Sie bearbeiten möchten, und wählen Sie *Kommentar bearbeiten*.
+. Geben Sie einen Kommentar ein und wählen Sie *Speichern*.
+
+
+
+
+=== Erstellen Sie einen PDF-Bericht eines Migrationsplans
+
+Erstellen Sie einen PDF-Bericht mit den Details eines Migrationsplans.
+
+.Schritte
+. Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
+. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.
+. Wählen Sie die *Migrationspläne* aus.
+. Wählen Sie das Aktionsmenü (...) für den Migrationsplan aus, für den ein PDF-Bericht erstellt werden soll, und wählen Sie *Bericht erstellen*.
+. Geben Sie einen Namen für das Berichts-PDF ein und wählen Sie *Speichern*.
+
+
+
+
+=== Löschen eines Migrationsplans
+
+Wenn ein Migrationsplan nicht mehr benötigt wird, können Sie ihn jederzeit löschen.
+
+.Schritte
+. Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
+. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.
+. Wählen Sie die *Migrationspläne* aus.
+. Wählen Sie das Aktionsmenü (...) für den Migrationsplan aus, den Sie löschen möchten, und wählen Sie *Löschen*.
+. Bestätigen Sie die Aktion, indem Sie *Löschen* auswählen.
+

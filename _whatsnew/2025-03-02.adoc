@@ -6,7 +6,7 @@
 
 === Verbesserungen bei Amazon EC2 Migration Advisor
 
-Diese Version der BlueXP  Workload-Farm für VMware bietet mehrere Verbesserungen bei der Erfahrung des Amazon EC2 Migration Advisor:
+Diese Version von BlueXP Workload Factory für VMware bietet mehrere Verbesserungen für die Erfahrung des Amazon EC2-Migrationsberaters:
 
 * *Geschätzter Instanztyp*: Der Migrationsberater kann nun die Anforderungen Ihrer Umgebung prüfen und für jede VM einen geschätzten Amazon EC2 Instanztyp angeben. Sie können auswählen, den geschätzten Instanztyp für jede VM im Schritt „Umfang“ des Migrationsberaters einzubeziehen.
 * *Möglichkeit Amazon EBS Volumes zu empfehlen*: Der Migrationsberater kann aufgrund bestimmter Kapazitäts- oder Performance-Anforderungen einer bestimmten Region nun die Migration von Daten-Volumes in den Amazon Elastic Block Store (EBS) anstelle von Amazon FSX for NetApp ONTAP empfehlen.

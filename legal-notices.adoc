@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Rechtliche Hinweise für die BlueXP -Workload-Fabrik für VMware
+= Rechtliche Hinweise zur NetApp Workload Factory für VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -47,4 +47,4 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.
 
-https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["BlueXP -Workload ist werkseitig eingestellt"^]
+https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["NetApp Workload Factory"^]

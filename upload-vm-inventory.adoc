@@ -1,17 +1,27 @@
 ---
 sidebar: sidebar 
-permalink: capture-vm-configurations-native.html 
+permalink: upload-vm-inventory.html 
 keywords: vm workloads, capture vm details 
-summary: Sie können das VM-Collector-Skript Migration Advisor oder RVTools verwenden, um Ihre aktuellen VM-Konfigurationen zu erfassen. Wir empfehlen die Verwendung des VM-Collector-Skripts Migration Advisor, da es sowohl VM-Konfigurations- als auch Performance-Daten für den genauesten Plan erfasst. 
+summary: Sie können das Planungscenter verwenden, um Informationen zu Ihrer aktuellen VMware-Umgebung hochzuladen. 
 ---
-= Erfassen Sie Ihre VM-Konfigurationen, bevor Sie mit VMware-Workloads zu Amazon EC2 migrieren
+= Hochladen von VM-Inventardaten in die NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Mithilfe des Migration Advisor VM-Datensammlerskripts, RVTools oder NetApp-Dateninfrastrukturanalysen können Sie Ihre aktuellen VM-Konfigurationen erfassen. Wir empfehlen Ihnen, das Migrationberater-Skript für den VM-Collector oder Data Infrastructure Insights zu verwenden, da mit diesen Optionen sowohl VM-Konfigurations- als auch Performance-Daten für den genauesten Plan erfasst werden.
+Bevor Sie einen Migrationsplan erstellen können, müssen Sie Ihre VM-Inventardaten hochladen.
+
+.Schritte
+. Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
+. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.
++
+Vom Planungscenter aus können Sie Ihre VM-Inventardaten hochladen, vorherige Inventardaten-Uploads anzeigen und eine Migration mithilfe eines beliebigen VM-Inventardatensatzes planen.
+
+. Wählen Sie *VM-Inventar hochladen*.
+. Wählen Sie die zu verwendende Datenerfassungsmethode aus:
+
 
 [role="tabbed-block"]
 ====
@@ -22,6 +32,11 @@ RVTools ist eine Windows-Anwendung, die mit vCenter und ESX-Server (5.x bis 8.0)
 https://www.robware.net/home["Erfahren Sie mehr über RVTools"^]
 
 .Schritte
+. Wählen Sie die Kachel *RVTools* und dann *Weiter*.
++
+Die Seite *Prepare for AWS Cloud Onboarding* wird angezeigt.
+
+. Geben Sie einen Namen für den VM-Inventardatensatz ein, den Sie erstellen möchten.
 . Laden Sie RVTools 4.4.2 oder höher von herunter, und installieren Sie sie https://www.robware.net/download["RVTools-Website"^]
 . Starten Sie RVTools, und melden Sie sich beim Ziel-vCenter-Server an.
 +
@@ -31,13 +46,13 @@ Dadurch werden Informationen über diesen vCenter-Server erfasst.
 +
  https://resources.robware.net/resources/prod/RVTools.pdf["RVTools-Dokumentation"^]Weitere Informationen finden Sie im Kapitel „Kommandozeilenparameter“ in der.
 
+. Wählenimage:button-upload-file.png["Die Schaltfläche „Hochladen“"] und wählen Sie die RVTools-Datei aus, die Sie exportiert haben.
+. Wählen Sie *Hochladen*.
+. Wählen Sie *Fertig*.
 
-
-.Ergebnis
-Die xlsx- oder xls-Datei mit Ihren Ergebnissen wird in Ihrem Arbeitsverzeichnis gespeichert.
 
 --
-.Verwenden des VM-Collector-Skripts Migration Advisor (detaillierte Planung)
+.Nutzung des Datensammlers (Detailplanung)
 --
 Das VM-Collector-Skript des NetApp Migrationsberaters erfasst VM-Konfigurationsinformationen aus Ihrem vCenter, ähnlich wie RVTools die aktuellen VM-Leistungsdaten erfasst, um tatsächliche Lese- und Schreib-IOPS und Durchsatzstatistiken bereitzustellen. Sie können das Skript in einem von zwei Modi verwenden:
 
@@ -59,16 +74,7 @@ Das System, auf dem Sie das Collector-Skript ausführen, muss die folgenden Anfo
 Beachten Sie, dass Sie, wenn Sie langfristige Statistiken aus Ihren VMs erfassen möchten (Tagesstatistiken), in der vSphere-Managementkonsole (VMware-Managementumgebung) die Statistikebene 3 oder höher aktiviert haben müssen.
 
 .Schritte
-. Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
-. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.
-+
-Vom Planungscenter aus können Sie Ihre VM-Inventardaten hochladen, vorherige Inventardaten-Uploads anzeigen und eine Migration mit einem beliebigen VM-Inventardatensatz planen. Wählen Sie dann *Migration zu AWS Native Compute* aus.  Der Begrüßungsbildschirm des VMware-Migrationsberaters wird angezeigt.
-
-+
-Informationen zu den Vorteilen des Migrationsberaters finden Sie hier.
-
-. Wenn Sie fertig sind, wählen Sie *Let's Start*.
-. Wählen Sie die Kachel *Detailplanung* aus und wählen Sie *Weiter* aus.
+. Wählen Sie die Kachel *Datensammler* und dann *Weiter* aus.
 +
 Das Codebox-Fenster wird rechts auf der Seite angezeigt.
 
@@ -104,10 +110,11 @@ Wo?
 +
 Optional können Sie das Datensammlerskript ohne Angabe von Optionen ausführen; dies ermöglicht Ihnen, den Datenerfassungszeitraum aus dem interaktiven Menü auszuwählen.
 
++
++ Das Skript gibt eine komprimierte Datei mit einem Zeitstempel im Namen im aktuellen Arbeitsverzeichnis aus.  Die ZIP-Datei enthält eine Liste aller VMs und ihrer Eigenschaften sowie ihre IOPS- und Durchsatzdaten.
 
+. Wählen Sie *Hochladen*.
 
-.Ergebnis
-Das Skript gibt eine komprimierte Datei mit einem Zeitstempel im Namen im aktuellen Arbeitsverzeichnis aus. Die ZIP-Datei enthält eine Liste aller VMs und ihrer Eigenschaften sowie ihrer IOPS- und Durchsatzdaten.
 
 --
 .Nutzung von NetApp-Dateninfrastrukturen Erkenntnisse (detaillierte Planung)
@@ -117,30 +124,29 @@ NetApp Data Infrastructure Insights ist ein Tool für das Monitoring Ihrer Cloud
 https://docs.netapp.com/us-en/data-infrastructure-insights/["Mit einer Dateninfrastruktur Erkenntnisse gewinnen"^]
 
 .Schritte
-. Melden Sie sich bei Ihrem Data Infrastructure Insights Konto an.
-. Wählen Sie im Menü Seitennavigation *Admin*.
-. Wählen Sie im daraufhin angezeigten Menü *API Access* aus.
-. Wählen Sie auf der Registerkarte *API Access Tokens* *+ API Access Token* aus.
+. Wählen Sie die Kachel * Data Infrastructure Insights* und dann *Weiter*.
 +
-Das Dialogfeld API Access Token erstellen wird angezeigt.
+Die Seite *Prepare for AWS Cloud Onboarding* wird angezeigt.
 
-. Geben Sie einen Namen und eine Beschreibung für das API-Token an.
-. Wählen Sie unter *welche Art von APIs wird dieses Token verwendet, um* aufzurufen* eine der folgenden Optionen aus:
+. Geben Sie einen Namen für den VM-Inventardatensatz ein, den Sie erstellen möchten.
+. Geben Sie den Mandantenendpunkt für Data Infrastructure Insights ein.
 +
-** Erfassungseinheit
-** Ressourcen
-** Datenerfassung
+Dies sollte die URL sein, über die Sie auf Data Infrastructure Insights zugreifen.
 
+. Wenn Sie noch kein API-Zugriffstoken für Data Infrastructure Insights generiert haben, befolgen Sie die Anweisungen auf der Seite, um ein Token zu erstellen. Andernfalls fügen Sie Ihr API-Zugriffstoken in das Textfeld *Enter API Access Token* ein.
+. Wählen Sie *Hochladen*.
++
+Workload Factory sammelt Informationen von Data Infrastructure Insights.
 
-. Wählen Sie unter *Berechtigungen* *nur Lesen*.
-. Wählen Sie unter *Token läuft ab in* die Zeitdauer aus, für die das API-Token gültig sein muss.
-. Deaktivieren Sie * Token automatisch rotieren für Kubernetes*.
-. Wählen Sie *Speichern*.
-. Wählen Sie *API Access Token kopieren*.
-. Speichern Sie dieses Token zur Vorbereitung der Verwendung mit dem Workload Factory-Migrationsberater.
 
 
 --
 ====
 .Was kommt als Nächstes?
-link:launch-onboarding-advisor-native.html["Erstellung eines Amazon EC2-Implementierungsplans über den Migrationsberater"].
+Verwalten Sie Ihre hochgeladenen VM-Inventardaten vom Planungscenter aus oder erstellen Sie einen Bereitstellungsplan.
+
+* link:explore-planning-center.html["Entdecken Sie das VMware Workloads-Planungscenter"]
+* link:launch-onboarding-advisor.html["Erstellen eines Amazon VMware Cloud-Bereitstellungsplans"]
+* link:launch-migration-advisor-evs.html["Erstellen eines Bereitstellungsplans für den Amazon Elastic VMware Service"]
+* link:launch-onboarding-advisor-native.html["Erstellen eines Amazon EC2-Bereitstellungsplans"]
+

@@ -6,6 +6,6 @@
 
 === Einführung der Migrationsberater-Unterstützung für Amazon Elastic VMWare Service
 
-Die BlueXP Workload Factory für VMware unterstützt jetzt Amazon Elastic VMware Service. Mit dem Migration Advisor können Sie Ihre lokalen VMware-Workloads schnell zu Amazon Elastic VMware Service migrieren. Das optimiert die Kosten und ermöglicht Ihnen mehr Kontrolle über Ihre VMware-Umgebung, ohne Ihre Anwendungen umgestalten oder auf eine neue Plattform umstellen zu müssen.
+BlueXP Workload Factory für VMware unterstützt jetzt Amazon Elastic VMware Service.  Mithilfe des Migrationsberaters können Sie Ihre lokalen VMware-Workloads schnell zum Amazon Elastic VMware Service migrieren. So optimieren Sie die Kosten und erhalten mehr Kontrolle über Ihre VMware-Umgebung, ohne dass Sie Ihre Anwendungen umgestalten oder auf eine neue Plattform umstellen müssen.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Erstellen Sie einen Bereitstellungsplan für Amazon EVS mit dem Migrationsberater"]
