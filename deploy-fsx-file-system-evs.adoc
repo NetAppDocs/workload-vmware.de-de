@@ -15,24 +15,47 @@ Nachdem Sie überprüft haben, dass das empfohlene FSx for ONTAP -Dateisystem (o
 
 Abhängig von der Richtlinie und den Berechtigungen, die Sie Ihrem Workload Factory-Konto hinzugefügt haben, können Sie das FSx for ONTAP -Dateisystem vollständig mithilfe von Workload Factory bereitstellen (im Lese-/Schreibmodus).  Wenn Sie weniger Berechtigungen (Nur-Lese-Modus) oder keine Berechtigungen (Basismodus) haben, müssen Sie die CloudFormation-Vorlage aus der Codebox verwenden und das FSx für ONTAP Dateisystem selbst in AWS bereitstellen.
 
-.Anforderungen für Bereitstellungen im Amazon Elastic VMware Service
+
+
+== Anforderungen
+
 * Sie müssen über ein Abonnement für den Amazon Elastic VMware Service verfügen.
 * Sie müssen über die erforderlichen Berechtigungen verfügen, um in Ihrem AWS-Konto ein FSx for ONTAP-Dateisystem zu erstellen.
 
 
-.Schritte
+
+
+== Überlegungen
+
+* Sie können die Option schnell erstellen oder Erweitert erstellen verwenden. Advanced Create bietet einige zusätzliche Speicherparameter, die Sie anpassen können. https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Sehen Sie, was diese beiden Optionen bieten"]
+* Im Abschnitt „Amazon Elastic VMware Service-Einstellungen“ können Sie die EVS-Virtualisierungsumgebung auswählen, die mit den externen Datenspeichern verbunden werden soll.  Dadurch werden einige Felder automatisch mit den Best-Practice-Optionen für die Bereitstellung ausgefüllt.  Sie können diese Optionen nach Bedarf ändern.
+
+
+
+
+== Schritte
+
 . Wählen Sie unten auf der Seite *Prüfplan* *deploy* aus, und die Seite Erstellen eines FSX für ONTAP-Dateisystem wird angezeigt.
 +
 Die meisten Felder, die Ihr FSX für ONTAP-Dateisystem definieren, werden basierend auf den von Ihnen angegebenen Informationen ausgefüllt, aber es gibt ein paar Felder, die Sie auf dieser Seite ausfüllen müssen.
-
-+
-Sie können die Option schnell erstellen oder Erweitert erstellen verwenden. Advanced Create bietet einige zusätzliche Speicherparameter, die Sie anpassen können. https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Sehen Sie, was diese beiden Optionen bieten"]
 
 . Geben Sie im Abschnitt „Allgemeine Konfiguration des Dateisystems“ die folgenden Informationen ein:
 +
 .. *AWS-Anmeldeinformationen*: Wählen Sie Anmeldeinformationen aus oder fügen Sie sie hinzu, die Workload Factory die erforderlichen Berechtigungen zum direkten Erstellen Ihres FSx for ONTAP Dateisystems erteilen.  Sie können auch den CloudFormation-Code von Codebox auswählen und das FSx für das ONTAP Dateisystem selbst in AWS bereitstellen.
 .. *Dateisystemname*: Geben Sie den Namen ein, den Sie für dieses Dateisystem FSX for ONTAP verwenden möchten.
 .. *Tags*: Optional können Sie Tags hinzufügen, um dieses FSx für ONTAP-Dateisystem zu kategorisieren.
+
+
+. Im Abschnitt „Amazon Elastic VMware Service-Einstellungen“ wählen Sie in der Liste „Umgebungs-ID“ die EVS-Umgebung aus, mit der die Datenspeicher verbunden werden sollen.
++
+Dadurch werden die folgenden Felder automatisch ausgefüllt:
+
++
+** *VPC*
+** *Verfügbarkeitszone*
+** *Subnetz*
+** Im Abschnitt *NFS-Datenspeicherzugriff* wird das Feld *EVS-Hostverwaltung (CIDR)* automatisch ausgefüllt, wenn Sie die Option *Nur EVS-Hostverwaltung* ausgewählt haben.
+** Im Abschnitt *Datenspeicher-Einbindungsoptionen* werden die Felder *EVS Cluster VMware vCenter Adresse* und *vSphere Administrator Credentials Secret ARN* automatisch ausgefüllt, wenn Sie die Einbindung von Datenspeichern in den EVS-Cluster ausgewählt haben.
 
 
 . Geben Sie im Abschnitt „Netzwerk und Sicherheit“ die folgenden Informationen ein:
@@ -95,9 +118,12 @@ Wenn Amazon EVS in dieser Region nicht verfügbar ist oder Ihr Konto nicht über
 Optional können Sie im Codebox-Fenster *Zu CloudFormation umleiten* auswählen, um das Dateisystem und die empfohlene VM-Konfiguration mithilfe eines CloudFormation-Stacks zu erstellen.
 
 +
-In beiden Fällen können Sie den Erstellungsfortschritt in CloudFormation überwachen.
+In beiden Fällen können Sie den Fortschritt der Erstellung in CloudFormation überwachen.
 
 
 
-.Ergebnis
+
+
+== Ergebnis
+
 Das Dateisystem FSX für ONTAP wird bereitgestellt. Sie können jetzt die AWS CloudFormation-Vorlage in der Codebox verwenden, um die empfohlene VM-Konfiguration in Ihrer Amazon Elastic VMware Service-Umgebung bereitzustellen.

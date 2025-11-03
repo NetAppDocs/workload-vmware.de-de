@@ -61,7 +61,7 @@ Verwenden Sie das Migrationscenter, um Migrationspläne zu erstellen und zu verw
 
 === Bereitstellen eines Migrationsplans
 
-Sie können einen Migrationsplan auswählen und bereitstellen, sodass die VMs in die Amazon AWS-Umgebung Ihrer Wahl migriert werden.
+Sie können einen Migrationsplan auswählen und ihn so konfigurieren, dass die VMs in die Amazon AWS-Umgebung Ihrer Wahl migriert werden.
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
@@ -93,16 +93,16 @@ Wenn Sie Kommentardetails für einen Migrationsplan ändern müssen, bearbeiten 
 
 
 
-=== Erstellen Sie einen PDF-Bericht eines Migrationsplans
+=== Erstellen Sie einen PDF- oder CSV-Bericht über einen Migrationsplan.
 
-Erstellen Sie einen PDF-Bericht mit den Details eines Migrationsplans.
+Erstellen Sie einen PDF- oder CSV-Bericht mit den Details eines Migrationsplans.
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
 . Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.
-. Wählen Sie die *Migrationspläne* aus.
-. Wählen Sie das Aktionsmenü (...) für den Migrationsplan aus, für den ein PDF-Bericht erstellt werden soll, und wählen Sie *Bericht erstellen*.
-. Geben Sie einen Namen für das Berichts-PDF ein und wählen Sie *Speichern*.
+. Wählen Sie *Migrationspläne* aus.
+. Wählen Sie im Menü „Aktionen“ (...) den Migrationsplan aus, für den Sie einen PDF- oder CSV-Bericht erstellen möchten, und wählen Sie dann *Plan herunterladen (PDF)* oder *VM-Bericht herunterladen (CSV)*.
+. Geben Sie einen Namen für den Bericht ein und wählen Sie *Speichern*.
 
 
 

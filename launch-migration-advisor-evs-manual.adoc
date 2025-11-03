@@ -13,19 +13,20 @@ summary: Melden Sie sich bei der NetApp Workload Factory an, um auf das VMware-P
 [role="lead"]
 Melden Sie sich bei der NetApp Workload Factory an, um auf das VMware-Planungscenter zuzugreifen.  Von dort aus können Sie manuell einen Bereitstellungsplan oder Migrationsplan für Amazon EVS erstellen, der auf Ihre Anforderungen zugeschnitten ist.
 
-Beachten Sie, dass Sie für den Zugriff auf Workload Factory einen Benutzernamen und ein Kennwort benötigen.  Wenn Sie keinen Zugriff haben, erstellen Sie jetzt ein Konto.  Siehe die Anweisungen https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Hier"] .
-
-
-
-== Erstellen Sie einen Bereitstellungsplan, indem Sie die Umgebungsanforderungen manuell angeben
-
 Sie können Ihre Anforderungen für virtuelle Maschinen im Amazon Elastic VMware Service manuell angeben und angepasste Amazon FSx für NetApp ONTAP-Dateisysteme als externe Datenspeicher verwenden.
 
-.Anforderungen
+
+
+== Anforderungen
+
+* Sie benötigen einen Benutzernamen und ein Passwort, um auf Workload Factory zugreifen zu können.  Falls Sie noch keinen Zugriff haben, erstellen Sie jetzt ein Konto.  Siehe die Anweisungen. https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Hier"] Die
 * Sie müssen über ein Abonnement für den Amazon Elastic VMware Service verfügen.
 
 
-.Schritte
+
+
+== Schritte
+
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
 . Wenn Sie Workload Factory über die Workload Factory-Konsole aufgerufen haben, wählen Sie optional in der Kachel „VMware-Workloads“ *VMware Planning Center* und dann *VMware Planning Center* aus.  Das VMware-Planungscenter wird angezeigt.
 . Wählen Sie *EVS-Plan manuell erstellen*.
@@ -46,7 +47,10 @@ Beachten Sie die folgenden Leistungsanforderungen und Empfehlungen für die VM-M
 +
 Standardmäßig speichert Workload Factory den Migrationsplan im Planungscenter.  Sie können diese Option oben auf der Seite deaktivieren.
 
-. Wenn Sie mit dem Migrationsplan zufrieden sind, können Sie die Plandetails optional als PDF-Dokument herunterladen, indem Sie *Plan exportieren (PDF)* auswählen.
+. Optional können Sie den Migrationsplan als PDF- oder CSV-Datei exportieren, indem Sie oben rechts auf der Seite *Plan verwalten* und anschließend *Bericht herunterladen (.pdf)* oder *VM-Speicherbereitstellung herunterladen (.csv)* auswählen.
++
+Die .csv-Datei erstellt eine Übersicht aller im Migrationsplan enthaltenen VMs sowie der ihnen zugewiesenen Speichervolumes.
+
 . Wenn Sie bereit sind, den Bereitstellungsplan bereitzustellen, wählen Sie *Bereitstellen*.
 
 

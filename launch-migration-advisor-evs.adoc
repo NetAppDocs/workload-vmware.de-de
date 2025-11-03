@@ -13,19 +13,20 @@ summary: Vom VMware-Planungscenter aus können Sie den Amazon EVS-Migrationsbera
 [role="lead"]
 Vom VMware-Planungscenter aus können Sie den Amazon EVS-Migrationsberater starten, der Sie bei der Erstellung eines Migrationsplans unterstützt, der auf Ihre Anforderungen zugeschnitten ist.
 
-Beachten Sie, dass Sie für den Zugriff auf Workload Factory einen Benutzernamen und ein Kennwort benötigen.  Wenn Sie keinen Zugriff haben, erstellen Sie jetzt ein Konto.  Siehe die Anweisungen https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Hier"] .
-
-
-
-== Erstellen eines Implementierungsplans mithilfe des Migrationsberaters
-
 Sie können einen Bereitstellungsplan erstellen, um virtuelle Maschinen zum Amazon Elastic VMware Service zu migrieren und angepasste Amazon FSx for NetApp ONTAP Dateisysteme als externe Datenspeicher zu verwenden.  Die Optionen im Migrationsratgeber können je nach dem zum Erfassen der VM-Inventardaten verwendeten Tool unterschiedlich sein.
 
-.Anforderungen
+
+
+== Anforderungen
+
+* Sie benötigen einen Benutzernamen und ein Passwort, um auf Workload Factory zugreifen zu können.  Falls Sie noch keinen Zugriff haben, erstellen Sie jetzt ein Konto.  Siehe die Anweisungen. https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Hier"] Die
 * Sie müssen über ein Abonnement für den Amazon Elastic VMware Service verfügen.
 
 
-.Schritte
+
+
+== Schritte
+
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
 . Wenn Sie Workload Factory über die Workload Factory-Konsole aufgerufen haben, wählen Sie optional in der Kachel „VMware-Workloads“ *VMware Planning Center* und dann *VMware Planning Center* aus.  Das VMware-Planungscenter wird angezeigt.
 . Wählen Sie aus der Liste ein VM-Inventar aus, das Sie zum Erstellen eines Bereitstellungsplans verwenden möchten, und wählen Sie in dieser Zeile *Planung starten* aus.
@@ -91,7 +92,7 @@ In der VM-Liste können Sie auswählen, welche Arten von VM-Informationen als Sp
 [discrete]
 ===== Design
 
-. Überprüfen Sie auf der Seite *ClassReview-Instanzspeicherzuweisung* die VM-Informationen, Volume-Klassifizierungsregeln, Volume-Zuweisungen und die Liste der Volumes, die im Rahmen der Bereitstellung migriert werden, und wählen Sie dann *Weiter* aus.
+* Überprüfen Sie auf der Seite *ClassReview-Instanzspeicherzuweisung* die VM-Informationen, Volume-Klassifizierungsregeln, Volume-Zuweisungen und die Liste der Volumes, die im Rahmen der Bereitstellung migriert werden, und wählen Sie dann *Weiter* aus.
 
 
 [discrete]
@@ -103,6 +104,10 @@ Oben auf der Seite werden die monatlichen Einsparungen für FSX für ONTAP-Files
 
 +
 Der Migrationsplan wird standardmäßig automatisch in der Liste der Pläne im Planungscenter gespeichert.
+
+. Optional können Sie den Migrationsplan als PDF- oder CSV-Datei exportieren, indem Sie oben rechts auf der Seite *Plan verwalten* und anschließend *Bericht herunterladen (.pdf)* oder *VM-Speicherbereitstellung herunterladen (.csv)* auswählen.
++
+Die .csv-Datei erstellt eine Übersicht aller im Migrationsplan enthaltenen VMs sowie der ihnen zugewiesenen Speichervolumes.
 
 . Wenn Sie bereit sind, mit dem Plan fortzufahren, wählen Sie *Bereitstellung* aus, um mit der Bereitstellung des empfohlenen Amazon FSx for NetApp ONTAP Dateisystems zu beginnen.
 
