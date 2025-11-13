@@ -29,7 +29,7 @@ Vom Planungscenter aus können Sie Ihre VM-Inventardaten hochladen, vorherige In
 --
 RVTools ist eine Windows-Anwendung, die mit vCenter und ESX-Server (5.x bis 8.0) interagiert, um Informationen über Ihre virtuellen VMware-Umgebungen zu erfassen. Es sammelt Informationen über VMs, CPU, Arbeitsspeicher, Festplatten, Cluster, ESX Hosts, Datastores und vieles mehr. Sie können diese Informationen zur Verwendung mit dem Migrationsberater in eine xlsx-Datei exportieren.
 
-https://www.robware.net/home["Erfahren Sie mehr über RVTools"^]
+im https://www.dell.com/en-us/shop/vmware/sl/rvtools["Erfahren Sie mehr über RVTools"^]
 
 .Schritte
 . Wählen Sie die Kachel *RVTools* und dann *Weiter*.
@@ -37,14 +37,14 @@ https://www.robware.net/home["Erfahren Sie mehr über RVTools"^]
 Die Seite *Prepare for AWS Cloud Onboarding* wird angezeigt.
 
 . Geben Sie einen Namen für den VM-Inventardatensatz ein, den Sie erstellen möchten.
-. Laden Sie RVTools 4.4.2 oder höher von herunter, und installieren Sie sie https://www.robware.net/download["RVTools-Website"^]
+. Laden Sie RVTools 4.4.2 oder höher von der Website herunter und installieren Sie es. https://www.dell.com/en-us/shop/vmware/sl/rvtools["RVTools-Website"^]
 . Starten Sie RVTools, und melden Sie sich beim Ziel-vCenter-Server an.
 +
 Dadurch werden Informationen über diesen vCenter-Server erfasst.
 
 . Exportieren Sie Ihre VMware-Informationen in eine xlsx- oder xls-Datei.
 +
- https://resources.robware.net/resources/prod/RVTools.pdf["RVTools-Dokumentation"^]Weitere Informationen finden Sie im Kapitel „Kommandozeilenparameter“ in der.
+Siehe das Kapitel über „Befehlszeilenparameter“ im https://www.dell.com/en-us/shop/vmware/sl/rvtools["Die RVTools-Dokumentation befindet sich im Abschnitt „Ressourcen“."^] für weitere Details.
 
 . Wählenimage:button-upload-file.png["Die Schaltfläche „Hochladen“"] und wählen Sie die RVTools-Datei aus, die Sie exportiert haben.
 . Wählen Sie *Hochladen*.

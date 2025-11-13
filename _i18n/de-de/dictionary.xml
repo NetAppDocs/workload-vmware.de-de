@@ -33,9 +33,7 @@
   <block id="3f8f9b99b287380b37d3886a9f7e40f7" category="open-title">Verwenden Sie die RVTools-Software</block>
   <block id="18498b95c15ee1034dbf55a71b7c7b9d" category="paragraph">RVTools ist eine Windows-Anwendung, die mit vCenter und ESX-Server (5.x bis 8.0) interagiert, um Informationen über Ihre virtuellen VMware-Umgebungen zu erfassen. Es sammelt Informationen über VMs, CPU, Arbeitsspeicher, Festplatten, Cluster, ESX Hosts, Datastores und vieles mehr. Sie können diese Informationen zur Verwendung mit dem Migrationsberater in eine xlsx-Datei exportieren.</block>
   <block id="344899ab535d99090285d73527e8b852" category="inline-link">Erfahren Sie mehr über RVTools</block>
-  <block id="707b583376def9edad1fc8a7199124ea" category="paragraph"><block ref="707b583376def9edad1fc8a7199124ea" category="inline-link-rx"></block></block>
   <block id="5525d9548d578c70365c720a2035b2fa" category="inline-link">RVTools-Website</block>
-  <block id="13613d07869f39104d3c7dc70d0a584e" category="list-text">Laden Sie RVTools 4.4.2 oder höher von herunter, und installieren Sie sie<block ref="c7c9965d016bc084e3044c04ae01ffcd" category="inline-link-rx"></block></block>
   <block id="93768280696f91c787d919221b25e927" category="list-text">Starten Sie RVTools, und melden Sie sich beim Ziel-vCenter-Server an.</block>
   <block id="1121913c71bf9c4dfefecfd1802408c4" category="paragraph">Dadurch werden Informationen über diesen vCenter-Server erfasst.</block>
   <block id="418e7e2732f5b077d0a55b9086325810" category="list-text">Exportieren Sie Ihre VMware-Informationen in eine xlsx- oder xls-Datei.</block>
@@ -250,7 +248,6 @@
   <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link">Dokumentation zu Amazon FSX für NetApp ONTAP</block>
   <block id="0eb8b604056cff3e56816d6bff3e3b57" category="paragraph">Informationen zum Verwalten Ihres FSX für ONTAP-Dateisystems finden Sie unter, um die<block ref="fbab171416a38225bcf6963b32f6d497" category="inline-link-rx"></block> Backup- und Schutzfunktionen anzuzeigen, die Sie verwenden können.</block>
   <block id="b7c19b7e4e8df7fa64586112497c63f5" category="summary">Steigen Sie mit dem VMware Migrationsberater ein, um Ihre aktuelle Infrastruktur mithilfe von Amazon FSX for ONTAP als externe NFS-Datastores in VMware Cloud on AWS zu verlagern.</block>
-  <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link">Betriebsmodi</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Eins</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Zwei</block>
   <block id="fb391f4cf6483b8b419032dc188bd9d8" category="inline-link">Erfahren Sie, wie Sie Anmeldeinformationen und Berechtigungen hinzufügen</block>
@@ -316,7 +313,6 @@
   <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">Migrieren Sie zu Amazon EC2</block>
   <block id="d33a9cde7de06ccdf8aba953dd2aeb0d" category="list-text">Führen Sie das heruntergeladene Datensammlerskript aus und legen Sie die Datenerfassungsoption für die VM-Statistik „täglich“ oder „stündlich“ fest.</block>
   <block id="8109466383788459676a9b2ec067ebe7" category="paragraph">Das Skript gibt eine komprimierte Datei mit einem Zeitstempel im Namen im aktuellen Arbeitsverzeichnis aus. Die ZIP-Datei enthält eine Liste aller VMs und ihrer Eigenschaften sowie ihrer IOPS- und Durchsatzdaten.</block>
-  <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph"><block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block>Weitere Informationen finden Sie im Kapitel „Kommandozeilenparameter“ in der.</block>
   <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">Erstellung eines Amazon EC2-Implementierungsplans über den Migrationsberater</block>
   <block id="414196819b55791be7e7314c3ef3e1cb" category="paragraph"><block ref="256f57bc6446332fd4641ea86650235a" category="inline-link-macro-rx"></block>.</block>
   <block id="f04f84e2375dd70545e2146f2d203aa3" category="paragraph">Die Hauptseite des VMware Migration Advisor wird angezeigt.</block>
@@ -358,7 +354,6 @@
   <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">Wählen Sie *Helfen Sie mir bei der Entscheidung*, wenn Sie sich nicht sicher sind, welches Verhältnis Sie wählen sollen. Das Dialogfeld _Data Reduction Ratio Assistant_ wird angezeigt. Wählen Sie alle Aussagen für Ihren VM-Bestand und Ihren Storage-Bestand aus. Der Assistent empfiehlt eine entsprechende Datenreduktionsrate. Wählen Sie *Anwenden*, um das empfohlene Verhältnis zu verwenden.</block>
   <block id="c9b4182f157d4d581536f53df8cd512d" category="paragraph">Die Workload-Farm für VMware unterstützt jetzt die Migration zu Amazon EC2 mithilfe des VMware Migrationsberaters.</block>
   <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link">Konsolenerfahrungen</block>
-  <block id="80d4b078f6c58ce0995857130402115f" category="paragraph">Bevor Sie beginnen, sollten Sie ein Verständnis von haben<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block>.</block>
   <block id="c01367c7ec78f01defe37cab59b14851" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block>.</block>
   <block id="65b67cfacaf9f942b7e72202ad4253cf" category="paragraph"><block ref="f440c867abbb2e895fda5fc4c7c4b4d3" category="inline-link-macro-rx"></block>.</block>
   <block id="99518c9c883f7beb3f0b6f82063520fd" category="inline-link-macro">Erfahren Sie, wie Sie Ihre FSX für ONTAP-Dateisysteme verbinden</block>
@@ -761,4 +756,15 @@
   <block id="ce8e7e98b5597e78e8fd7d6bc94729cb" category="inline-link">Anmeldeinformationen manuell zu einem Konto hinzufügen</block>
   <block id="89de75212fc10daeec1259e132f3752a" category="paragraph">Wenn Sie Berechtigungen erteilen möchten, müssen Sie Folgendes tun:<block ref="869f3c251b5d8f71098ec6e85e90e6d1" category="inline-link-rx"></block> Dies umfasst die Auswahl von Workload-Funktionen wie Datenbanken und KI sowie die Erstellung der IAM-Richtlinien für die erforderlichen Berechtigungen.</block>
   <block id="78a1fd3770ad9cba75be7a432485a77e" category="section-title">2. November 2025</block>
+  <block id="50d2e9de63b2a2c16916c2f1b6818a38" category="paragraph"><block ref="50d2e9de63b2a2c16916c2f1b6818a38" category="inline-link-rx"></block></block>
+  <block id="a64a69c3508f33cfd62281ba53751057" category="list-text">Laden Sie RVTools 4.4.2 oder höher herunter und installieren Sie es von<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="862ba35dfdf3a7836d71ed579dfca3ec" category="paragraph">Siehe das Kapitel über „Befehlszeilenparameter“ im<block ref="cb13b358aa71a504b38a0472274f8ec0" category="inline-link-rx"></block> für weitere Details.</block>
+  <block id="d6add28cedc07b8a80ae0bda37f86523" category="list-text">Laden Sie RVTools 4.4.2 oder höher herunter und installieren Sie es im<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="33daaeb5c5025e30dc44f9f5bb7098a6" category="inline-link">Die RVTools-Dokumentation finden Sie im Abschnitt „Ressourcen“.</block>
+  <block id="bc7e9c87828b6c8d46b8ee715cdad433" category="paragraph">Siehe das Kapitel über „Befehlszeilenparameter“ im<block ref="cba36d23348879ff4ac7b19a18786876" category="inline-link-rx"></block> für weitere Details.</block>
+  <block id="c6e53b973f12d3e5f6edcac94bd4cafc" category="paragraph">Bevor Sie beginnen, sollten Sie ein Verständnis der :https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html[Berechtigungen für NetApp Workload Factory^] haben.</block>
+  <block id="ed642dbc1cfaad7c138d0206f75e0100" category="paragraph">im<block ref="bf6bdc955de5a25fe27ac07cc3dd7f22" category="inline-link-rx"></block></block>
+  <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">Laden Sie RVTools 4.4.2 oder höher von der Website herunter und installieren Sie es.<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">Die RVTools-Dokumentation befindet sich im Abschnitt „Ressourcen“.</block>
+  <block id="aab95159d263780315dd964c73eaae67" category="paragraph">Siehe das Kapitel über „Befehlszeilenparameter“ im<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> für weitere Details.</block>
 </blocks>
