@@ -13,8 +13,6 @@ summary: Sie können das VM-Collector-Skript Migration Advisor oder RVTools verw
 [role="lead"]
 Sie können das VM-Collector-Skript Migration Advisor oder RVTools verwenden, um Ihre aktuellen VM-Konfigurationen zu erfassen. Wir empfehlen die Verwendung des VM-Collector-Skripts Migration Advisor, da es sowohl VM-Konfigurations- als auch Performance-Daten für den genauesten Plan erfasst.
 
-Wenn Sie ein neues System basierend auf einem vorhandenen, lokal gespeicherten Bereitstellungsplan bereitstellen möchten, können Sie diesen Schritt überspringen und den vorhandenen Bereitstellungsplan auswählen. link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["Erfahren Sie, wie Sie einen vorhandenen Plan zur Erstellung eines neuen Plans nutzen"].
-
 [role="tabbed-block"]
 ====
 .Verwenden Sie das Migrationberater VM-Collector-Skript

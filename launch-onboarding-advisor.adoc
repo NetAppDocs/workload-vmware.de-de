@@ -13,11 +13,7 @@ summary: Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware-M
 [role="lead"]
 Melden Sie sich bei der NetApp Workload Factory an, um auf den VMware-Migrationsberater zuzugreifen.  Sie folgen den Schritten des Assistenten, um einen Bereitstellungs- oder Migrationsplan zu erstellen, der auf Ihre Anforderungen zugeschnitten ist.
 
-Bei der Migration zu VMware Cloud können Sie mit dem Migrationsberater einen Bereitstellungsplan für folgende Szenarien erstellen:
-
-* <<Erstellen Sie einen Implementierungsplan basierend auf einer lokalen vSphere-Umgebung,Um Ihre aktuelle lokale vSphere Umgebung in die VMware Cloud zu migrieren.>>
-* <<Create a deployment plan based on an existing plan,Bereitstellen eines Systems in der Cloud basierend auf einem bestehenden Implementierungsplan mit ähnlichen Anforderungen>>
-
+Bei der Migration zu VMware Cloud können Sie den Migrationsberater verwenden, um Ihre aktuelle lokale vSphere-Umgebung in die VMware Cloud zu migrieren.
 
 Beachten Sie, dass Sie für den Zugriff auf Workload Factory einen Benutzernamen und ein Kennwort benötigen.  Wenn Sie keinen Zugriff haben, erstellen Sie jetzt ein Konto.  Siehe die Anweisungen https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Hier"] .
 
