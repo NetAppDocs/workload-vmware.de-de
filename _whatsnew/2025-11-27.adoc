@@ -1,0 +1,13 @@
+= Berechnen Sie die Kosteneinsparungen durch die Migration zu Amazon Elastic VMware Service für bestimmte Regionen
+:allow-uri-read: 
+
+
+
+
+=== Berechnen Sie die Kosteneinsparungen durch die Migration zu Amazon Elastic VMware Service für bestimmte Regionen
+
+Sie können nun den Wert verschiedener Bereitstellungsoptionen für Ihre Cloud-Migration erkunden, den Aufwand für die Lösungsbewertung optimieren und sich eingehend mit Lösungen befassen, die das Potenzial haben, in der Cloud Mehrwert und Einsparungen zu bieten.
+
+Sie können auch die Einsparungen an vCPU-Kernen überprüfen, die durch die Verwendung von FSx für ONTAP für eine EVS-Bereitstellung erzielt werden können.
+
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Entdecken Sie die Einsparungen für Amazon Elastic VMware Service mit NetApp Workload Factory"]
