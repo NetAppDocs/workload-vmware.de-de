@@ -767,4 +767,7 @@
   <block id="6706b7bf4c170433cc0ab592c9e594f8" category="list-text">Wählen Sie unter *EVS-Abrechnungsplan* den Plan aus, den Sie nutzen.</block>
   <block id="74ce259d0d76a9e0cd46f6300bcc2371" category="list-text">Um den Migrationsberater zu verwenden <block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block> Wählen Sie für eine Amazon EVS-Umgebung die Option *EVS-Migration planen*.</block>
   <block id="815e75619b370a1b845eccec6979ed74" category="section-title">27. November 2025</block>
+  <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">Integration des KI-Assistenten auf der Startseite</block>
+  <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Auf der Startseite der Workload Factory-Konsole ist der KI-Assistent „Ask me“ integriert, mit dem Sie Fragen zu Ihrer eigenen Speicherlandschaft stellen, personalisierte Einblicke direkt aus Ihrer Umgebung erhalten und auf frühere Konversationen zurückgreifen können. Sie können mit „Fragen Sie mich“ interagieren, um Ihre Workloads zu verstehen, Probleme zu beheben und mehr über Workload Factory zu erfahren – alles, ohne die Konsole zu verlassen.</block>
+  <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">04. Januar 2026</block>
 </blocks>
