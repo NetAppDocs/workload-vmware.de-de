@@ -15,9 +15,9 @@ Bevor Sie einen Migrationsplan erstellen können, müssen Sie Ihre VM-Inventarda
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
-. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.
+. Wählen Sie das Menü aus image:workloads-menu-icon.png["Über das Hamburger-Menüsymbol kann man zu Workloads wie Speicher, EDA, KI, Datenbanken, VMware und Administration navigieren."] und wählen Sie dann *VMware* aus.
 +
-Vom Planungscenter aus können Sie Ihre VM-Inventardaten hochladen, vorherige Inventardaten-Uploads anzeigen und eine Migration mithilfe eines beliebigen VM-Inventardatensatzes planen.
+Das Planungszentrum wird angezeigt. Im Planungszentrum können Sie Ihre VM-Inventardaten hochladen, frühere Inventardaten-Uploads einsehen und eine Migration unter Verwendung eines beliebigen VM-Inventardatensatzes planen.
 
 . Wählen Sie *VM-Inventar hochladen*.
 . Wählen Sie die zu verwendende Datenerfassungsmethode aus:

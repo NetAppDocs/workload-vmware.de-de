@@ -26,7 +26,11 @@ NOTE: Lesen Sie vor dem Fortfahren den Haftungsausschluss unten im Sparrechner, 
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
-. Wählen Sie auf der Kachel „VMware-Workloads“ die Option „Einsparungen erkunden“ und dann „Amazon Elastic VMware Service (EVS)“ aus.  Der Sparrechner wird angezeigt.
+. Wählen Sie das Menü aus image:workloads-menu-icon.png["Über das Hamburger-Menüsymbol kann man zu Workloads wie Speicher, EDA, KI, Datenbanken, VMware und Administration navigieren."] und wählen Sie dann *VMware* aus.
++
+Das Planungszentrum wird angezeigt.
+
+. Wählen Sie im VMware-Menü *Einsparmöglichkeiten entdecken*. Der Sparrechner wird angezeigt.
 +
 Im Bereich *Umgebungseinstellungen* können Sie Ihre EVS-Bereitstellungsregion auswählen und die TCO- und Einsparungsprognosen entsprechend anpassen.
 

@@ -60,9 +60,9 @@ Beachten Sie, dass Sie, wenn Sie langfristige Statistiken aus Ihren VMs erfassen
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
-. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.
+. Wählen Sie das Menü aus image:workloads-menu-icon.png["Über das Hamburger-Menüsymbol kann man zu Workloads wie Speicher, EDA, KI, Datenbanken, VMware und Administration navigieren."] und wählen Sie dann *VMware* aus.
 +
-Vom Planungscenter aus können Sie Ihre VM-Inventardaten hochladen, vorherige Inventardaten-Uploads anzeigen und eine Migration mit einem beliebigen VM-Inventardatensatz planen. Wählen Sie dann *Migration zu AWS Native Compute* aus.  Der Begrüßungsbildschirm des VMware-Migrationsberaters wird angezeigt.
+Das Planungszentrum wird angezeigt. Im Planungszentrum können Sie Ihre VM-Inventardaten hochladen, frühere Uploads einsehen und eine Migration mithilfe beliebiger VM-Inventardatensätze planen. Wählen Sie anschließend *Migration zu AWS Native Compute* aus. Der VMware Migration Advisor-Startbildschirm wird angezeigt.
 
 +
 Informationen zu den Vorteilen des Migrationsberaters finden Sie hier.

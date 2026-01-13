@@ -33,7 +33,10 @@ Sie können den Namen eines gespeicherten Datensatzes ändern.
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
-. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.
+. Wählen Sie das Menü aus image:workloads-menu-icon.png["Über das Hamburger-Menüsymbol kann man zu Workloads wie Speicher, EDA, KI, Datenbanken, VMware und Administration navigieren."] und wählen Sie dann *VMware* aus.
++
+Das Planungszentrum wird angezeigt.
+
 . Wählen Sie das Aktionsmenü (...) für den Datensatz aus, den Sie umbenennen möchten, und wählen Sie *Umbenennen*.
 . Geben Sie einen neuen Namen für den Datensatz ein und wählen Sie *Speichern*.
 
@@ -46,7 +49,10 @@ Wenn ein Datensatz nicht mehr benötigt wird, können Sie ihn jederzeit löschen
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
-. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.
+. Wählen Sie das Menü aus image:workloads-menu-icon.png["Über das Hamburger-Menüsymbol kann man zu Workloads wie Speicher, EDA, KI, Datenbanken, VMware und Administration navigieren."] und wählen Sie dann *VMware* aus.
++
+Das Planungszentrum wird angezeigt.
+
 . Wählen Sie das Aktionsmenü (...) für den Datensatz aus, den Sie löschen möchten, und wählen Sie *Löschen*.
 . Wählen Sie *Löschen*, um die Aktion zu bestätigen.
 
@@ -65,8 +71,11 @@ Sie können einen Migrationsplan auswählen und ihn so konfigurieren, dass die V
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
-. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.
-. Wählen Sie das Menü *Migrationspläne*.
+. Wählen Sie das Menü aus image:workloads-menu-icon.png["Über das Hamburger-Menüsymbol kann man zu Workloads wie Speicher, EDA, KI, Datenbanken, VMware und Administration navigieren."] und wählen Sie dann *VMware* aus.
++
+Das Planungszentrum wird angezeigt.
+
+. Wählen Sie *Migrationspläne* aus.
 . Wählen Sie das Aktionsmenü (...) für den Migrationsplan aus, den Sie bereitstellen möchten, und wählen Sie *Bereitstellen*.
 . Beachten Sie je nach Migrationsplan die Anweisungen zum Bereitstellen des Dateisystems:
 +
@@ -85,8 +94,11 @@ Wenn Sie Kommentardetails für einen Migrationsplan ändern müssen, bearbeiten 
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
-. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.
-. Wählen Sie die *Migrationspläne* aus.
+. Wählen Sie das Menü aus image:workloads-menu-icon.png["Über das Hamburger-Menüsymbol kann man zu Workloads wie Speicher, EDA, KI, Datenbanken, VMware und Administration navigieren."] und wählen Sie dann *VMware* aus.
++
+Das Planungszentrum wird angezeigt.
+
+. Wählen Sie *Migrationspläne* aus.
 . Wählen Sie das Aktionsmenü (...) für den Migrationsplan aus, den Sie bearbeiten möchten, und wählen Sie *Kommentar bearbeiten*.
 . Geben Sie einen Kommentar ein und wählen Sie *Speichern*.
 
@@ -99,7 +111,10 @@ Erstellen Sie einen PDF- oder CSV-Bericht mit den Details eines Migrationsplans.
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
-. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.
+. Wählen Sie das Menü aus image:workloads-menu-icon.png["Über das Hamburger-Menüsymbol kann man zu Workloads wie Speicher, EDA, KI, Datenbanken, VMware und Administration navigieren."] und wählen Sie dann *VMware* aus.
++
+Das Planungszentrum wird angezeigt.
+
 . Wählen Sie *Migrationspläne* aus.
 . Wählen Sie im Menü „Aktionen“ (...) den Migrationsplan aus, für den Sie einen PDF- oder CSV-Bericht erstellen möchten, und wählen Sie dann *Plan herunterladen (PDF)* oder *VM-Bericht herunterladen (CSV)*.
 . Geben Sie einen Namen für den Bericht ein und wählen Sie *Speichern*.
@@ -113,8 +128,11 @@ Wenn ein Migrationsplan nicht mehr benötigt wird, können Sie ihn jederzeit lö
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
-. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.
-. Wählen Sie die *Migrationspläne* aus.
+. Wählen Sie das Menü aus image:workloads-menu-icon.png["Über das Hamburger-Menüsymbol kann man zu Workloads wie Speicher, EDA, KI, Datenbanken, VMware und Administration navigieren."] und wählen Sie dann *VMware* aus.
++
+Das Planungszentrum wird angezeigt.
+
+. Wählen Sie *Migrationspläne* aus.
 . Wählen Sie das Aktionsmenü (...) für den Migrationsplan aus, den Sie löschen möchten, und wählen Sie *Löschen*.
 . Bestätigen Sie die Aktion, indem Sie *Löschen* auswählen.
 

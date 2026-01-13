@@ -378,7 +378,6 @@
   <block id="694a4615408e2c20273a3b2eddddc05f" category="list-text">Wählen Sie auf der Seite *Scope* die VMs aus der Liste aus, die Sie in die AWS-Migration aufnehmen möchten. Sie können die Liste nach dem Stromstatus jeder VM und nach dem Datacenter und Cluster, in dem sich die VM befindet, filtern.</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">Führen Sie einen der folgenden Schritte aus:</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">1 September 2024</block>
-  <block id="1d9b4d532dc0a6a0e4f5f8e48c2bf2fc" category="list-text">Wählen Sie in der VMware-Workload-Kachel *Assess and Plan* aus und wählen Sie dann *Migration to VMware Cloud on AWS* aus.</block>
   <block id="3d749d00ccdbb179e634ecc56aff4377" category="list-text">Führen Sie das heruntergeladene Datensammlerskript aus und legen Sie die Datenerfassungsoption für die VM-Statistik „stündlich“ oder „täglich“ fest.</block>
   <block id="b2d8e0c32623281035bb9ce3ea340526" category="list-text">*LastHour* erfasst IOPS und Durchsatzdaten für die letzten 1 Stunde mit Intervallen von 20 Sekunden.</block>
   <block id="c3aef4fe00d86c06f8e8b666bd7c9f02" category="list-text">*LastDay* erfasst IOPS und Durchsatzdaten der letzten 24 Stunden in 5-Minuten-Intervallen.</block>
@@ -467,7 +466,6 @@
   <block id="b23b05aa1d44c04b2da76aa4c7408d6c" category="section-title">Entdecken Sie Einsparungen für EVS-Umgebungen</block>
   <block id="15783568389e909d8a2f1f68183d26bb" category="paragraph">Befolgen Sie diese Schritte, um potenzielle Einsparungen bei einer geplanten Migration zu einer Amazon EVS-Umgebung zu ermitteln.</block>
   <block id="37ef970024a5557ba41801e6f2130fd9" category="admonition">Lesen Sie vor dem Fortfahren den Haftungsausschluss unten im Sparrechner, um mehr darüber zu erfahren, wie die Preisschätzungen berechnet werden.</block>
-  <block id="1811dba1a30bbfb16d7bd36ec7e8759c" category="list-text">Wählen Sie auf der Kachel „VMware-Workloads“ die Option „Einsparungen erkunden“ und dann „Amazon Elastic VMware Service (EVS)“ aus.  Der Sparrechner wird angezeigt.</block>
   <block id="a48f1fc19140e11332765f3ad9d224e1" category="list-text">Passen Sie die folgenden Schieberegler nach Bedarf an, um Echtzeit-Einsparungsberechnungen für die von Ihnen ausgewählten Werte anzuzeigen.  Wenn Sie eine Tastatur verwenden, können Sie mit den Pfeiltasten kleine Anpassungen vornehmen:</block>
   <block id="b17baab6ba72f6d1c79c0b2294137330" category="list-text">*Erforderliche physische CPU (Anzahl)*</block>
   <block id="f1696c7a8437d9eca6a19bba82e206b9" category="list-text">*Erforderlicher physischer Speicher (GiB)*</block>
@@ -502,8 +500,6 @@
   <block id="81ee9955f68100a5e460b3f794e65e9b" category="paragraph"><block ref="81ee9955f68100a5e460b3f794e65e9b" category="inline-link-rx"></block></block>
   <block id="122a56eb4649431a7f2dbb8886f047cc" category="doc">Entdecken Sie die Einsparungen für Amazon Elastic VMware Service mit NetApp Workload Factory</block>
   <block id="d516e280a366ca18651acbc6e4772bf0" category="list-text">Melden Sie sich bei Workload Factory mit einem der folgenden<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block> .</block>
-  <block id="a3f54610cbcda64610ceaeba76793123" category="list-text">Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.</block>
-  <block id="2ee908dfa7d26403e44e0c3c2ce404f0" category="paragraph">Vom Planungscenter aus können Sie Ihre VM-Inventardaten hochladen, vorherige Inventardaten-Uploads anzeigen und eine Migration mit einem beliebigen VM-Inventardatensatz planen. Wählen Sie dann *Migration zu AWS Native Compute* aus.  Der Begrüßungsbildschirm des VMware-Migrationsberaters wird angezeigt.</block>
   <block id="d5db9fed5445fd6da0101158bde40fad" category="list-text">Speichern Sie dieses Token zur Vorbereitung der Verwendung mit dem Workload Factory-Migrationsberater.</block>
   <block id="c450ceba09f988891c5496ca97845c53" category="summary">Nachdem Sie überprüft haben, dass das empfohlene FSx for ONTAP -Dateisystem oder in einigen Fällen die Dateisysteme Ihren genauen Anforderungen entsprechen, können Sie Workload Factory verwenden, um das System in Ihrer AWS-Umgebung bereitzustellen.</block>
   <block id="5619c23907d6c8e136428b1ffb2d7cbd" category="paragraph">Nachdem Sie überprüft haben, dass das empfohlene FSx for ONTAP -Dateisystem (oder in einigen Fällen mehrere Dateisysteme) Ihren genauen Anforderungen entspricht, können Sie Workload Factory verwenden, um das System in Ihrer AWS-Umgebung bereitzustellen.</block>
@@ -523,7 +519,6 @@
   <block id="5aee541b6cca4e5c8849f06d0b79da2d" category="paragraph">Sie können VM-Inventardaten hochladen, wenn Sie bereit sind, Workload Factory zu verwenden, um Migrationsoptionen zu Amazon AWS-Umgebungen zu erkunden.  Siehe<block ref="31e8e3bc37bd2e1bade95d88393c52bb" category="inline-link-macro-rx"></block> Anweisungen hierzu finden Sie unter.</block>
   <block id="4cfbd8d29274bc983e664e06493a4303" category="section-title">Umbenennen eines Datasets</block>
   <block id="0705a0d205a3ce08fe1389b4cf5d5aba" category="paragraph">Sie können den Namen eines gespeicherten Datensatzes ändern.</block>
-  <block id="7fd30ff482388995a8513cf146671f4e" category="list-text">Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.  Das Planungscenter wird angezeigt.</block>
   <block id="110fd890f0f123db41f3cef28e294e4d" category="list-text">Wählen Sie das Aktionsmenü (...) für den Datensatz aus, den Sie umbenennen möchten, und wählen Sie *Umbenennen*.</block>
   <block id="2aa2935d11befe5eb053377a67c05f8f" category="list-text">Geben Sie einen neuen Namen für den Datensatz ein und wählen Sie *Speichern*.</block>
   <block id="58aa021adf712dc0e2813bcdcba181f3" category="section-title">Löschen eines Datasets</block>
@@ -533,7 +528,6 @@
   <block id="f80ba210e2b7f5a6a678422254f971c2" category="section-title">Verwalten von Migrationsplänen</block>
   <block id="35114aeb2258e143dcf714ece6d9d294" category="paragraph">Verwenden Sie das Migrationscenter, um Migrationspläne zu erstellen und zu verwalten.</block>
   <block id="3659e24395e47e249a7cb0babacdce89" category="section-title">Bereitstellen eines Migrationsplans</block>
-  <block id="d739eb8fed40a1b32724c4bd454b0f7b" category="list-text">Wählen Sie das Menü *Migrationspläne*.</block>
   <block id="956d376b583f5687a7637d9906bf6a8a" category="list-text">Wählen Sie das Aktionsmenü (...) für den Migrationsplan aus, den Sie bereitstellen möchten, und wählen Sie *Bereitstellen*.</block>
   <block id="5a71691c5600510f5a4512966f318d3b" category="list-text">Beachten Sie je nach Migrationsplan die Anweisungen zum Bereitstellen des Dateisystems:</block>
   <block id="a4534545db06dd96615fb42a8dcdf091" category="inline-link-macro">Bereitstellen des Dateisystems für Amazon VMware Cloud-Pläne</block>
@@ -544,7 +538,6 @@
   <block id="7e526b4bf6969bafd6a4c35e8b1f6858" category="list-text"><block ref="7e526b4bf6969bafd6a4c35e8b1f6858" category="inline-link-macro-rx"></block></block>
   <block id="47642a7e3c3b5c81c9ae2a3ea6b5b670" category="section-title">Bearbeiten des Kommentars für einen Migrationsplan</block>
   <block id="b8fcf4bb479081f2ff9078fded9fcbba" category="paragraph">Wenn Sie Kommentardetails für einen Migrationsplan ändern müssen, bearbeiten Sie den Kommentar im Planungscenter.</block>
-  <block id="ed977dfdfe1506958cfaf0814d2d88aa" category="list-text">Wählen Sie die *Migrationspläne* aus.</block>
   <block id="85ff4660d4c9887c8c3642f5b88f5c0f" category="list-text">Wählen Sie das Aktionsmenü (...) für den Migrationsplan aus, den Sie bearbeiten möchten, und wählen Sie *Kommentar bearbeiten*.</block>
   <block id="ffba1532f20138af6f125ed0e7922f0c" category="list-text">Geben Sie einen Kommentar ein und wählen Sie *Speichern*.</block>
   <block id="80150f821562b98f3c468bc4b96f7cfc" category="section-title">Löschen eines Migrationsplans</block>
@@ -571,7 +564,6 @@
   <block id="47940e0522122bf1e695d6ef8be611b4" category="doc">Manuelles Erstellen eines Bereitstellungsplans für Amazon EVS</block>
   <block id="974141ff0d1eb54059bc869fa1e21956" category="paragraph">Melden Sie sich bei der NetApp Workload Factory an, um auf das VMware-Planungscenter zuzugreifen.  Von dort aus können Sie manuell einen Bereitstellungsplan oder Migrationsplan für Amazon EVS erstellen, der auf Ihre Anforderungen zugeschnitten ist.</block>
   <block id="aa852edb1debe256686d19ef81384df5" category="paragraph">Beachten Sie, dass Sie für den Zugriff auf Workload Factory einen Benutzernamen und ein Kennwort benötigen.  Wenn Sie keinen Zugriff haben, erstellen Sie jetzt ein Konto.  Siehe die Anweisungen<block ref="8d9a8b8727a696c09218527f7717c32e" category="inline-link-rx"></block> .</block>
-  <block id="16c4fea5db1b123ee73083a03e23c825" category="list-text">Wenn Sie Workload Factory über die Workload Factory-Konsole aufgerufen haben, wählen Sie optional in der Kachel „VMware-Workloads“ *VMware Planning Center* und dann *VMware Planning Center* aus.  Das VMware-Planungscenter wird angezeigt.</block>
   <block id="3a24ead84cf153dcdbed17a6f2a5453f" category="list-text">Wählen Sie *EVS-Plan manuell erstellen*.</block>
   <block id="d81d55a8a22e2c2e3489e48eb0ed356b" category="list-text">Wenn Sie bereit sind, wählen Sie *Plan überprüfen* aus, um den Migrationsplan zu überprüfen.</block>
   <block id="09092a8424b4b288607f4a8069cab241" category="paragraph">Standardmäßig speichert Workload Factory den Migrationsplan im Planungscenter.  Sie können diese Option oben auf der Seite deaktivieren.</block>
@@ -674,7 +666,6 @@
   <block id="01e556e9ed381ddad48f5f248ea8c853" category="summary">Sie können das Planungscenter verwenden, um Informationen zu Ihrer aktuellen VMware-Umgebung hochzuladen.</block>
   <block id="549db19de828407c882fab2f54c0d91b" category="doc">Hochladen von VM-Inventardaten in die NetApp Workload Factory</block>
   <block id="549d0e83e0f77a058ecb115d751ef72a" category="paragraph">Bevor Sie einen Migrationsplan erstellen können, müssen Sie Ihre VM-Inventardaten hochladen.</block>
-  <block id="d1b898a05a6055416cc6065195fac618" category="paragraph">Vom Planungscenter aus können Sie Ihre VM-Inventardaten hochladen, vorherige Inventardaten-Uploads anzeigen und eine Migration mithilfe eines beliebigen VM-Inventardatensatzes planen.</block>
   <block id="6c2c52acb8ece2370c8022ea7c978cb0" category="list-text">Wählen Sie *VM-Inventar hochladen*.</block>
   <block id="d3157fb0911e0c33c9adcedf0e1598ec" category="list-text">Wählen Sie die zu verwendende Datenerfassungsmethode aus:</block>
   <block id="56a20a27e57943bc4d91537b0e964977" category="list-text">Wählen Sie die Kachel *RVTools* und dann *Weiter*.</block>
@@ -770,4 +761,11 @@
   <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">Integration des KI-Assistenten auf der Startseite</block>
   <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Auf der Startseite der Workload Factory-Konsole ist der KI-Assistent „Ask me“ integriert, mit dem Sie Fragen zu Ihrer eigenen Speicherlandschaft stellen, personalisierte Einblicke direkt aus Ihrer Umgebung erhalten und auf frühere Konversationen zurückgreifen können. Sie können mit „Fragen Sie mich“ interagieren, um Ihre Workloads zu verstehen, Probleme zu beheben und mehr über Workload Factory zu erfahren – alles, ohne die Konsole zu verlassen.</block>
   <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">04. Januar 2026</block>
+  <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">Über das Hamburger-Menüsymbol kann man zu Workloads wie Speicher, EDA, KI, Datenbanken, VMware und Administration navigieren.</block>
+  <block id="daba095d05b7fd9d182dec54a6d16128" category="list-text">Wählen Sie das Menü aus <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> und wählen Sie dann *VMware* aus.</block>
+  <block id="68cd9b93debb6e340198a3ce932bf558" category="list-text">Wählen Sie im VMware-Menü *Einsparmöglichkeiten entdecken*. Der Sparrechner wird angezeigt.</block>
+  <block id="436af711d4993660c5c38d9cf698cc6e" category="paragraph">Das Planungszentrum wird angezeigt. Im Planungszentrum können Sie Ihre VM-Inventardaten hochladen, frühere Uploads einsehen und eine Migration mithilfe beliebiger VM-Inventardatensätze planen. Wählen Sie anschließend *Migration zu AWS Native Compute* aus. Der VMware Migration Advisor-Startbildschirm wird angezeigt.</block>
+  <block id="45f41cadcd45c9728fa28d6a1cb8d206" category="list-text">Wählen Sie im VMware-Menü *Bewerten und planen* und anschließend *Migration zu VMware Cloud on AWS*.</block>
+  <block id="9af7ccdef2ffa0cddc3f29f9b918947c" category="list-text">Wählen Sie *Los geht's!*. Sie können die Anzeige dieser Seite durch Aktivieren des Kontrollkästchens deaktivieren.</block>
+  <block id="034ce347094f8e8ed94fd4499edd6a02" category="paragraph">Das Planungszentrum wird angezeigt. Im Planungszentrum können Sie Ihre VM-Inventardaten hochladen, frühere Inventardaten-Uploads einsehen und eine Migration unter Verwendung eines beliebigen VM-Inventardatensatzes planen.</block>
 </blocks>

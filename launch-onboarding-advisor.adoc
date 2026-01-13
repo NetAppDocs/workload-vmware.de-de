@@ -30,7 +30,7 @@ Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphe
 
 .Schritte
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
-. Wählen Sie auf der Kachel „VMware-Workloads“ *VMware-Planungscenter* aus.
+. Wählen Sie das Menü aus image:workloads-menu-icon.png["Über das Hamburger-Menüsymbol kann man zu Workloads wie Speicher, EDA, KI, Datenbanken, VMware und Administration navigieren."] und wählen Sie dann *VMware* aus.
 +
 Das Planungszentrum wird angezeigt.
 
