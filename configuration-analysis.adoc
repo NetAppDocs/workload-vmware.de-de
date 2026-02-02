@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: configuration-analysis.html 
+keywords: evs, well-architected, configuration analysis, best practices, recommendations 
+summary: Erfahren Sie, wie Workload Factory Amazon Elastic VMware Service-Konfigurationen analysiert, um Probleme zu identifizieren und Best-Practice-Empfehlungen bereitzustellen. 
+---
+= Konfigurationsanalyse für EVS-Konfigurationen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory analysiert regelmäßig Amazon Elastic VMware Service (EVS) Konfigurationen, um Abweichungen von Best Practices zu identifizieren. Nutzen Sie die Ergebnisse, um Leistung, Kosteneffizienz und Compliance zu verbessern.
+
+Zu den wichtigsten Fähigkeiten gehören:
+
+* Tägliche Konfigurationsanalyse
+* Automatische Best-Practice-Validierungen
+* Proaktive Beobachtbarkeit
+* Erkenntnisse in die Praxis umsetzen
+
+
+
+
+== Well-architected Status
+
+In der Workload Factory-Konsole wird der Well-architected-Status für alle erkannten EVS Virtualisierung-Umgebungen aufgeführt. Well-architected-Status werden als „Optimiert“ oder „Nicht optimiert“ kategorisiert. Wenn Sie *Inventory* auswählen, gelangen Sie zur Registerkarte Well-architected-Status innerhalb der Umgebung, wo Sie alle Konfigurationen für die Umgebung finden.
+
+
+
+== Konfigurationskategorien
+
+Workload Factory bewertet EVS-Konfigurationen in verschiedenen Kategorien, um die Übereinstimmung mit AWS und NetApp Best Practices sicherzustellen. Jede Kategorie konzentriert sich auf spezifische Aspekte Ihrer EVS-Umgebung:
+
+Verfügbarkeit:: Wie zugänglich und betriebsbereit die EVS configuration voraussichtlich sein wird.
+Sicherheit:: Wie gut die EVS-Konfiguration Daten schützt und den Zugriff kontrolliert (zum Beispiel EC2-Stopp- und Beendigungs-Schutz).
+Resilienz:: Die Fähigkeit der EVS-Konfiguration, sich von Ausfällen oder Störungen zu erholen.
+
+
+.Was kommt als Nächstes
+link:view-evs-well-architected.html["Implementieren Sie gut strukturierte Konfigurationen"]

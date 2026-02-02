@@ -52,3 +52,10 @@ Implementieren Sie das neue Filesystem FSX für ONTAP, das die Datastores für I
 
 [role="quick-margin-para"]
 link:deploy-fsx-file-system-evs.html["Erfahren Sie, wie Sie Ihr neues FSX für ONTAP-Filesystem implementieren"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["Sechs"] Überprüfen Sie gut strukturierte Erkenntnisse für Ihre EVS-Umgebung
+[role="quick-margin-para"]
+Wenn Ihre EVS-Umgebung erkannt wird, führt Workload Factory automatisch täglich Well-Architected-Scans durch, um Konfigurationsprobleme zu identifizieren und Empfehlungen zur Behebung bereitzustellen.
+
+[role="quick-margin-para"]
+link:view-evs-well-architected.html["Erfahren Sie, wie Sie gut strukturierte Konfigurationen implementieren"^].

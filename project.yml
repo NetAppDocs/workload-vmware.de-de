@@ -60,6 +60,12 @@ sidebar:
         url: "/connect-sddc-to-fsx.html"
       - title: Migrieren Sie Ihre Daten zur neuen Infrastruktur
         url: "/migrate-data.html"
+  - title: Verwalten und überwachen
+    entries:
+    - title: Konfigurationsanalyse für EVS-Konfigurationen
+      url: "/configuration-analysis.html"
+    - title: Implementieren Sie gut strukturierte EVS-Konfigurationen
+      url: "/view-evs-well-architected.html"
   - title: Wissen und Support
     entries:
     - title: Für den Support anmelden
