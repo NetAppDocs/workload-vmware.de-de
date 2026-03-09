@@ -149,4 +149,5 @@ Verwalten Sie Ihre hochgeladenen VM-Inventardaten vom Planungscenter aus oder er
 * link:launch-onboarding-advisor.html["Erstellen eines Amazon VMware Cloud-Bereitstellungsplans"]
 * link:launch-migration-advisor-evs.html["Erstellen eines Bereitstellungsplans für den Amazon Elastic VMware Service"]
 * link:launch-onboarding-advisor-native.html["Erstellen eines Amazon EC2-Bereitstellungsplans"]
+* link:launch-migration-advisor-gcve.html["Erstellen Sie einen Google Cloud VMware Engine-Bereitstellungsplan"]
 

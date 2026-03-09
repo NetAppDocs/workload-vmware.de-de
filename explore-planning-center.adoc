@@ -82,6 +82,7 @@ Das Planungszentrum wird angezeigt.
 ** link:deploy-fsx-file-system.html["Bereitstellen des Dateisystems für Amazon VMware Cloud-Pläne"]
 ** link:deploy-fsx-file-system-native.html["Bereitstellen des Dateisystems für Amazon EC2-Pläne"]
 ** link:deploy-fsx-file-system-evs.html["Bereitstellen des Dateisystems für Amazon Elastic VMware Service-Pläne"]
+** link:deploy-gcnv-datastores.html["Google Cloud NetApp Volumes-Datenspeicher für Google Cloud VMware Engine-Pläne bereitstellen"]
 
 
 
