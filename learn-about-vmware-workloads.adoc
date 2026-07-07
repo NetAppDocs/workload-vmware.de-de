@@ -84,7 +84,11 @@ Die Registerkarte „Optimierte Architektur“ bietet eine automatisierte tägli
 
 Automatische Scans werden mithilfe der AWS-APIs durchgeführt – es sind keine vSphere-Anmeldeinformationen erforderlich. Die Ergebnisse sind nach Konfigurationsbereich geordnet, wobei jede Feststellung Status, Schweregrad, Details zu den betroffenen Ressourcen und Schritt-für-Schritt-Anweisungen zur Behebung enthält.
 
-link:view-evs-well-architected.html["Implementieren Sie gut strukturierte EVS-Konfigurationen in Workload Factory"]. == Kosten
+link:view-evs-well-architected.html["Implementieren Sie gut strukturierte EVS-Konfigurationen in Workload Factory"].
+
+
+
+== Kosten
 
 Die Nutzung von Workload Factory für VMware ist kostenlos.
 
@@ -105,7 +109,6 @@ Workload Factory wird in allen kommerziellen Regionen unterstützt, in denen FSx
 Die folgenden AWS-Regionen werden nicht unterstützt:
 
 * Regionen Chinas
-* GovCloud (USA)-Regionen
 * Geheime Cloud
 * Streng geheime Cloud
 

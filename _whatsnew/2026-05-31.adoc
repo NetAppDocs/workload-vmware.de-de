@@ -1,0 +1,9 @@
+= Unterstützung für AWS GovCloud (US) in NetApp Workload Factory
+:allow-uri-read: 
+
+
+
+
+=== Unterstützung für AWS GovCloud (US) in NetApp Workload Factory
+
+NetApp Workload Factory unterstützt AWS GovCloud (US)-Konten. Mit einem GovCloud (US)-Konto können Sie Speicher-Workloads in den AWS GovCloud (US)-Regionen bereitstellen und verwalten.
