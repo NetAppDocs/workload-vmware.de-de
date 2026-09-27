@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: view-evs-well-architected.html 
-keywords: evs, well-architected, wad, best practices, recommendations, security, resiliency 
+keywords: evs, well-architected, best practices, recommendations, security, resiliency 
 summary: Überprüfen Sie den Well-Architected-Status der EVS-Konfigurationen in Workload Factory und befolgen Sie die Empfehlungen zur Fehlerbehebung basierend auf den Best Practices von AWS und NetApp. 
 ---
 = Implementieren Sie gut strukturierte EVS-Konfigurationen
@@ -15,6 +15,7 @@ Nutzen Sie die Workload Factory-Konfigurationsanalyse, um den gut entwickelten S
 
 
 
+[[about-this-task]]
 == Über diese Aufgabe
 
 Automatische tägliche Scans aller erkannten EVS-Umgebungen mithilfe der AWS-APIs analysieren Ihre EVS-Konfiguration und identifizieren potenzielle Probleme, die die Verfügbarkeit, Ausfallsicherheit, Sicherheit oder Kostenoptimierung beeinträchtigen könnten. Die Ergebnisse sind nach Konfigurationsbereich geordnet, wobei jeder Befund Status, Schweregrad, Details zu den betroffenen Ressourcen und Schritt-für-Schritt-Anleitungen zur Behebung enthält.
@@ -29,6 +30,7 @@ Zu den wichtigsten Merkmalen gehören:
 
 
 
+[[understanding-well-architected-insights]]
 === Verständnis von gut strukturierten Erkenntnissen
 
 Die Registerkarte „Well-architected“ zeigt Folgendes an:
@@ -43,6 +45,7 @@ Die Registerkarte „Well-architected“ zeigt Folgendes an:
 
 
 
+[[scan-frequency]]
 === Scanfrequenz
 
 Well-architected Scans werden automatisch für alle erkannten EVS-Konfigurationen durchgeführt. Wichtige Details zur Scanplanung:
@@ -58,6 +61,7 @@ NOTE: Die bedarfsgesteuerte Ausführung von gut strukturierten Scans wird derzei
 
 
 
+[[before-you-begin]]
 == Bevor Sie beginnen
 
 * Sie müssen über  https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS-Anmeldeinformationen hinzugefügt"^] mit den Berechtigungen _Anzeigen, Planen und Analysieren_ für VMware-Workloads verfügen.
@@ -66,6 +70,7 @@ NOTE: Die bedarfsgesteuerte Ausführung von gut strukturierten Scans wird derzei
 
 
 
+[[access-the-well-architected-status-tab]]
 == Greifen Sie auf die Registerkarte „Well-Architected-Status“ zu.
 
 .Schritte
@@ -89,10 +94,12 @@ Folgende Elemente werden angezeigt:
 
 
 
+[[view-well-architected-assessments]]
 == Gut konzipierte Assessments anzeigen
 
 
 
+[[cluster-node-management]]
 === Clusterknotenverwaltung
 
 Hierbei wird bewertet, ob auf Ihren EVS-Clusterknoten ein geeigneter EC2-Stopp- und Beendigungsschutz konfiguriert ist.
@@ -137,6 +144,7 @@ Um dieses Problem zu beheben, aktivieren Sie den Stopp- und Beendigungsschutz f�
 
 
 
+[[evs-environment-resiliency]]
 === EVS-Umgebungsresilienz
 
 Dies bewertet, ob Ihre EVS-Clusterknoten ordnungsgemäß auf Partitionsplatzierungsgruppen verteilt sind.
@@ -193,6 +201,7 @@ Beim Erstellen oder Erweitern einer EVS-Umgebung stellen Sie alle Clusterknoten 
 
 
 
+[[whats-next]]
 == Was kommt als Nächstes
 
 Nach Überprüfung Ihrer gut strukturierten Erkenntnisse und der Umsetzung der empfohlenen Änderungen:

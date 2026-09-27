@@ -17,6 +17,7 @@ Sie können einen Bereitstellungsplan erstellen, um virtuelle Maschinen zu Googl
 
 
 
+[[requirements]]
 == Anforderungen
 
 * Sie müssenlink:upload-vm-inventory.html["ein VM-Inventar hochgeladen"] .
@@ -26,6 +27,7 @@ Sie können einen Bereitstellungsplan erstellen, um virtuelle Maschinen zu Googl
 
 
 
+[[steps]]
 == Schritte
 
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .
@@ -43,6 +45,7 @@ Der Assistent *Prepare for Google Cloud onboarding* wird angezeigt.
 
 
 
+[[configure-migration-preferences]]
 === Migrationseinstellungen konfigurieren
 
 . Überprüfen Sie im Abschnitt „Upload der VM-Konfiguration“ die Informationen zum Dataset, das Sie zum Erstellen eines Migrationsplans verwenden.  Der Abschnitt *VM-Inventarzusammenfassung* wird aus der Inventardatei gefüllt, um die Anzahl der VMs und die gesamte Speicherkapazität wiederzugeben.
@@ -96,6 +99,7 @@ NOTE: Wenn Sie weniger als 20% Spielraum auswählen, wird der Snapshot-Schutz au
 
 
 
+[[select-a-cluster-configuration]]
 === Wählen Sie eine Clusterkonfiguration aus
 
 . Auf der Seite *Bevorzugte Google Cloud VMware Engine cluster configuration auswählen* konfigurieren Sie Ihre Google Cloud VMware Engine cluster preferences und überprüfen die empfohlenen Konfigurationen.
@@ -128,6 +132,7 @@ Die erste (kostengünstigste) Konfiguration ist standardmäßig ausgewählt.
 
 
 
+[[select-a-vm-layout]]
 === Wählen Sie ein VM-Layout aus
 
 . Auf der Seite *Automatische VM-Auswahl* überprüfen Sie das optimale Layout der virtuellen Maschine, das automatisch basierend auf Ihrer benötigten externen Speicherkapazität und Ihren Präferenzen ausgewählt wurde.
@@ -172,6 +177,7 @@ NOTE: Wenn Sie die VM-Auswahl manuell ändern, können Sie zur automatischen Aus
 
 
 
+[[review-nfs-datastore-assignments]]
 === NFS-Datenspeicherzuweisungen überprüfen
 
 . Auf der Seite *Review instance store assignment* überprüfen Sie das detaillierte Datenspeicherlayout und die VM-Zuordnungen.
@@ -231,6 +237,7 @@ NOTE: Wenn Sie die VM-Auswahl manuell ändern, können Sie zur automatischen Aus
 
 
 
+[[review-and-save-your-deployment-plan]]
 === Überprüfen und speichern Sie Ihren Bereitstellungsplan
 
 . Auf der Seite *Review your migration plan* überprüfen und passen Sie Ihren Bereitstellungsplan an, bevor Sie ihn speichern.

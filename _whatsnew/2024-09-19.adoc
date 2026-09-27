@@ -4,6 +4,7 @@
 
 
 
+[[vmware-migration-advisor-enhancements]]
 === Verbesserungen bei VMware Migration Advisor
 
 Diese Version von Workload Factory für VMware bietet Funktions- und Stabilitätsverbesserungen sowie die Möglichkeit, Migrationspläne zu importieren und zu exportieren, wenn der VMware-Migrationsberater verwendet wird.

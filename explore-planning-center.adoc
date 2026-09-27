@@ -15,18 +15,21 @@ Mit dem VMware-Planungscenter können Sie neue VM-Inventardaten hochladen und ne
 
 
 
+[[manage-vm-inventory-data]]
 == Verwalten von VM-Inventardaten
 
 Verwenden Sie das Planungscenter, um VM-Inventardaten zu erstellen und zu verwalten.
 
 
 
+[[upload-vm-inventory-data]]
 === Hochladen von VM-Inventardaten
 
 Sie können VM-Inventardaten hochladen, wenn Sie bereit sind, Workload Factory zu verwenden, um Migrationsoptionen zu Amazon AWS-Umgebungen zu erkunden.  Siehelink:upload-vm-inventory.html["Hochladen von VM-Inventardaten"] Anweisungen hierzu finden Sie unter.
 
 
 
+[[rename-a-dataset]]
 === Umbenennen eines Datasets
 
 Sie können den Namen eines gespeicherten Datensatzes ändern.
@@ -43,6 +46,7 @@ Das Planungszentrum wird angezeigt.
 
 
 
+[[delete-a-dataset]]
 === Löschen eines Datasets
 
 Wenn ein Datensatz nicht mehr benötigt wird, können Sie ihn jederzeit löschen.
@@ -59,12 +63,14 @@ Das Planungszentrum wird angezeigt.
 
 
 
+[[manage-migration-plans]]
 == Verwalten von Migrationsplänen
 
 Verwenden Sie das Migrationscenter, um Migrationspläne zu erstellen und zu verwalten.
 
 
 
+[[provision-a-migration-plan]]
 === Bereitstellen eines Migrationsplans
 
 Sie können einen Migrationsplan auswählen und ihn so konfigurieren, dass die VMs in die Amazon AWS-Umgebung Ihrer Wahl migriert werden.
@@ -88,6 +94,7 @@ Das Planungszentrum wird angezeigt.
 
 
 
+[[edit-the-comment-for-a-migration-plan]]
 === Bearbeiten des Kommentars für einen Migrationsplan
 
 Wenn Sie Kommentardetails für einen Migrationsplan ändern müssen, bearbeiten Sie den Kommentar im Planungscenter.
@@ -105,6 +112,7 @@ Das Planungszentrum wird angezeigt.
 
 
 
+[[create-a-pdf-or-csv-report-of-a-migration-plan]]
 === Erstellen Sie einen PDF- oder CSV-Bericht über einen Migrationsplan.
 
 Erstellen Sie einen PDF- oder CSV-Bericht mit den Details eines Migrationsplans.
@@ -122,6 +130,7 @@ Das Planungszentrum wird angezeigt.
 
 
 
+[[delete-a-migration-plan]]
 === Löschen eines Migrationsplans
 
 Wenn ein Migrationsplan nicht mehr benötigt wird, können Sie ihn jederzeit löschen.

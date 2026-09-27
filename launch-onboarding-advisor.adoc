@@ -19,6 +19,7 @@ Beachten Sie, dass Sie für den Zugriff auf Workload Factory einen Benutzernamen
 
 
 
+[[create-a-deployment-plan-based-on-an-on-premises-vsphere-environment]]
 == Erstellen Sie einen Implementierungsplan basierend auf einer lokalen vSphere-Umgebung
 
 Sie können Ihre aktuellen Konfigurationen von Virtual Machines in lokalen vSphere-Umgebungen auf Virtual Machines in VMware Cloud on AWS migrieren und die benutzerdefinierten Amazon FSX for NetApp ONTAP-Dateisysteme als externe Datastores verwenden.

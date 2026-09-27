@@ -4,6 +4,7 @@
 
 
 
+[[calculate-cost-savings-of-migrating-to-amazon-elastic-vmware-service-for-specific-regions]]
 === Berechnen Sie die Kosteneinsparungen durch die Migration zu Amazon Elastic VMware Service für bestimmte Regionen
 
 Sie können nun den Wert verschiedener Bereitstellungsoptionen für Ihre Cloud-Migration erkunden, den Aufwand für die Lösungsbewertung optimieren und sich eingehend mit Lösungen befassen, die das Potenzial haben, in der Cloud Mehrwert und Einsparungen zu bieten.

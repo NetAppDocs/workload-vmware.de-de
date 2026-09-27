@@ -4,6 +4,7 @@
 
 
 
+[[introducing-the-amazon-elastic-vmware-service-preferences-in-the-fsx-for-ontap-file-system-deployment-wizard]]
 === Einführung der Amazon Elastic VMware Service-Einstellungen im FSx for ONTAP Dateisystembereitstellungsassistenten
 
 Wenn Sie ein FSx for ONTAP Dateisystem zur Verwendung als externer NFS-Datenspeicher für Amazon Elastic VMware Service bereitstellen, können Sie nun die EVS-Umgebung auswählen, in der die Datenspeicher verbunden werden sollen.  Dadurch werden mehrere Felder im Bereitstellungsassistenten automatisch ausgefüllt, um den Bereitstellungsprozess zu vereinfachen.
@@ -12,6 +13,7 @@ https://docs.netapp.com/us-en/workload-vmware/deploy-fsx-file-system-evs.html["S
 
 
 
+[[permissions-changes-for-vmware-workloads]]
 === Berechtigungsänderungen für VMware-Workloads
 
 VMware Workloads bietet mehr Klarheit über die für bestimmte Aktionen erforderlichen Berechtigungen und eine höhere Granularität bei der Auswahl nur der benötigten Berechtigungen.  Wenn Sie Anmeldeinformationen hinzufügen, stehen Ihnen zwei Berechtigungsoptionen zur Auswahl, anstatt des bisherigen Berechtigungsmodells, das aus _nur_lesen_ und _lesen/schreiben_ bestand. Das neue Berechtigungsmodell unterteilt die Berechtigungsrichtlinien wie folgt:
@@ -26,6 +28,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Verbesserungen bei Amazon EC2 Migration Advisor
 
 Diese Version von NetApp Workload Factory für VMware bietet mehrere Verbesserungen der Migrationsberatung:

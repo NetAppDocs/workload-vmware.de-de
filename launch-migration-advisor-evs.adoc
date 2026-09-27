@@ -17,6 +17,7 @@ Sie können einen Bereitstellungsplan erstellen, um virtuelle Maschinen zum Amaz
 
 
 
+[[requirements]]
 == Anforderungen
 
 * Sie benötigen einen Benutzernamen und ein Passwort, um auf Workload Factory zugreifen zu können.  Falls Sie noch keinen Zugriff haben, erstellen Sie jetzt ein Konto.  Siehe die Anweisungen. https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Hier"] Die
@@ -25,6 +26,7 @@ Sie können einen Bereitstellungsplan erstellen, um virtuelle Maschinen zum Amaz
 
 
 
+[[steps]]
 == Schritte
 
 . Melden Sie sich bei Workload Factory mit einem der folgenden https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Konsolenerfahrungen"^] .

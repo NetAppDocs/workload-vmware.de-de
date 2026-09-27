@@ -17,6 +17,7 @@ Wenn der Einsparungsrechner ermittelt, dass FSx für ONTAP der kostengünstigste
 
 
 
+[[explore-savings-for-evs-environments]]
 == Entdecken Sie Einsparungen für EVS-Umgebungen
 
 Befolgen Sie diese Schritte, um potenzielle Einsparungen bei einer geplanten Migration zu einer Amazon EVS-Umgebung zu ermitteln.

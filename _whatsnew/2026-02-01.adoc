@@ -4,6 +4,7 @@
 
 
 
+[[well-architected-analysis-for-amazon-elastic-vmware-service]]
 === Well-architected Analyse für Amazon Elastic VMware Service
 
 Workload Factory bietet jetzt eine automatisierte, gut strukturierte Analyse für Ihre Amazon Elastic VMware Service (EVS)-Umgebungen. Tägliche Scans identifizieren Konfigurationsabweichungen und bieten detaillierte Empfehlungen zur Behebung, damit Sie optimalen Betrieb, Sicherheit und Kosteneffizienz aufrechterhalten können.

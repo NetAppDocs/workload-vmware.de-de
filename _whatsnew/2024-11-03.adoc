@@ -4,6 +4,7 @@
 
 
 
+[[vmware-migration-advisor-data-reduction-ratio-help]]
 === Das Datenreduzierungsverhältnis von VMware Migration Advisor hilft Ihnen dabei
 
 Diese Version von Workload Factory für VMware umfasst einen Assistenten zur Datenreduzierung. Mit dem Assistenten zur Datenreduzierung können Sie entscheiden, welches Verhältnis für Ihren VMware Bestand und Ihren Storage-Bestand am besten ist, wenn Sie sich für das AWS Cloud Onboarding vorbereiten.
